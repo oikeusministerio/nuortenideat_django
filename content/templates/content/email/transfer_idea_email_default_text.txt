@@ -1,0 +1,39 @@
+{% load i18n configs %}{% base_url as base_url %}{% blocktrans with idea_url=idea_url sender_name=sender_name sender_email=sender_email %}Hei Nuortenideat.fi-yhteyshenkilö,
+
+Nuortenideat.fi-palveluun on kirjoitettu idea, joka on ohjattu sinun käsiteltäväksi. Tutustu ideaan ja vastaa nuoren esittämään muutos- tai parannusehdotukseen. Jos et ole oikea henkilö käsittelemään asiaa, pyydämme välittämään idean eteenpäin sähköpostitse oikealle henkilölle omassa organisaatiossasi tai sen ulkopuolella. Idean kirjoittajan on tärkeä saada tietää, miten asia etenee ja miten se on otettu huomioon!
+
+Idea on osoitteessa {{ base_url }}{{ idea_url }}.
+
+{{ sender_name }}
+sähköposti: {{ sender_email }}
+
+
+
+---
+Alla olevaa viestipohjaa voi muokata ja hyödyntää, kun lähetät idean eteenpäin. Lisää omat yhteystietosi viestiin.
+Jos sinulla tulee kysyttävää, ole yhteydessä tuki@nuortenideat.fi.
+
+
+Viestipohja muokattavaksi sähköpostiin:
+
+Hei,
+
+Nuortenideat.fi-palveluun on kirjoitettu idea, joka on ohjattu sinun käsiteltäväksi. Tutustu ideaan ja vastaa nuoren esittämään muutos- tai parannusehdotukseen. Jos et ole oikea henkilö käsittelemään asiaa, pyydämme välittämään idean eteenpäin sähköpostitse oikealle henkilölle. Idean kirjoittajan on tärkeä saada tietää, miten asia etenee ja miten se on otettu huomioon!
+
+Idea on osoitteessa {{ base_url }}{{ idea_url }}.
+
+Ilmoita minulle tiedot siitä, miten idean käsittely etenee ja millaisen vastauksen se saa. Tiedot idean etenemisestä sekä vastaus perusteluineen julkaistaan Nuortenideat.fi-palvelussa idean yhteydessä, kun olen sen saanut. Näin myös idean kirjoittaja sekä sitä kommentoineet ja kannattaneet nuoret saavat tiedon, miten ehdotus on huomioitu.
+
+Tiedot idean vastaanottamisesta ja etenemisestä pyydetään toimittamaan kuukauden kuluessa. Tiedon vastauksesta voit ilmoittaa myöhemmin sen saatuasi.
+
+Kiitos yhteistyöstä!
+
+nimi
+Nuortenideat.fi-yhteyshenkilö
+sähköposti
+puhelin
+{% endblocktrans %}
+
+---
+{% trans "Nuortenideat.fi on valtakunnallinen vaikuttamispalvelu, jonka kautta nuoret voivat parantaa ja kehittää lähiympäristöään. Nuorten kirjoittamat ideat toimitetaan eteenpäin käsittelyyn ja vastattavaksi asioista päättäville toimijoille. Kaksikielinen palvelu on osa oikeusministeriön demokratiapalveluita verkossa (www.demokratia.fi). Palvelun tuottavat yhteistyössä Nuorten tieto- ja neuvontatyön kehittämiskeskus Koordinaatti, oikeusministeriö sekä opetus- ja kulttuuriministeriö. Tutustu ja ota palvelu käyttöön osoitteessa www.nuortenideat.fi" %}
+---

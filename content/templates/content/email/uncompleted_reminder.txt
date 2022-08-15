@@ -1,0 +1,2 @@
+{% extends "nuka/email/base.txt" %}{% load i18n configs %}{% block content %}{% blocktrans with title=idea.title %}Nuortenideat.fi idea '{{ title }}' on ollut "Viety eteenpäin"-tilassa {{ transferred_days }} päivää. Idea kaipaa vastauksen kirjaamista.{% endblocktrans %}
+{% trans "Idea on osoitteessa" %} {% base_url as url %}{% trans url %}{{idea_url}}{% endblock content %}

@@ -1,0 +1,15 @@
+.DS_STORE
+.idea
+*.pyc
+static-tmp
+celerybeat-schedule
+celerybeat.pid
+local_settings.py
+staticroot/*
+
+# VSCode user environment settings
+.vscode/
+
+# Node modules
+node_modules/
+package-lock.json

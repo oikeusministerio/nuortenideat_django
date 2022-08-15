@@ -1,0 +1,1 @@
+{% extends "nuka/email/base.txt" %}{% load i18n %}{% block content %}{% blocktrans %}Nuortenideat.fi käyttäjätilisi moderaattorioikeudet tunnuksella "{{ username }}" erääntyvät {{ days_left }} päivän kuluttua. Käy päivittämässä oikeutesi osoitteessa: {{ link }}.{% endblocktrans %}{% endblock content %}

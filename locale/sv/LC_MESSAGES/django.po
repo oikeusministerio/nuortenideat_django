@@ -1,0 +1,4305 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Nuorten ideat\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-24 15:39+0300\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: POEditor.com\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: account/admin.py:20
+msgid "Permissions"
+msgstr "Permissions"
+
+#: account/admin.py:22
+msgid "Important dates"
+msgstr "Important dates"
+
+#: account/forms.py:48
+#, python-brace-format
+msgid "Salasanan täytyy olla vähintään {0} merkkiä pitkä."
+msgstr "Lösenordet måste bestå av minst {0} tecken."
+
+#: account/forms.py:53
+msgid "Salasanaan täytyy sisältyä vähintään yksi numero."
+msgstr "I lösenordet måste ingå minst en siffra."
+
+#: account/forms.py:57
+msgid "Salasanaan täytyy sisältyä vähintään yksi kirjain."
+msgstr "I lösenordet måste ingå minst en bokstav."
+
+#: account/forms.py:87 account/forms.py:404 account/forms.py:417
+#: nkadmin/templates/nkadmin/users_list.html:55
+msgid "Käyttäjätunnus"
+msgstr "Användarnamn"
+
+#: account/forms.py:99 account/forms.py:434
+msgid "Käyttäjätunnus on jo käytössä."
+msgstr "Användarnamnet används redan."
+
+#: account/forms.py:113
+msgid "Virheellinen käyttäjätunnus tai salasana."
+msgstr "Fel användarnamn eller lösenord."
+
+#: account/forms.py:114
+msgid "Käyttäjätunnus ei ole aktiivinen."
+msgstr "Användarnamnet har inte aktiverats."
+
+#: account/forms.py:120
+msgid "Puhelinnumero"
+msgstr "Telefonnummer"
+
+#: account/forms.py:121
+msgid ""
+"Syötä puhelinnumero kansainvälisessä muodossa ilman välimerkkejä, esim. "
+"+358401234567"
+msgstr ""
+"Ange telefonnumret i internationellt format utan skiljetecken, t.ex. "
+"+358401234567"
+
+#: account/forms.py:131 nkadmin/forms.py:93
+#: nkadmin/templates/nkadmin/users_list.html:72
+msgid "Kotikunta"
+msgstr "Hemkommun"
+
+#: account/forms.py:132 nkadmin/forms.py:96
+msgid "Valitse"
+msgstr "Välj"
+
+#: account/forms.py:139
+msgid "Sähköpostiosoite on jo käytössä."
+msgstr "E-postadressen används redan."
+
+#: account/forms.py:151 account/templates/account/messages/detail.html:27
+#: content/templates/idea_survey/survey_container.html:63
+#: nkvote/templates/gallup/well.html:40
+msgid "Sähköposti"
+msgstr "E-post"
+
+#: account/forms.py:152
+msgid "Tekstiviesti"
+msgstr "Textmeddelande"
+
+#: account/forms.py:154
+msgid "Valitse vahvistusviestin toimitustapa"
+msgstr "Välj hur du vill att bekräftelsemeddelande skickas"
+
+#: account/forms.py:160
+msgid "Valitse aiheet, joita haluat seurata"
+msgstr "Välj vilka ämnen du vill följa"
+
+#: account/forms.py:186
+msgid "Vahvistustunnus"
+msgstr "Bekräftelsekod"
+
+#: account/forms.py:196
+msgid "Virheellinen vahvistustunnus"
+msgstr "Felaktig bekräftelsekod"
+
+#: account/forms.py:202
+msgid "Aktivointiyritykset käytetty"
+msgstr "Inga aktiveringsförsök kvar"
+
+#: account/forms.py:209
+msgid "Vahvistuslinkki on virheellinen tai vanhentunut."
+msgstr "Bekräftelselänken är felaktig eller föråldrad."
+
+#: account/forms.py:298 content/forms.py:383 organization/forms.py:159
+msgid "Valitse kuva"
+msgstr "Välj bild"
+
+#: account/forms.py:321
+msgid "Valitse vastaanottajat"
+msgstr "Välj mottagare"
+
+#: account/forms.py:324 content/forms.py:434 content/forms.py:453
+#: nkmessages/forms.py:14 nkmessages/models.py:36
+msgid "Viesti"
+msgstr "Meddelande"
+
+#: account/forms.py:330 account/forms.py:337 nkcomments/forms.py:47
+#: nkcomments/forms.py:92 nkmessages/forms.py:31 nkmessages/forms.py:38
+#: survey/forms.py:121
+msgid "Tämä kenttä ei voi olla tyhjä."
+msgstr "Det här fältet kan inte vara tomt."
+
+#: account/forms.py:376
+msgid "Omat"
+msgstr "Egna"
+
+#: account/forms.py:377
+msgid "Seuratut ideat"
+msgstr "Idéer som du följer"
+
+#: account/forms.py:378 account/templates/account/profile_base.html:74
+#: account/templates/account/user_settings.html:35
+msgid "Seuratut aiheet"
+msgstr "Ämnen som du följer"
+
+#: account/forms.py:379 account/templates/account/profile_base.html:78
+#: account/templates/account/user_settings.html:40
+msgid "Seuratut organisaatiot"
+msgstr "Organisationer som du följer"
+
+#: account/forms.py:380
+msgid "Vaikutetut ideat ja kysymykset"
+msgstr "Idéer och frågor som påverkats"
+
+#: account/forms.py:384 content/forms.py:522 content/models.py:63
+#: content/models.py:457 nkadmin/templates/nkadmin/users_list.html:33
+#: nkvote/models.py:85 organization/forms.py:185 organization/forms.py:274
+#: organization/forms.py:282 survey/apps.py:18
+msgid "Kaikki"
+msgstr "Samtliga"
+
+#: account/forms.py:385 content/templates/content/create_idea_form.html:5
+#: content/templates/content/create_idea_form.html:37
+#: content/templates/content/create_question_form.html:8
+#: content/templates/content/idea_detail.html:134
+#: content/templates/content/initiative_list.html:5
+#: content/templates/content/initiative_list.html:44
+#: content/templates/content/initiative_list.html:51
+#: nuka/templates/nuka/base.html:288 nuka/templates/nuka/base.html.py:373
+#: nuka/templatetags/sitemap_urls.py:29 organization/forms.py:283
+msgid "Ideat"
+msgstr "Idéer"
+
+#: account/forms.py:386 content/templates/content/create_question_form.html:5
+#: organization/forms.py:284
+msgid "Kysymykset"
+msgstr "Frågor"
+
+#: account/forms.py:391 account/templates/account/messages/listing.html:32
+#: organization/forms.py:289
+msgid "Näytä"
+msgstr "Visa"
+
+#: account/forms.py:492 nkvote/templates/gallup/form.html:39
+msgid "Heti"
+msgstr "Genast"
+
+#: account/forms.py:493
+msgid "Päivittäin"
+msgstr "Dagligen"
+
+#: account/forms.py:494
+msgid "Viikottain"
+msgstr "Veckoligen"
+
+#: account/management/commands/remind_passive.py:33
+#: account/management/commands/remind_passive_manually.py:31
+msgid "Varoitus käyttäjätilin poistamisesta."
+msgstr ""
+
+#: account/middleware.py:16
+msgid "Tiliin yhdistäminen peruutettiin."
+msgstr "Anslutningen till kontot avbröts."
+
+#: account/models.py:95
+msgid "Odottaa aktivointia"
+msgstr "Väntar på aktivering"
+
+#: account/models.py:96
+msgid "Aktiivinen"
+msgstr "Aktiverad"
+
+#: account/models.py:97 content/forms.py:512 content/models.py:56
+msgid "Arkistoitu"
+msgstr "Arkiverad"
+
+#: account/models.py:103
+#, python-format
+msgid ""
+"Enintään %(count)d merkkiä. Vain kirjaimet, numerot ja %(special_chars)s "
+"ovat sallittuja."
+msgstr ""
+"Högst %(count)d tecken. Endast bokstäver, siffror och %(special_chars)s är "
+"tillåtna."
+
+#: account/models.py:108
+msgid "Syötä kelvollinen käyttäjätunnus."
+msgstr "Mata in ett lämpligt användarnamn"
+
+#: account/models.py:113
+msgid "käyttäjänimi"
+msgstr "användarnamn"
+
+#: account/models.py:114
+msgid "staff status"
+msgstr "staff status"
+
+#: account/models.py:115
+msgid "Designates whether the user can log into this admin site."
+msgstr "Designates whether the user can log into this admin site."
+
+#: account/models.py:117 nkmoderation/models.py:50
+msgid "tila"
+msgstr "status"
+
+#: account/models.py:119
+msgid "liittynyt"
+msgstr "ansluten"
+
+#: account/models.py:120
+msgid "muokattu"
+msgstr "redigerad"
+
+#: account/models.py:121
+msgid "moderointioikeudet voimassa"
+msgstr ""
+
+#: account/models.py:180 account/models.py:330
+#: nkadmin/templates/nkadmin/users_list.html:38
+msgid "Ylläpitäjä"
+msgstr "Administratör"
+
+#: account/models.py:182 account/models.py:329 nkadmin/forms.py:75
+#: nkadmin/templates/nkadmin/users_list.html:37
+msgid "Moderaattori"
+msgstr "Moderator"
+
+#: account/models.py:247 account/templates/account/messages/create.html:11
+#: account/templates/account/messages/detail.html:11
+#: account/templates/account/messages/listing.html:15
+#: account/templates/account/profile_base.html:11
+#: account/templates/account/user_change_password.html:10
+#: account/templates/account/user_profile.html:9
+#: account/templates/account/user_settings.html:15
+msgid "Käyttäjä"
+msgstr "Användare"
+
+#: account/models.py:248 nkadmin/templates/nkadmin/base.html:14
+#: nkadmin/templates/nkadmin/edit_user.html:9
+#: nkadmin/templates/nkadmin/users_list.html:8
+#: nkadmin/templates/reports/user_activity_modal.html:13
+msgid "Käyttäjät"
+msgstr "Användare"
+
+#: account/models.py:264 slug/models.py:42
+msgid "suomi"
+msgstr "finska"
+
+#: account/models.py:265 slug/models.py:43
+msgid "ruotsi"
+msgstr "svenska"
+
+#: account/models.py:269 account/templates/account/signup.html:25
+msgid "Kyllä"
+msgstr "Ja"
+
+#: account/models.py:270 account/renderers.py:26
+#: account/templates/account/signup.html:31
+msgid "Ei"
+msgstr "Nej"
+
+#: account/models.py:274
+msgid "etunimi"
+msgstr "förnamn"
+
+#: account/models.py:275
+msgid "sukunimi"
+msgstr "efternamn"
+
+#: account/models.py:276 nkpicturecarousel/models.py:67
+msgid "kieli"
+msgstr "språk"
+
+#: account/models.py:278 nkmessages/models.py:59
+msgid "sähköposti"
+msgstr "e-post"
+
+#: account/models.py:279
+msgid "puhelinnumero"
+msgstr "telefonnummer"
+
+#: account/models.py:281
+msgid "syntymävuosi"
+msgstr "födelseår"
+
+#: account/models.py:285
+msgid "ilmoitus uusista viesteistä"
+msgstr "notifiering om nya meddelanden"
+
+#: account/models.py:310 organization/models.py:100
+msgid "Profiilikuvan rajaus"
+msgstr "Avgränsning av profilbilden"
+
+#: account/models.py:322
+msgid "Käyttäjäasetus"
+msgstr "Användarinställning"
+
+#: account/models.py:323
+msgid "Käyttäjäasetukset"
+msgstr "Användarinställningar"
+
+#: account/perms.py:33
+msgid "Sinun on määriteltävä sähköpostiosoitteesi ennen jatkamista."
+msgstr "Du måste ange din e-postadress innan du går vidare."
+
+#: account/perms.py:44
+msgid "Käyttäjäprofiilia ei ole palvelussa."
+msgstr "Användarprofilen finns inte i tjänsten."
+
+#: account/pipeline.py:98 account/pipeline.py:113
+msgid "{}-tili on jo käytössä."
+msgstr "{}-kontot används redan."
+
+#: account/pipeline.py:132
+#, python-brace-format
+msgid ""
+"{0}-tiliä ei ole yhdistetty. Rekisteröidy {0}-tunnuksillasi tai yhdistä se "
+"jo olemassaolevaan Nuortenideat.fi-tunnukseen Oma sivun asetuksista."
+msgstr ""
+"{0}-kontot har inte anslutits till tjänsten. Registrera dig med ditt {0}-"
+"användarnamn eller anslut det till ditt existerande Ungasidéer.fi-"
+"användarnamn genom att ändra inställningarna på din Egen sida."
+
+#: account/pipeline.py:151
+#, python-brace-format
+msgid "{0}-yhteys luotu. Voit jatkossa kirjautua palveluun {0}-tunnuksillasi."
+msgstr ""
+"{0}-anslutning skapats. I fortsättningen kan du logga in i tjänsten med ditt "
+"{0}-användarnamn."
+
+#: account/pipeline.py:157 account/views.py:325
+#, python-format
+msgid "Tervetuloa! Käytit palvelua viimeksi %s."
+msgstr "Välkommen! Du använde tjänsten senast %s."
+
+#: account/pipeline.py:165
+msgid "{}-yhteys poistettu."
+msgstr "{0}-anslutningen har avslutats."
+
+#: account/templates/account/email/account_closed.txt:1
+#, python-format
+msgid ""
+"Nuortenideat.fi käyttäjätilisi käyttäjätunnuksella %(user)s on suljettu."
+msgstr ""
+"Ditt användarkonto i Ungasidéer.fi med användarnamnet %(user)s har stängts."
+
+#: account/templates/account/email/account_created.txt:1
+#, python-format
+msgid ""
+"Hei %(user)s,\n"
+"\n"
+"Tervetuloa Nuortenideat.fi palvelun käyttäjäksi."
+msgstr ""
+"Hei %(user)s,\n"
+"\n"
+"Välkommen till tjänsten Ungasideer.fi!"
+
+#: account/templates/account/email/confirm_signup.txt:3
+msgid "Vahvista sähköpostiosoitteesi alla olevalla vahvistustunnuksella"
+msgstr "Bekräfta din e-postadress med bekräftelsekoden nedan"
+
+#: account/templates/account/email/confirm_signup.txt:6
+msgid "Voit myös vaihtoehtoisesti käyttää vahvistuslinkkiä"
+msgstr "Du kan också klicka på bekräftelselänken"
+
+#: account/templates/account/email/confirm_signup.txt:9
+#: account/templates/account/email/password_reset.txt:7
+msgid ""
+"Jos linkkiä napsauttamalla ei tapahdu mitään, kopioi ja liitä osoite "
+"selaimen osoiteriville."
+msgstr ""
+"Om inget händer när du klickar på länken, kopiera adressen och klistra in "
+"den i webbläsarens adressfält."
+
+#: account/templates/account/email/password_reset.txt:2
+#, python-format
+msgid ""
+"Sait tämän viestin, koska Nuortenideat.fi käyttäjätunnuksellesi %(user)s "
+"tilattiin salasanan nollaus."
+msgstr ""
+"Du fick detta meddelande eftersom nollställning av lösenordet beställdes för "
+"ditt Ungasideer.fi-användarnamn %(user)s."
+
+#: account/templates/account/email/password_reset.txt:4
+msgid "Aseta tunnuksellesi uusi salasana napsauttamalla alla olevaa linkkiä"
+msgstr ""
+"Ange ett nytt lösenord för ditt användarnamn genom att klicka på länken nedan"
+
+#: account/templates/account/email/password_reset_title.txt:1
+#: account/templates/account/user_reset_password.html:8
+msgid "Salasanan nollaus"
+msgstr "Nollställning av lösenord"
+
+#: account/templates/account/email/remind_moderator_rights.txt:1
+#, python-format
+msgid ""
+"Nuortenideat.fi käyttäjätilisi moderaattorioikeudet tunnuksella "
+"\"%(username)s\" erääntyvät %(days_left)s päivän kuluttua. Käy päivittämässä "
+"oikeutesi osoitteessa: %(link)s."
+msgstr ""
+
+#: account/templates/account/email/remind_passive_users.txt:1
+#, python-format
+msgid ""
+"Nuortenideat.fi käyttäjätilisi tunnuksella \"%(username)s\" on ollut pian 2 "
+"vuotta passiivinen ja se poistetaan %(days_until)s päivän kuluttua. Voit "
+"peruuttaa poiston kirjautumalla käyttäjätunnuksellasi palveluun."
+msgstr ""
+
+#: account/templates/account/email_confirmation_failed.html:4
+msgid "Sähköpostin vahvistaminen"
+msgstr "Bekräftelse av e-postadress"
+
+#: account/templates/account/email_confirmed.html:4
+msgid "Sähköposti vahvistettu"
+msgstr "E-postadressen bekräftad"
+
+#: account/templates/account/email_confirmed.html:6
+msgid "Sähköpostiosoitteesi on vahvistettu."
+msgstr "Din e-postadress har bekräftats."
+
+#: account/templates/account/email_confirmed.html:6
+msgid "Voit nyt kirjautua sisään palveluun."
+msgstr "Nu kan du logga in i tjänsten."
+
+#: account/templates/account/login.html:6
+#: account/templates/account/login.html:13
+#: account/templates/account/signup_choices.html:23
+#: nuka/templates/nuka/base.html:191 nuka/templates/nuka/base.html.py:222
+msgid "Kirjaudu sisään"
+msgstr "Logga in"
+
+#: account/templates/account/login.html:23 nuka/templatetags/sitemap_urls.py:24
+msgid "Kirjaudu"
+msgstr "Logga in"
+
+#: account/templates/account/login.html:26
+msgid "Salasana hukassa?"
+msgstr "Glömt ditt lösenord?"
+
+#: account/templates/account/login.html:36
+msgid "Oletko uusi käyttäjä?"
+msgstr "Ny användare?"
+
+#: account/templates/account/login.html:37
+#, python-format
+msgid "Tee tunnus <a href=\"%(signup_url)s\">rekisteröitymällä</a>"
+msgstr ""
+"Skapa ett användarnamn <a href=\"%(signup_url)s\">genom att registrera dig</"
+"a>"
+
+#: account/templates/account/messages/create.html:7
+#: account/templates/account/messages/detail.html:7
+#: account/templates/account/messages/listing.html:12
+#: account/templates/account/profile_base.html:5
+#: account/templates/account/profile_base.html:9
+#: account/templates/account/profile_base.html:24
+#: account/templates/account/signup_activated.html:10
+#: account/templates/account/user_change_password.html:7
+#: account/templates/account/user_profile.html:6
+#: account/templates/account/user_settings.html:12
+#: nuka/templates/nuka/base.html:304 nuka/templatetags/sitemap_urls.py:91
+msgid "Oma sivu"
+msgstr "Egen sida"
+
+#: account/templates/account/messages/create.html:8
+#: account/templates/account/messages/detail.html:8
+#: account/templates/account/messages/listing.html:13
+#: account/templates/account/messages/listing.html:24
+#: account/templates/account/profile_base.html:29 nkmessages/models.py:37
+msgid "Viestit"
+msgstr "Meddelanden"
+
+#: account/templates/account/messages/create.html:9
+#: account/templates/account/messages/listing.html:25 nkmessages/models.py:47
+msgid "Uusi viesti"
+msgstr "Ny meddelande"
+
+#: account/templates/account/messages/create.html:23
+#: nkchat/jstemplates/message-form.html:2
+#: nkmessages/templates/nkmessages/feedback_form.html:22
+msgid "Lähetä"
+msgstr "Skicka"
+
+#: account/templates/account/messages/create.html:24
+#: account/templates/account/profile_picture_form.html:7
+#: content/templates/content/idea_detail_additional_details_add.html:12
+#: content/templates/content/idea_detail_additional_details_add.html:14
+#: content/templates/content/idea_edit_picture_form.html:21
+#: content/templates/content/publish_idea_decision.html:15
+#: content/templates/content/publish_idea_modal.html:88
+#: content/templates/content/transfer_idea.html:25
+#: content/templates/content/transfer_idea_to_kua.html:17
+#: content/templates/idea_survey/confirm_delete.html:11
+#: content/templates/idea_survey/survey_name_form.html:11
+#: cropping/templates/cropping/crop_form.html:12
+#: nkchat/jstemplates/create-group-chat.html:3
+#: nkvote/templates/gallup/confirm_delete.html:11
+#: nkvote/templates/gallup/form.html:50
+#: organization/templates/organization/organization_picture_form.html:7
+#: survey/templates/survey/edit_mode/question.html:28
+#: survey/templates/survey/edit_mode/subtitle.html:15
+msgid "Peruuta"
+msgstr "Ångra"
+
+#: account/templates/account/messages/detail.html:20
+#: account/templates/account/messages/list_table.html:8
+msgid "Lähettäjä"
+msgstr "Avsändare"
+
+#: account/templates/account/messages/detail.html:34
+#: account/templates/account/messages/list_table.html:7 tagging/admin.py:23
+#: tagging/models.py:23
+msgid "Aihe"
+msgstr "Ämne"
+
+#: account/templates/account/messages/detail.html:40
+#: account/templates/account/messages/list_table.html:10
+msgid "Vastaanottaja"
+msgstr "Mottagare"
+
+#: account/templates/account/messages/detail.html:46
+#: account/templates/account/messages/list_table.html:9
+msgid "Päiväys"
+msgstr "Datum"
+
+#: account/templates/account/messages/detail.html:58
+msgid "Takaisin viesteihin"
+msgstr "Tillbaka till meddelanden"
+
+#: account/templates/account/messages/detail.html:60
+#: nkvote/templates/gallup/well.html:61
+#: nkvote/templates/gallup/well/results.html:33
+msgid "Vastaa"
+msgstr "Svara"
+
+#: account/templates/account/messages/detail.html:66
+#: account/templates/account/user_settings_picture.html:8
+#: content/templates/content/idea_confirm_delete.html:10
+#: content/templates/idea_survey/confirm_delete.html:10
+#: content/templates/idea_survey/survey_container.html:47
+#: nkmoderation/templates/nkmoderation/moderated_object.html:20
+#: nkvote/templates/gallup/confirm_delete.html:10
+#: nkvote/templates/gallup/well.html:24
+#: organization/templates/organization/organization_detail_picture.html:10
+#: survey/templates/survey/edit_mode/element_buttons.html:5
+#: survey/templates/survey/edit_mode/element_buttons_temp_element.html:5
+msgid "Poista"
+msgstr "Ta bort"
+
+#: account/templates/account/messages/list_table.html:29
+msgid "Ei viestejä."
+msgstr "Inga meddelanden."
+
+#: account/templates/account/messages/listing.html:27
+msgid ""
+"Voit lähettää viestin organisaatioiden yhteyshenkilöille tai "
+"moderaattoreille. Huomioi, että viestin lähettäjän ja vastaanottajan "
+"viestilaatikossa näkyvät omiin tietoihin tallennetut etunimi ja sukunimi. "
+"Muualla palvelussa julkisesti on näkyvissä ainoastaan käyttäjätunnus."
+msgstr ""
+"Du kan skicka meddelandet till organisationernas kontaktpersoner eller till "
+"moderatörerna. Observera att både i avsändarens och mottagarens e-postlåda "
+"syns det för- och efternamn du angett i dina egna uppgifter.  Annanstans i "
+"tjänsten syns enbart användarnamnet för allmänheten."
+
+#: account/templates/account/messages/listing.html:34
+msgid "Saapuneet"
+msgstr "Inkomna"
+
+#: account/templates/account/messages/listing.html:35
+msgid "Lähetetyt"
+msgstr "Skickade"
+
+#: account/templates/account/messages/listing.html:42
+msgid "Järjestys"
+msgstr "Ordning"
+
+#: account/templates/account/messages/listing.html:44
+msgid "Tuoreimmat ensin"
+msgstr "Nyaste först"
+
+#: account/templates/account/messages/listing.html:45
+msgid "Vanhimmat ensin"
+msgstr "Äldsta först"
+
+#: account/templates/account/messages/receivers.html:7
+#: nkchat/jstemplates/group-chat-users.html:1
+msgid "Moderaattorit"
+msgstr "Moderatorer"
+
+#: account/templates/account/messages/sender.html:8 nkmessages/models.py:62
+#: nkmessages/templates/nkmessages/feedback_form.html:6
+#: nuka/templates/nuka/base.html:421 nuka/templatetags/sitemap_urls.py:82
+msgid "Palaute"
+msgstr "Kommentarer"
+
+#: account/templates/account/messages/sender.html:10
+msgid "Nimetön palaute"
+msgstr "Anonyma kommentarer"
+
+#: account/templates/account/messages/subject.html:23
+msgid "vastattu"
+msgstr "besvarad"
+
+#: account/templates/account/notification_options/help_text.html:2
+msgid "Nuortenideat.fi lähettää sinulle sähköpostiviestin kun..."
+msgstr "Ungasidéer.fi skickar dig ett meddelande om..."
+
+#: account/templates/account/notification_options/options_detail.html:4
+#: account/templates/account/notification_options/options_edit.html:3
+msgid "Ilmoitusasetukset"
+msgstr "Inställningar för meddelanden "
+
+#: account/templates/account/notification_options/options_detail.html:6
+msgid "Muokkaa ilmoitusasetuksia"
+msgstr "Ändra inställningarna för meddelanden "
+
+#: account/templates/account/notification_options/options_edit.html:9
+#: account/templates/account/user_change_password.html:24
+#: account/templates/account/user_settings_edit.html:13
+#: content/templates/content/idea_detail.html:179
+#: content/templates/content/idea_detail.html:222
+#: content/templates/content/idea_detail_additional_details_add.html:8
+#: content/templates/content/idea_edit_picture_form.html:20
+#: content/templates/idea_survey/survey_name_form.html:10
+#: nkadmin/templates/nkadmin/change_user_password.html:17
+#: nkadmin/templates/nkadmin/edit_user.html:23
+#: nkcomments/templates/nkcomments/comment_edit_form.html:6
+#: nuka/templates/nuka/inline_edit_base_form.html:12
+#: survey/templates/survey/edit_mode/question.html:25
+#: survey/templates/survey/edit_mode/subtitle.html:12
+msgid "Tallenna"
+msgstr "Spara"
+
+#: account/templates/account/profile_base.html:19
+msgid "Käyttäjätili on arkistoitu"
+msgstr "Användarprofilen har arkiverats"
+
+#: account/templates/account/profile_base.html:27
+#: account/templates/account/user_profile.html:7
+msgid "Yhteenveto"
+msgstr "Sammandrag"
+
+#: account/templates/account/profile_base.html:31
+#: account/templates/account/user_settings.html:13
+msgid "Omat tiedot ja asetukset"
+msgstr "Egna uppgifter och inställningar"
+
+#: account/templates/account/profile_base.html:33
+#: account/templates/account/user_change_password.html:8
+#: account/templates/account/user_reset_password_confirm.html:17
+#: nkadmin/templates/nkadmin/users_list.html:101
+msgid "Vaihda salasana"
+msgstr "Byt lösenord"
+
+#: account/templates/account/profile_base.html:44
+#: content/templates/content/initiative_list.html:56
+#: nkwidget/templates/nkwidget/initiative/initiative_list.html:25
+#: nuka/templates/nuka/base.html:432 nuka/templates/nuka/base.html.py:433
+#: nuka/templates/nuka/base.html:437 nuka/templates/nuka/main_buttons.html:8
+#: nuka/templatetags/sitemap_urls.py:34
+#: organization/templates/organization/organization_detail.html:76
+msgid "Kirjoita idea"
+msgstr "Skriv en idé"
+
+#: account/templates/account/profile_base.html:55
+#: account/templates/account/user_profile_public.html:22
+msgid "Lähetä käyttäjälle viesti"
+msgstr "Skicka ett meddelande till användaren"
+
+#: account/templates/account/profile_base.html:62
+#: account/templates/account/user_profile_public.html:36
+#: nkadmin/templates/nkadmin/users_list.html:36
+msgid "Yhteyshenkilö"
+msgstr "Kontaktperson"
+
+#: account/templates/account/profile_base.html:70
+#: account/templates/account/user_profile_public.html:44
+#: nkadmin/templates/nkadmin/users_list.html:56
+#: organization/templates/organization/organization_detail.html:69
+msgid "Ideoita"
+msgstr "Idéer"
+
+#: account/templates/account/profile_base.html:71
+#: account/templates/account/user_profile_public.html:45
+#: nkadmin/templates/nkadmin/users_list.html:57
+msgid "Kysymyksiä"
+msgstr "Frågor"
+
+#: account/templates/account/profile_base.html:72
+#: account/templates/account/user_profile_public.html:46
+msgid "Kommentteja"
+msgstr "Kommentarer"
+
+#: account/templates/account/profile_picture.html:22
+#: account/templates/account/signup.html:20
+#: account/templates/account/user_settings.html:29
+msgid "Profiilikuva"
+msgstr "Profilbild"
+
+#: account/templates/account/profile_picture.html:25
+msgid "Profiilikuvan paikka"
+msgstr "Profilbildens plats "
+
+#: account/templates/account/profile_picture_form.html:6
+#: cropping/templates/cropping/crop_form.html:11
+#: organization/templates/organization/organization_picture_form.html:6
+msgid "Valmis"
+msgstr "Färdig"
+
+#: account/templates/account/signup.html:6
+#: account/templates/account/signup.html:47
+#: account/templates/account/signup_choices.html:6
+#: account/templates/account/signup_choices.html:11
+#: nuka/templates/nuka/base.html:198 nuka/templates/nuka/base.html.py:228
+#: nuka/templatetags/sitemap_urls.py:19
+msgid "Rekisteröidy"
+msgstr "Registrera dig"
+
+#: account/templates/account/signup.html:11
+msgid "Rekisteröityminen"
+msgstr "Registrering"
+
+#: account/templates/account/signup.html:12
+msgid ""
+"Täytä alla olevat tiedot viedäksesi rekisteröitymisen loppuun. Kaikki kohdat "
+"ovat pakollisia."
+msgstr ""
+"Fyll i uppgifterna nedan för att slutföra din registrering. Alla fält är "
+"obligatoriska."
+
+#: account/templates/account/signup.html:21
+msgid "Käytetäänkö profiilikuvaa?"
+msgstr "Vill du använda profilbilden?"
+
+#: account/templates/account/signup.html:53
+#, python-format
+msgid ""
+"Olen tutustunut <a target=\"_blank\" href=\"%(privacy_policy_url)s"
+"\">tietosuojaselosteeseen</a>"
+msgstr ""
+
+#: account/templates/account/signup_activated.html:8
+msgid "Kiitos rekisteröitymisestä"
+msgstr "Tack för din registrering"
+
+#: account/templates/account/signup_activated.html:9
+msgid "Rekisteröityminen Nuortenideat.fi-palveluun on valmis."
+msgstr "Din registrering i tjänsten Ungasideer.fi är klar."
+
+#: account/templates/account/signup_activation.html:8
+msgid "Vahvista rekisteröityminen"
+msgstr "Bekräfta registreringen"
+
+#: account/templates/account/signup_activation.html:10
+msgid ""
+"Vahvista rekisteröityminen syöttämällä alla olevaan kenttään "
+"vahvistustunnus, joka lähetettiin sähköpostiisi tai matkapuhelimeesi."
+msgstr ""
+"Bekräfta registreringen genom att mata in bekräftelsekoden du fått till din "
+"e-postadress eller till din mobiltelefon i fältet nedan."
+
+#: account/templates/account/signup_activation.html:17
+msgid "Vahvista"
+msgstr "Bekräfta"
+
+#: account/templates/account/signup_choices.html:15
+msgid "Rekisteröidy sähköpostiosoitteella"
+msgstr "Registrera dig med din e-postadress"
+
+#: account/templates/account/signup_choices.html:16
+msgid "Rekisteröidy sähköpostilla"
+msgstr "Registrera dig via e-post"
+
+#: account/templates/account/signup_choices.html:22
+msgid "Onko sinulla jo tunnukset?"
+msgstr "Har du redan ett användarnamn?"
+
+#: account/templates/account/sms/confirm_signup.txt:1
+msgid ""
+"Vahvista rekisteröityminen Nuortenideat.fi-palveluun seuraavalla "
+"vahvistustunnuksella"
+msgstr ""
+"Bekräfta registreringen i tjänsten Ungasidéer.fi med följande bekräftelsekod"
+
+#: account/templates/account/user_change_password.html:17
+msgid "Salasanan vaihto"
+msgstr "Byte av lösenord"
+
+#: account/templates/account/user_profile.html:52
+msgid "Omat ideat ja kysymykset"
+msgstr "Egna idéer och frågor"
+
+#: account/templates/account/user_profile.html:72
+#: organization/templates/organization/organization_detail.html:146
+msgid "Odotetaan hakutulosta"
+msgstr "Väntar på sökresultatet"
+
+#: account/templates/account/user_profile.html:81
+#: account/templates/account/user_profile_public.html:59
+#: content/templates/content/initiative_elements_all.html:7
+#: content/templates/content/initiative_list.html:129
+msgid "Hakuehdoilla ei löydetty yhtään ideaa."
+msgstr "Din sökning gav inga idéer."
+
+#: account/templates/account/user_profile_public.html:13
+msgid "Profiilikuvake"
+msgstr "Profilikon"
+
+#: account/templates/account/user_reset_password.html:16
+msgid "Lähetä salasanan vaihtolinkki"
+msgstr "Skicka en länk för byte av lösenord"
+
+#: account/templates/account/user_reset_password_confirm.html:9
+msgid "Kirjoita uusi salasana"
+msgstr "Ange ett nytt lösenord"
+
+#: account/templates/account/user_reset_password_confirm.html:23
+msgid "Virhe salasanan vaihtamisessa"
+msgstr "Ett fel uppstod vid byte av lösenord"
+
+#: account/templates/account/user_reset_password_confirm.html:25
+msgid ""
+"Salasanan vaihtamislinkki oli virheellinen. Yritä salasanan vaihtamista "
+"uudestaan."
+msgstr ""
+"Länken  för byte av lösenord var felaktig. Försök byta lösenordet på nytt."
+
+#: account/templates/account/user_reset_password_link_sent.html:5
+msgid "Salasanan vaihtolinkki lähetetty"
+msgstr "Länk för byte av lösenord skickad"
+
+#: account/templates/account/user_reset_password_link_sent.html:7
+msgid ""
+"Olemme lähettäneet sähköpostiisi ohjeet salasanan vaihtamiseen. Sähköpostin "
+"pitäisi saapua muutamassa minuutissa."
+msgstr ""
+"Vi har skickat anvisningar om byte av lösenord till din e-postadress. E-"
+"postmeddelandet borde anlända inom ett par minuter."
+
+#: account/templates/account/user_reset_password_link_sent.html:9
+msgid ""
+"Jos et saa sähköpostia, varmista että syötit sähköpostiosoitteen oikein ja "
+"tarkista myös sähköpostisi roskapostikansio."
+msgstr ""
+"Om du inte fått e-postmeddelandet, försäkra dig om att du angett rätt e-"
+"postadress och kontrollera skräppostmappen i ditt e-postprogram."
+
+#: account/templates/account/user_settings.html:38
+msgid "Seuraa aiheita"
+msgstr "Följ ämnen"
+
+#: account/templates/account/user_settings.html:43
+msgid "Seuraa organisaatiota"
+msgstr "Följ organisationen"
+
+#: account/templates/account/user_settings.html:59
+msgid "Tiliasetukset"
+msgstr "Kontoinställningar"
+
+#: account/templates/account/user_settings.html:65
+msgid "Yhdistä Facebook-tiliin"
+msgstr "Anslut till Facebook"
+
+#: account/templates/account/user_settings.html:68
+msgid "Yhdistä Google-tiliin"
+msgstr "Anslut till Google-konto"
+
+#: account/templates/account/user_settings.html:71
+msgid "Yhdistä Instagram-tiliin"
+msgstr "Anslut till ditt Instagram-konto"
+
+#: account/templates/account/user_settings.html:79
+msgid "Poista Google-tilin yhdistys"
+msgstr "Avbryt anslutningen till Google-konto"
+
+#: account/templates/account/user_settings.html:81
+msgid "Poista Facebook-tilin yhdistys"
+msgstr "Ta bort anslutningen till Facebook"
+
+#: account/templates/account/user_settings.html:83
+msgid "Poista Instagram-tilin yhdistys"
+msgstr "Koppla bort ditt Instagram-konto"
+
+#: account/templates/account/user_settings.html:92
+msgid "Haluatko varmasti sulkea käyttäjätilisi?"
+msgstr "Är du säker på att du vill avsluta ditt användarkonto?"
+
+#: account/templates/account/user_settings.html:94
+msgid "Sulje tili"
+msgstr "Avsluta konto"
+
+#: account/templates/account/user_settings_detail.html:4
+#: account/templates/account/user_settings_edit.html:3
+msgid "Omat tiedot"
+msgstr "Egna uppgifter"
+
+#: account/templates/account/user_settings_detail.html:6
+#: nkadmin/templates/nkadmin/edit_user.html:10
+#: nkadmin/templates/nkadmin/users_list.html:98
+msgid "Muokkaa tietoja"
+msgstr "Redigera uppgifter"
+
+#: account/templates/account/user_settings_picture.html:6
+#: organization/templates/organization/organization_detail_picture.html:8
+msgid "Rajaa"
+msgstr "Avgränsa"
+
+#: account/templates/account/user_settings_picture.html:7
+#: organization/templates/organization/organization_detail_picture.html:9
+msgid "Vaihda"
+msgstr "Byt"
+
+#: account/templates/account/user_settings_picture.html:10
+#: content/templates/content/idea_multiform/picture_inputs.html:13
+#: content/templates/content/idea_picture.html:6
+#: organization/templates/organization/organization_detail_picture.html:12
+msgid "Lisää kuva"
+msgstr "Lägg till bild"
+
+#: account/urls.py:69
+msgid ""
+"Salasanasi on vaihdettu. Voit nyt kirjautua sisään käyttäen uutta "
+"salasanaasi."
+msgstr "Ditt lösenord har bytts. Nu kan du logga in med ditt nya lösenord."
+
+#: account/utils.py:44
+msgid "Varoitus moderointioikeuksien vanhentumisesta."
+msgstr ""
+
+#: account/views.py:86 account/views.py:781 content/views.py:239
+#: content/views.py:673 organization/views.py:75
+msgid "Täytä kaikki pakolliset kentät."
+msgstr "Fyll i alla obligatoriska fält."
+
+#: account/views.py:163
+msgid "Vahvista sähköpostiosoitteesi"
+msgstr "Bekräfta din e-postadress"
+
+#: account/views.py:179
+msgid "NuortenIdeat"
+msgstr "UngasIdeer"
+
+#: account/views.py:225
+msgid "Istunto vanhentunut"
+msgstr "Sessionen har gått ut"
+
+#: account/views.py:241
+msgid "Käyttäjätili avattu."
+msgstr "Användarkonto öppnat."
+
+#: account/views.py:252
+msgid "Aktivointiyritykset käytetty. Rekisteröidy uudelleen."
+msgstr "Inga aktiveringsförsök kvar. Registrera dig på nytt."
+
+#: account/views.py:292
+msgid "Sinut on kirjattu ulos palvelusta."
+msgstr "Du har loggats ut ur tjänsten."
+
+#: account/views.py:293
+msgid ""
+"Jos olet käyttänyt Facebook-kirjautumista, muista kirjautua ulos myös "
+"Facebookista."
+msgstr "Kom ihåg att logga ut ur Facebook om du använt den för att logga in. "
+
+#: account/views.py:323
+msgid "Tervetuloa Nuortenideat.fi palveluun!"
+msgstr "Välkommen till tjänsten Ungasideer.fi!"
+
+#: account/views.py:591
+msgid ""
+"Salasanasi on vaihdettu. Käytä seuraavan kirjautumisen yhteydessä uutta "
+"salasanaasi."
+msgstr ""
+"Ditt lösenord har bytts. Använd ditt nya lösenord nästa gång du loggar in "
+"dig."
+
+#: account/views.py:596
+msgid "Virhe. Tarkista lomakkeen tiedot."
+msgstr "Fel. Kontrollera informationen på formuläret."
+
+#: account/views.py:609
+msgid "Käyttäjätilisi on suljettu."
+msgstr "Användarkonto stängt."
+
+#: account/views.py:625
+#, python-format
+msgid "Käyttäjätili %s suljettu."
+msgstr "Användarkonto %s stängt."
+
+#: account/views.py:729
+msgid "Vastaus viestiin"
+msgstr "Svar på meddelande"
+
+#: account/views.py:747
+msgid "Viesti lähetetty."
+msgstr "Meddelandet har skickats."
+
+#: account/views.py:797
+msgid "Haluan viedä tämän idean eteenpäin."
+msgstr "Jag vill föra denna idé vidare."
+
+#: account/views.py:811
+msgid "Viesti lähetetty yhteyshenkilölle."
+msgstr "Idén har skickats till kontaktpersonen."
+
+#: account/views.py:833
+msgid "Viesti poistettu postilaatikostasi."
+msgstr "Meddelandet har raderats från din inbox."
+
+#: actions/lists.py:23
+msgid "Joku kommentoi ideaasi"
+msgstr "Någon kommenterar din idé"
+
+#: actions/lists.py:30
+msgid "Kysymystäsi kommentoidaan"
+msgstr "Din fråga kommenteras"
+
+#: actions/lists.py:37
+msgid "Kysymykseesi vastataan"
+msgstr "Din fråga besvaras"
+
+#: actions/lists.py:44
+msgid "Oman idean tila muuttuu"
+msgstr "Idéns status ändras"
+
+#: actions/lists.py:51
+msgid "Organisaatiollesi esitetään idea"
+msgstr "Det framförs en idé som gäller din organisation"
+
+#: actions/lists.py:58
+msgid "Organisaatiollesi esitetään kysymys"
+msgstr "Det ställs en fråga som gäller din organisation"
+
+#: actions/lists.py:65
+msgid "Organisaatiotasi koskevan idean tila muuttuu"
+msgstr "Statusen för idén som gäller din organisation ändras"
+
+#: actions/lists.py:72
+msgid "Organisaatiotasi koskevaa ideaa kommentoidaan"
+msgstr "Idén som gäller din organisation kommenteras"
+
+#: actions/lists.py:79
+msgid "Uusi organisaatio luodaan"
+msgstr "En ny organisation skapats"
+
+#: actions/lists.py:86
+msgid "Sisältöä ilmoitetaan asiattomaksi"
+msgstr "Innehåll anmälts olämpligt"
+
+#: actions/tasks.py:45 content/views.py:975
+#: nkwidget/templates/nkwidget/base.html:22
+#: nkwidget/templates/nkwidget/base.html:24 nuka/context_processors.py:11
+#: nuka/templates/nuka/base.html:13 nuka/templates/nuka/base.html.py:384
+#: nuka/utils.py:41
+msgid "Nuortenideat.fi"
+msgstr "Ungasideer.fi"
+
+#: actions/tasks.py:46
+msgid "kooste tapahtumista"
+msgstr "sammanfattning av händelser"
+
+#: actions/templates/notifications/email/base.txt:6
+msgid ""
+"Tämä on Nuortenideat.fi-palvelun automaattisesti lähettämä ilmoitus. Älä "
+"vastaa tähän viestiin."
+msgstr ""
+"Detta är ett meddelande Nuortenideat.fi tjänsten skickas automatiskt. Svara "
+"inte på det här meddelandet."
+
+#: actions/templates/notifications/email/base.txt:7
+#: nuka/templates/nuka/email/base.txt:4
+msgid "Harjoittelu"
+msgstr "Testning"
+
+#: actions/templates/notifications/email/collection.txt:1
+msgid "Seuraavia ideoitasi on kommentoitu"
+msgstr "Följande idér har kommenteras"
+
+#: actions/templates/notifications/email/collection.txt:5
+msgid "Seuraaviin kysymyksiisi on tullut vastauksia / kommentteja"
+msgstr "Det har kommit svar / kommenter i följande frågor"
+
+#: actions/templates/notifications/email/collection.txt:9
+msgid "Seuraavien ideoidesi tila on muuttunut"
+msgstr "Statusen för följande idér har ändrat"
+
+#: actions/templates/notifications/email/collection.txt:13
+msgid "Uudet ideat organisaatiollesi"
+msgstr "Nya idér för din organisation"
+
+#: actions/templates/notifications/email/collection.txt:17
+msgid "Uudet kysymykset organisaatiollesi"
+msgstr "Nya frågor för din organisation"
+
+#: actions/templates/notifications/email/collection.txt:21
+msgid "Seuraavien organisaatiotasi koskevien ideoiden tila on muuttunut"
+msgstr "Följande statusen för idér som gäller din organisation har ändrats"
+
+#: actions/templates/notifications/email/collection.txt:25
+msgid "Seuraavia organisaatiotasi koskevia ideoita on kommentoitu"
+msgstr "Följande idér som gäller din organisation har kommenterats"
+
+#: actions/templates/notifications/email/collection.txt:29
+#: nkadmin/templates/nkadmin/base.html:13
+msgid "Uudet organisaatiot"
+msgstr "Nya organisationer"
+
+#: actions/templates/notifications/email/collection.txt:33
+msgid "Asiattomaksi ilmoitetut"
+msgstr "Anmält olämpligt"
+
+#: actions/templates/notifications/email/collection.txt:34
+#: content/templates/content/content_base.html:62
+#: content/templates/content/content_base.html:63
+#: content/templates/content/idea_detail.html:4
+#: content/templates/idea_survey/survey_results_pdf.html:22
+#: nkvote/templates/gallup/results_pdf.html:18
+msgid "Idea"
+msgstr "Idé"
+
+#: actions/templates/notifications/email/collection.txt:35
+msgid "kommentti"
+msgstr "komment"
+
+#: actions/templates/notifications/email/content/idea.updated.idea-published.organization-contact.txt:2
+msgid "Organisaatiosi on saanut uuden idean"
+msgstr "Det framförs en idé som gäller din organisation"
+
+#: actions/templates/notifications/email/content/idea.updated.idea-published.organization-contact.txt:4
+#, python-format
+msgid "Organisaatiosi on saanut uuden idean \"%(name)s\""
+msgstr "Det framförs en idé som gäller din organisation \"%(name)s\" "
+
+#: actions/templates/notifications/email/content/idea.updated.idea-published.organization-contact.txt:5
+#: actions/templates/notifications/email/content/idea.updated.status-updated-after-publish.organization-contact.txt:5
+#: actions/templates/notifications/email/content/idea.updated.status-updated.content-owner.txt:5
+#: actions/templates/notifications/email/content/question.created..organization-contact.txt:5
+#: actions/templates/notifications/email/nkcomments/customcomment.created.idea-commented.content-owner.txt:5
+#: actions/templates/notifications/email/nkcomments/customcomment.created.idea-commented.organization-contact.txt:5
+#: actions/templates/notifications/email/nkcomments/customcomment.created.question-answered.content-owner.txt:5
+#: actions/templates/notifications/email/nkcomments/customcomment.created.question-commented.content-owner.txt:5
+#: actions/templates/notifications/email/nkmoderation/contentflag.created..moderator.txt:7
+#: actions/templates/notifications/email/organization/organization.created..moderator.txt:5
+msgid "Katso"
+msgstr "Titta"
+
+#: actions/templates/notifications/email/content/idea.updated.status-updated-after-publish.organization-contact.txt:2
+msgid "Organisaatiosi idean tila on muuttunut"
+msgstr "Statusen för idén som gäller din organisation ändras"
+
+#: actions/templates/notifications/email/content/idea.updated.status-updated-after-publish.organization-contact.txt:4
+#, python-format
+msgid "Organisaatiosi idean \"%(name)s\" tila on muuttunut"
+msgstr "statusen för idén som gäller din organisation ändras \"%(name)s\""
+
+#: actions/templates/notifications/email/content/idea.updated.status-updated.content-owner.txt:2
+msgid "Ideasi tila on muuttunut"
+msgstr "Statusen ändras på din idé"
+
+#: actions/templates/notifications/email/content/idea.updated.status-updated.content-owner.txt:4
+#, python-format
+msgid "Ideasi \"%(name)s\" tila on muuttunut"
+msgstr "Statusen ändras på din idé \"%(name)s\""
+
+#: actions/templates/notifications/email/content/question.created..organization-contact.txt:2
+msgid "Organisaatiollesi on julkaistu kysymys"
+msgstr "Det ställs en fråga som gäller din organisation"
+
+#: actions/templates/notifications/email/content/question.created..organization-contact.txt:4
+#, python-format
+msgid "Organisaatiollesi on julkaistu kysymys \"%(name)s\""
+msgstr "Det ställs en fråga som gäller din organisation \"%(name)s\""
+
+#: actions/templates/notifications/email/nkcomments/customcomment.created.idea-commented.content-owner.txt:2
+msgid "Ideaasi on kommentoitu"
+msgstr "Någon kommenterar din idé"
+
+#: actions/templates/notifications/email/nkcomments/customcomment.created.idea-commented.content-owner.txt:4
+#, python-format
+msgid "Ideaasi \"%(name)s\" on kommentoitu"
+msgstr "Någon kommenterar din idé \"%(name)s\""
+
+#: actions/templates/notifications/email/nkcomments/customcomment.created.idea-commented.organization-contact.txt:2
+msgid "Organisaatiosi ideaa on kommentoitu"
+msgstr "Idén som gäller din organisation kommenteras"
+
+#: actions/templates/notifications/email/nkcomments/customcomment.created.idea-commented.organization-contact.txt:4
+#, python-format
+msgid "Organisaatiosi ideaa \"%(name)s\" on kommentoitu"
+msgstr "Idén \"%(name)s\" som gäller din organisation kommenteras"
+
+#: actions/templates/notifications/email/nkcomments/customcomment.created.question-answered.content-owner.txt:2
+msgid "Kysymykseesi on tullut vastaus"
+msgstr "Du har fått ett svar på din fråga"
+
+#: actions/templates/notifications/email/nkcomments/customcomment.created.question-answered.content-owner.txt:4
+#, python-format
+msgid "Kysymykseesi \"%(name)s\" on tullut vastaus"
+msgstr "Din fråga \"%(name)s\" har besvarats"
+
+#: actions/templates/notifications/email/nkcomments/customcomment.created.question-commented.content-owner.txt:2
+msgid "Kysymykseesi on tullut kommentti"
+msgstr "Din fråga har kommenterats"
+
+#: actions/templates/notifications/email/nkcomments/customcomment.created.question-commented.content-owner.txt:4
+#, python-format
+msgid "Kysymykseesi \"%(name)s\" on tullut kommentti"
+msgstr "Din fråga \"%(name)s\" har kommenterats"
+
+#: actions/templates/notifications/email/nkmoderation/contentflag.created..moderator.txt:2
+#: actions/templates/notifications/email/nkmoderation/contentflag.created..moderator.txt:4
+msgid "Sisältöä on ilmoitettu asiattomaksi"
+msgstr "Innehåll har anmälts olämpligt"
+
+#: actions/templates/notifications/email/nkmoderation/contentflag.created..moderator.txt:5
+msgid "Syy"
+msgstr "Orsak"
+
+#: actions/templates/notifications/email/nkmoderation/contentflag.created..moderator.txt:6
+#: campaign/admin.py:21 campaign/models.py:17
+#: content/templates/content/create_idea_form.html:56 help/admin.py:20
+#: help/models.py:17 info/admin.py:20 info/models.py:16
+msgid "Sisältö"
+msgstr "Innehåll"
+
+#: actions/templates/notifications/email/organization/organization.created..moderator.txt:2
+msgid "Uusi organisaatio odottaa hyväksyntää"
+msgstr "En ny organisation väntar på godkännande"
+
+#: actions/templates/notifications/email/organization/organization.created..moderator.txt:4
+#, python-format
+msgid "Uusi organisaatio \"%(name)s odottaa hyväksyntää\""
+msgstr "En ny organisation \"%(name)s väntar på godkännande"
+
+#: campaign/admin.py:20 campaign/models.py:16 content/admin.py:16
+#: content/forms.py:433 help/admin.py:19 help/models.py:16 info/admin.py:19
+#: info/models.py:15
+msgid "Otsikko"
+msgstr "Rubrik"
+
+#: campaign/models.py:28
+msgid "Kampanja"
+msgstr "Kampanj"
+
+#: campaign/models.py:29
+msgid "Kampanjat"
+msgstr "Kampanjer"
+
+#: campaign/templates/campaign/campaign_list.html:5
+#: campaign/templates/campaign/campaign_list.html:8
+#: campaign/templates/campaign/campaign_list.html:17
+#: nuka/templates/nuka/base.html:297 nuka/templatetags/sitemap_urls.py:72
+msgid "Materiaalit"
+msgstr "Material"
+
+#: campaign/templates/campaign/campaign_list.html:42
+msgid "Ei materiaaleja."
+msgstr "Inga material."
+
+#: content/admin.py:17 nuka/apps.py:16
+msgid "Omistajat"
+msgstr "Ägare"
+
+#: content/admin.py:18 content/forms.py:300 content/forms.py:428
+#: content/templates/content/content_base.html:103
+#: content/templates/content/idea_pdf.html:128 tagging/models.py:24
+msgid "Aiheet"
+msgstr "Ämnen"
+
+#: content/admin.py:19
+msgid "Linkki"
+msgstr "Länk"
+
+#: content/admin.py:20
+msgid "Kannattaa"
+msgstr "Understöder"
+
+#: content/admin.py:21
+msgid "Vastustaa"
+msgstr "Motsätter"
+
+#: content/admin.py:22
+#: content/templates/content/initiative_elements_organization.html:77
+#: content/templates/content/initiative_elements_user.html:70
+msgid "Tila"
+msgstr "Status"
+
+#: content/admin.py:23 content/forms.py:510 content/models.py:259
+#: content/models.py:556
+msgid "Viety eteenpäin"
+msgstr "Idén förts vidare"
+
+#: content/admin.py:24
+msgid "Kohdeorganisaatiot"
+msgstr "Målorganisationer"
+
+#: content/forms.py:57
+msgid "Organisaatiot omassa kunnassa"
+msgstr "Organisationer i din kommun"
+
+#: content/forms.py:59
+msgid "Muut organisaatiot"
+msgstr "Andra organisationer"
+
+#: content/forms.py:77
+msgid "Otsikkokuva"
+msgstr "Rubrikbild"
+
+#: content/forms.py:79 content/forms.py:386 content/models.py:284
+msgid "Mitä kuvassa on? (kuvaus suositeltava)"
+msgstr "Vad finns på bilden? (beskrivning rekommenderas)"
+
+#: content/forms.py:82
+msgid "Idean sisältö"
+msgstr "Idéns innehåll"
+
+#: content/forms.py:85
+msgid "Kirjoitetaanko idea organisaationa vai käyttäjänä?"
+msgstr "Ska idén skrivas i egenskap av organisation eller användare?"
+
+#: content/forms.py:88
+msgid "Kirjoita käyttäjänä"
+msgstr "Skriv i egenskap av användare"
+
+#: content/forms.py:89
+msgid "Kirjoita organisaationa"
+msgstr "Skriv i egenskap av organisation"
+
+#: content/forms.py:93
+msgid ""
+"Olet yhteyshenkilönä vähintään yhdessä organisaatiossa, joten voit valita "
+"kirjoittaa idean organisaationa tai tavallisena käyttäjänä."
+msgstr ""
+"Du är kontaktperson i åtminstone en organisation, vilket innebär att du kan "
+"skriva idén i egenskap av både organisation och användare."
+
+#: content/forms.py:100
+msgid "Valitse idean omistajat"
+msgstr "Välj ägare till idén"
+
+#: content/forms.py:101
+msgid "Valitse idean muiden omistajien Nuortenideat.fi-käyttäjätunnukset."
+msgstr "Välj Ungasidéer.fi-användarnamnen för de andra ägarna till idén."
+
+#: content/forms.py:105
+msgid "Mitä organisaatioita idea koskee?"
+msgstr "Vilka organisationer gäller idén?"
+
+#: content/forms.py:108
+msgid "Valittuja organisaatioita"
+msgstr "Valda organisationer"
+
+#: content/forms.py:109
+msgid "Idea koskee koko Suomea"
+msgstr "Idén gäller hela Finland"
+
+#: content/forms.py:110
+msgid "En osaa sanoa"
+msgstr "Vet inte"
+
+#: content/forms.py:115
+msgid "Valitse organisaatio tai organisaatiot, joihin idea liittyy."
+msgstr "Välj den organisation eller de organisationer som idén gäller."
+
+#: content/forms.py:118
+msgid "Valitse aiheet"
+msgstr "Välj ämnen"
+
+#: content/forms.py:120
+msgid "Valitse ideaan liittyvät aiheet."
+msgstr "Välj vilka ämnen din idé gäller."
+
+#: content/forms.py:178
+msgid "Et voi poistaa itseäsi idean omistajista."
+msgstr "Du kan inte ta bort dig själv från ägarna till idén."
+
+#: content/forms.py:191
+msgid "Tämä kenttä vaaditaan."
+msgstr "Obligatoriskt fält."
+
+#: content/forms.py:210
+msgid "Anna ideallesi nimi, joka kuvaa sen sisältöä."
+msgstr "Ge din idé en rubrik som beskriver innehållet."
+
+#: content/forms.py:212
+msgid ""
+"Lisää halutessasi ideaasi siihen sopiva kuva. Kuva näkyy palvelun etusivulla "
+"ideasi otsikon yläpuolella. Tarkista, että sinulla on lupa kuvan käyttöön, "
+"jos se ei ole omasi."
+msgstr ""
+"Om du vill kan du lägga till en lämplig bild. Bilden syns på ingångssidan "
+"ovanför rubriken för din idé. Kontrollera att du har rätt att använda "
+"bilden, om den inte är din egen."
+
+#: content/forms.py:216
+msgid ""
+"Kirjoita tähän kuvaus ideastasi sekä perustelut. Ideassa tulee olla jokin "
+"muutosehdotus, jotta se voidaan viedä eteenpäin käsiteltäväksi. Voit lisätä "
+"mm. kuvia ja linkittää videoita."
+msgstr ""
+"Skriv din idé och motivera den här. Idén ska innehålla ett ändringsförslag "
+"för att den ska kunna föras vidare. Du kan lägga till bl.a. bilder eller "
+"länkar till videoklipp."
+
+#: content/forms.py:219
+msgid ""
+"Jos olet tehnyt idean yhdessä muiden kanssa, voit lisätä myös heidät idean "
+"omistajiksi kirjoittamalla käyttäjätunnukset tähän."
+msgstr ""
+"Om idén läggs fram av en grupp, kan de andra deltagarna läggas till genom "
+"att mata in deras användarnamn här."
+
+#: content/forms.py:222
+msgid ""
+"Jos organisaatio löytyy palvelusta, valitse \"Valittuja organisaatioita\" ja "
+"kirjoita se alla olevaan laatikkoon. Jos ideasi on valtakunnallinen, valitse "
+"\"Idea koskee koko Suomea\". Jos et tiedä, mille organisaatiolle ideasi "
+"tulisi osoittaa, valitse \"En osaa sanoa\"."
+msgstr ""
+"Om organisationen finns med i tjänsten, välj ”Valda organisationer” och lägg "
+"till organisationen i fältet nedan.  Om din idé gäller hela landet, välj "
+"\"Idén gäller hela Finland\". Om du inte vet till vilken organisation du "
+"vill rikta din idé, välj ”Vet inte”."
+
+#: content/forms.py:227
+msgid ""
+"Mihin aiheisiin ideasi liittyy? Klikkaa alla olevaa kenttää, jolloin "
+"vaihtoehdot tulevat näkyviin. Voit valita myös useamman aiheen ideallesi."
+msgstr ""
+"Vilka ämnen gäller din idé? Klicka på fältet nedan för att se de olika "
+"alternativen. Du kan välja flera ämnen."
+
+#: content/forms.py:261
+msgid "Idean omistajat"
+msgstr "Ägare till idén"
+
+#: content/forms.py:262
+msgid "Syötä idean omistajien Nuortenideat.fi käyttäjätunnukset"
+msgstr "Ange Ungasidéer.fi-användarnamnen för ägarna till idén"
+
+#: content/forms.py:276
+msgid "Idean omistajia muutettu."
+msgstr "Ägare till idén ändrats"
+
+#: content/forms.py:314 content/templates/content/content_base.html:92
+#: content/templates/content/idea_pdf.html:119 nkadmin/forms.py:51
+#: nkadmin/templates/nkadmin/users_list.html:63
+#: nuka/templates/nuka/base.html:291 nuka/templates/nuka/base.html.py:374
+#: nuka/templatetags/sitemap_urls.py:39
+#: organization/templates/organization/create_organization.html:5
+#: organization/templates/organization/create_organization.html:21
+#: organization/templates/organization/organization_detail.html:40
+#: organization/templates/organization/organization_list.html:4
+#: organization/templates/organization/organization_list.html:11
+#: organization/templates/organization/organization_list.html:18
+msgid "Organisaatiot"
+msgstr "Organisationer"
+
+#: content/forms.py:335
+msgid "Mennyttä päivämäärää ei voi valita"
+msgstr "Det sista datumet kan inte väljas"
+
+#: content/forms.py:338
+#, python-format
+msgid "Et voi valita suurempaa päivämäärää kuin %(value)s"
+msgstr ""
+
+#: content/forms.py:392 content/templates/content/idea_moderation.html:2
+#: content/templates/content/idea_multiform/picture_inputs.html:11
+msgid "Vaihda kuva"
+msgstr "Byt bild"
+
+#: content/forms.py:444
+msgid "Lähettäjän nimi"
+msgstr "Avsändarens namn"
+
+#: content/forms.py:445
+msgid "Sähköpostiosoite"
+msgstr "E-postadress"
+
+#: content/forms.py:446
+msgid ""
+"Kirjoita sähköpostiosoitteesi, jos haluat ilmoituksen kun kysymystä "
+"kommentoidaan tai siihen tulee vastaus organisaatiolta."
+msgstr ""
+"Mata in din e-postadress om du vill få ett meddelande när frågan kommenderas "
+"eller besvaras."
+
+#: content/forms.py:450 nkcomments/forms.py:56 nkmessages/forms.py:16
+msgid "Tarkistuskoodi"
+msgstr "Granskningskod"
+
+#: content/forms.py:451 nkcomments/forms.py:57 nkmessages/forms.py:17
+msgid "Virheellinen tarkistuskoodi."
+msgstr "Fel granskningskod"
+
+#: content/forms.py:463 nkadmin/forms.py:32
+msgid "Rajaa organisaatiolla"
+msgstr "Avgränsa genom att välja organisation"
+
+#: content/forms.py:469
+msgid "Rajaa aiheella"
+msgstr "Avgränsa genom att välja ämne"
+
+#: content/forms.py:475
+msgid "Rajaa paikkakunnalla"
+msgstr "Avgränsa genom att välja ort"
+
+#: content/forms.py:509
+msgid "Avoin"
+msgstr "Öppen"
+
+#: content/forms.py:511 content/models.py:260 kuaapi/models.py:61
+msgid "Vastaus annettu"
+msgstr "Idén har besvarats"
+
+#: content/forms.py:566
+msgid "Hae ideaa"
+msgstr "Sök efter idé"
+
+#: content/forms.py:569
+msgid "Vain organisaatioiden luomat ideat"
+msgstr "Endast idéer som organisationer skapat"
+
+#: content/forms.py:647
+msgid "Tiedosto ylittää kokorajoituksen."
+msgstr "Filen överskrider storleksgränsen."
+
+#: content/forms.py:654
+msgid "Liian monta liitetiedostoa lisätty."
+msgstr "Antalet tillåtna bilagor överskridits."
+
+#: content/forms.py:663
+msgid "Olet lisännyt liian monta liitetiedostoa. Yritä myöhemmin uudestaan."
+msgstr "Du har lagt till för många bilagor. Prova på nytt senare."
+
+#: content/forms.py:685
+msgid ""
+"Nimenkirjoitusoikeus yhteisössä, laitoksessa tai säätiössä, jonka kotipaikka "
+"on aloitetta koskevassa kunnassa"
+msgstr ""
+"Firmateckningsrätt i en sammanslutning, institution eller stiftelse som har "
+"säte i den kommun som anges i initiativet"
+
+#: content/forms.py:688
+msgid ""
+"Nimenkirjoitusoikeus yrityksessä, jonka kotipaikka on aloitetta koskevassa "
+"kunnassa"
+msgstr ""
+"Firmateckningsrätt i ett företag som har säte i den kommun som anges i "
+"initiativet"
+
+#: content/forms.py:690
+msgid ""
+"Hallinta-oikeus tai omistus kiinteään omaisuuteen aloitetta koskevassa "
+"kunnassa"
+msgstr ""
+"Besittningsrätt till eller innehav av fast egendom i den kommun som anges i "
+"initiativet"
+
+#: content/forms.py:692
+msgid "Ei mitään näistä"
+msgstr "Inget av dessa"
+
+#: content/forms.py:695
+msgid "Onko sinulla jokin seuraavista?"
+msgstr "Har du något av de följande?"
+
+#: content/forms.py:700
+msgid "Et voi tehdä kuntalaisaloitetta kuntaan, jossa et ole jäsenenä."
+msgstr ""
+"Du måste vara medlem i kommunen för att kunna lägga fram ett "
+"invånarinitiativ."
+
+#: content/forms.py:714
+msgid ""
+"Valitse päivämäärä, jolloin idea lähtee automaattisesti eteenpäin "
+"käsittelyyn asiasta vastaavalle henkilölle"
+msgstr ""
+"Välj datum då idén ska skickas vidare för behandling till personen som "
+"svarar för ärendet"
+
+#: content/forms.py:716
+msgid ""
+"Voit muuttaa päivämäärän, jolloin idea lähetetään käsittelyyn (oletuksena "
+"kahden viikon päästä). Mitä enemmän kannatusta ja kommentteja idea saa, sitä "
+"todennäköisemmin se pääsee toteutukseen ja käsittelyyn päätöksenteossa. Jaa "
+"siksi ideasi kavereille kannatettavaksi ja kommentoitavaksi!"
+msgstr ""
+"Du kan ändra på datumet då idén skickas vidare för behandling "
+"(standardinställningen är att den skickas vidare efter två veckor)  Ju mer "
+"understöd och kommentarer idén får, desto mer sannolikt är det att den förs "
+"vidare och behandlas i beslutsfattandet.  Dela idén till dina kompisar så "
+"att de kan understöda och kommentera den! "
+
+#: content/forms.py:738
+msgid ""
+"Ymmärrän, että idean julkaisun jälkeen, nimeni ja sähköpostiosoitteeni "
+"välitetään idean vastaanottajalle. Idean vastanottaja on henkilö, joka "
+"kirjoittaa vastauksen tai päätöksen asiaan tai toimittaa sen eteenpäin "
+"jatkokäsittelyyn oikealle henkilölle."
+msgstr ""
+"Jag förstår att när idén har publicerats förmedlas mitt namn och min e-"
+"postadress till idéns mottagare. Idéns mottagare är den som skriver svaret "
+"eller fattar beslut om ärendet eller förmedlar idén vidare till rätt "
+"person.  "
+
+#: content/models.py:54 content/models.py:257 kuaapi/models.py:58
+msgid "Luonnos"
+msgstr "Skiss"
+
+#: content/models.py:55
+msgid "Julkinen"
+msgstr "Offentlig"
+
+#: content/models.py:64 content/models.py:458 nkvote/models.py:86
+msgid "Rekisteröityneet käyttäjät"
+msgstr "Registrerade användare"
+
+#: content/models.py:67 content/models.py:480
+msgid "otsikko"
+msgstr "rubrik"
+
+#: content/models.py:68 organization/models.py:76
+msgid "kuvaus"
+msgstr "beskrivning"
+
+#: content/models.py:79
+msgid "kohde organisaatiot"
+msgstr "mål organisationer"
+
+#: content/models.py:81
+msgid "aiheet"
+msgstr "ämnen"
+
+#: content/models.py:82
+msgid "näkyvyys"
+msgstr "synlighet"
+
+#: content/models.py:84
+msgid "Kuka saa kannattaa ja kommentoida?"
+msgstr "Vem får understöda och kommentera idén?"
+
+#: content/models.py:87
+msgid "kommenttien esimoderointi"
+msgstr "Förhandsmoderering av kommentarer"
+
+#: content/models.py:88
+msgid "kommentointi suljettu"
+msgstr "kan inte längre kommenteras"
+
+#: content/models.py:258 kuaapi/models.py:59
+msgid "Julkaistu"
+msgstr "Publicerad"
+
+#: content/models.py:290
+msgid "Idean vienti eteenpäin automaattisesti"
+msgstr "Idén ska skickas vidare automatiskt   "
+
+#: content/models.py:464
+msgid "Yksi vastaus osallistujaa kohden"
+msgstr "Ett svar per deltagare"
+
+#: content/models.py:465
+msgid "Rajattomat vastaukset kirjautumattomille käyttäjille"
+msgstr "Obegränsade svar för oregistrerade användare"
+
+#: content/models.py:477 content/templates/idea_survey/survey_container.html:20
+msgid "Kuka saa vastata kyselyyn?"
+msgstr "Vem får svara på enkäten?"
+
+#: content/models.py:481
+msgid "Vastaamisen asetukset"
+msgstr "Svarsinställningar"
+
+#: content/models.py:510 content/templates/content/idea_detail.html:383
+#: content/templates/idea_survey/survey_results_pdf.html:25
+msgid "Kysely"
+msgstr "Enkät"
+
+#: content/models.py:554 content/models.py:561
+msgid "lisätieto"
+msgstr "tilläggsuppgift"
+
+#: content/models.py:555
+msgid "VASTAUS"
+msgstr "SVAR"
+
+#: content/perms.py:45 content/perms.py:47
+msgid "Idea ei ole vielä julkinen."
+msgstr "Idén har ännu inte publicerats."
+
+#: content/perms.py:48
+msgid "Kirjaudu sisään, jos olet idean omistaja."
+msgstr "Logga in om du är ägare till idén."
+
+#: content/perms.py:78
+msgid "Idea on jo julkaistu."
+msgstr "Idén har redan publicerats."
+
+#: content/perms.py:195
+msgid "Kuntalaisaloite.fi-integraatio on kytketty pois päältä."
+msgstr "Integrationen med Invånarinitiativ.fi har avslutats."
+
+#: content/templates/content/additional_detail_edit_link.html:3
+msgid "Muokkaa lisätietoa"
+msgstr "Redigera informationen"
+
+#: content/templates/content/content_base.html:122
+#: organization/templates/organization/organization_detail.html:86
+msgid "Työkalut"
+msgstr "Verktyg"
+
+#: content/templates/content/content_base.html:141
+msgid "Kerro kavereille"
+msgstr "Berätta för dina vänner"
+
+#: content/templates/content/content_base.html:142
+#: content/templates/content/content_base.html:143
+msgid "Jaa Facebookissa"
+msgstr "Dela i Facebook"
+
+#: content/templates/content/content_base.html:145
+#: content/templates/content/content_base.html:146
+msgid "Jaa Twitterissä"
+msgstr "Dela på Twitter"
+
+#: content/templates/content/content_base.html:148
+#: content/templates/content/content_base.html:149
+msgid "Jaa Google+:ssa"
+msgstr "Dela på Google+"
+
+#: content/templates/content/content_base.html:151
+#: content/templates/content/content_base.html:152
+msgid "Jaa sähköpostilla"
+msgstr "Dela med e-post"
+
+#: content/templates/content/content_base.html:154
+#: content/templates/content/content_base.html:155
+msgid "Jaa WhatsAppissa"
+msgstr "Dela i WhatsApp"
+
+#: content/templates/content/content_base.html:158
+#: content/templates/content/content_base.html:159
+msgid "Tulosta PDF"
+msgstr "Skriv ut PDF"
+
+#: content/templates/content/content_base.html:162
+#: content/templates/content/content_base.html:163
+msgid "Tulosta"
+msgstr "Skriv ut"
+
+#: content/templates/content/create_idea_form.html:5
+#: content/templates/content/create_idea_form.html:38
+msgid "Uusi Idea"
+msgstr "En ny idé"
+
+#: content/templates/content/create_idea_form.html:44
+msgid "Uusi idea 1/2"
+msgstr "Ny idé 1/2"
+
+#: content/templates/content/create_idea_form.html:46
+msgid ""
+"Kirjoita idean tiedot: otsikko, kuvaus idean sisällöstä perusteluineen, mitä "
+"organisaatiota idea koskee ja mihin aiheisiin ideasi liittyy. Voit lisätä "
+"ideallesi myös kuvan. Seuraavassa vaiheessa voit lisätä ideaasi liittyvän "
+"kyselyn."
+msgstr ""
+"Mata in idéns uppgifter: en rubrik, en beskrivning av idéns innehåll, "
+"motivering, vilken organisation den riktas till och vilka ämnen den gäller.  "
+"Du kan också lägga till en bild för idén. I det följande skedet kan du lägga "
+"till en enkät som gäller idén."
+
+#: content/templates/content/create_idea_form.html:49
+msgid ""
+"Klikkaamalla <i class=\"glyphicon glyphicon-question-sign\"></i>-ikoneja "
+"näet tarkempia ohjeita kenttien täyttämiseksi."
+msgstr ""
+"Genom att klicka på <i class=\"glyphicon glyphicon-question-sign\"></i>-"
+"ikonerna får du närmare anvisningar om vilka uppgifter som ska ges i fälten."
+
+#: content/templates/content/create_idea_form.html:67
+msgid "Tekijä(t)"
+msgstr "Framläggare/framläggarna"
+
+#: content/templates/content/create_idea_form.html:86
+msgid "Osallistuminen"
+msgstr "Deltagande"
+
+#: content/templates/content/create_idea_form.html:91
+msgid "Organisaatio ja aiheet"
+msgstr "Organisation och ämnen"
+
+#: content/templates/content/create_idea_form.html:102
+msgid "Jatka seuraavaan vaiheeseen"
+msgstr "Fortsätt till nästa skede"
+
+#: content/templates/content/create_idea_form.html:110
+msgid "Uuden idean kirjoittaminen ei ole enää mahdollista."
+msgstr "Det är inte längre möjligt att skriva en ny idé"
+
+#: content/templates/content/create_idea_form.html:112
+msgid "Palvelussa ei julkaista ideoita 1.6.2022 lähtien."
+msgstr "Nya idéer publiceras inte från och med den 1 juni 2022."
+
+#: content/templates/content/create_question_form.html:5
+#: content/templates/content/create_question_form.html:9
+#: content/templates/content/create_question_form.html:14
+#: organization/templates/organization/organization_detail.html:80
+msgid "Kysy organisaatiolta"
+msgstr "Fråga organisationen"
+
+#: content/templates/content/create_question_form.html:16
+msgid ""
+"Jos sinulla on jotain kysyttävää, voit lähettää kysymyksen suoraan "
+"organisaatiolle tämän lomakkeen kautta. Kirjoittamasi kysymys näkyy "
+"julkisesti kaikille organisaation omalla sivulla. Voit myös ehdottaa "
+"organisaatiolle aiheita, joista se voisi kysyä nuorten mielipiteitä palvelun "
+"kautta."
+msgstr ""
+"Om du har frågor kan du skicka dem direkt till organisationen med denna "
+"blankett. Din fråga syns offentligt för alla på organisationens egen "
+"webbsida. Du kan också föreslå att organisationen använder tjänsten för att "
+"höra ungas åsikter om en viss fråga.   "
+
+#: content/templates/content/create_question_form.html:24
+msgid "Lähetä kysymys"
+msgstr "Skicka en fråga"
+
+#: content/templates/content/email/archive_warning.txt:1
+#, python-format
+msgid ""
+"Nuortenideat.fi idea '%(title)s' on ollut koskematon %(idle_days)s päivää ja "
+"arkistoidaan %(days_to_archive)s päivän kuluttua."
+msgstr ""
+"Idén '%(title)s' på Ungasidéer.fi har inte haft några händelser på  "
+"%(idle_days)s dagar och arkiveras om %(days_to_archive)s dagar."
+
+#: content/templates/content/email/autotransfer_note.txt:1
+#, python-format
+msgid ""
+"Olet julkaissut idean '%(title)s' Nuortenideat.fi-palvelussa. Idea lähtee "
+"kahden viikon kuluttua automaattisesti eteenpäin käsittelyyn asiasta "
+"vastaavalle henkilölle. Mitä enemmän kannatusta ja kommentteja idea saa, "
+"sitä todennäköisemmin se pääsee toteutukseen ja käsittelyyn päätöksenteossa. "
+"Jaa siksi ideasi kavereille kannatettavaksi ja kommentoitavaksi!\n"
+"\n"
+"Idea on osoitteessa %(base_url)s%(idea_url)s."
+msgstr ""
+"Du har publicerat idén '%(title)s' i Ungasidéer.fi. Om två veckor skickas "
+"idén vidare för behandling till personen som svarar för ärendet. Ju mer "
+"understöd och kommentarer idén får, desto mer sannolikt är det att den förs "
+"vidare och behandlas i beslutsfattandet.  Dela idén till dina kompisar så "
+"att de kan understöda och kommentera den! \n"
+"\n"
+"Idén finns på adressen %(base_url)s%(idea_url)s."
+
+#: content/templates/content/email/kua_reminder.txt:1
+msgid ""
+"Jos ideasi koskee oman kuntasi palvelua, voit kopioida valmiin idean "
+"kuntalaisaloite.fi-palveluun.\n"
+"\n"
+"Kunnan asukkailla on oikeus tehdä kuntalaisaloitteita oman kunnan toimintaa "
+"koskevissa asioissa. Aloitteen avulla voit nostaa esiin jonkin ajankohtaisen "
+"asian tai ongelman, sekä herätellä päättäjiä kiinnittämään siihen huomiota.  "
+"Kunnassa aloite ohjataan sen viranomaisen käsiteltäväksi, jonka "
+"toimialueeseen se kunnassa kuuluu. Jokainen kuntalaisaloite käsitellään. Lue "
+"lisää kuntalaisaloitteesta osoitteessa https://www.kuntalaisaloite.fi.\n"
+"\n"
+"Idean tietoihin ilmestyy “Tee kuntalaisaloite“ -painike sen jälkeen, kun "
+"olet julkaissut ideasi."
+msgstr ""
+
+#: content/templates/content/email/kua_reminder.txt:7
+#: content/templates/content/email/uncompleted_reminder.txt:2
+msgid "Idea on osoitteessa"
+msgstr ""
+
+#: content/templates/content/email/owner_change.txt:1
+#, python-format
+msgid ""
+"Idean '%(idea)s' omistajia on muutettu.\n"
+"Uudet omistajat ovat: %(owners)s"
+msgstr ""
+"\"Ägarna till idén '%(idea)s' har ändrats.\n"
+"Nya ägare är: %(owners)s\""
+
+#: content/templates/content/email/transfer_idea_email_default_text.txt:1
+#, python-format
+msgid ""
+"Hei Nuortenideat.fi-yhteyshenkilö,\n"
+"\n"
+"Nuortenideat.fi-palveluun on kirjoitettu idea, joka on ohjattu sinun "
+"käsiteltäväksi. Tutustu ideaan ja vastaa nuoren esittämään muutos- tai "
+"parannusehdotukseen. Jos et ole oikea henkilö käsittelemään asiaa, pyydämme "
+"välittämään idean eteenpäin sähköpostitse oikealle henkilölle omassa "
+"organisaatiossasi tai sen ulkopuolella. Idean kirjoittajan on tärkeä saada "
+"tietää, miten asia etenee ja miten se on otettu huomioon!\n"
+"\n"
+"Idea on osoitteessa %(base_url)s%(idea_url)s.\n"
+"\n"
+"%(sender_name)s\n"
+"sähköposti: %(sender_email)s\n"
+"\n"
+"\n"
+"\n"
+"---\n"
+"Alla olevaa viestipohjaa voi muokata ja hyödyntää, kun lähetät idean "
+"eteenpäin. Lisää omat yhteystietosi viestiin.\n"
+"Jos sinulla tulee kysyttävää, ole yhteydessä tuki@nuortenideat.fi.\n"
+"\n"
+"\n"
+"Viestipohja muokattavaksi sähköpostiin:\n"
+"\n"
+"Hei,\n"
+"\n"
+"Nuortenideat.fi-palveluun on kirjoitettu idea, joka on ohjattu sinun "
+"käsiteltäväksi. Tutustu ideaan ja vastaa nuoren esittämään muutos- tai "
+"parannusehdotukseen. Jos et ole oikea henkilö käsittelemään asiaa, pyydämme "
+"välittämään idean eteenpäin sähköpostitse oikealle henkilölle. Idean "
+"kirjoittajan on tärkeä saada tietää, miten asia etenee ja miten se on otettu "
+"huomioon!\n"
+"\n"
+"Idea on osoitteessa %(base_url)s%(idea_url)s.\n"
+"\n"
+"Ilmoita minulle tiedot siitä, miten idean käsittely etenee ja millaisen "
+"vastauksen se saa. Tiedot idean etenemisestä sekä vastaus perusteluineen "
+"julkaistaan Nuortenideat.fi-palvelussa idean yhteydessä, kun olen sen "
+"saanut. Näin myös idean kirjoittaja sekä sitä kommentoineet ja kannattaneet "
+"nuoret saavat tiedon, miten ehdotus on huomioitu.\n"
+"\n"
+"Tiedot idean vastaanottamisesta ja etenemisestä pyydetään toimittamaan "
+"kuukauden kuluessa. Tiedon vastauksesta voit ilmoittaa myöhemmin sen "
+"saatuasi.\n"
+"\n"
+"Kiitos yhteistyöstä!\n"
+"\n"
+"nimi\n"
+"Nuortenideat.fi-yhteyshenkilö\n"
+"sähköposti\n"
+"puhelin\n"
+msgstr ""
+"Hej!\n"
+"\n"
+"Du är kontaktperson i tjänsten Ungasidéer.fi och en idé som lagts fram i "
+"tjänsten Ungasidéer.fi har skickats till dig för behandling. Läs idén och "
+"svara på ändrings- eller förbättringsförslaget. Om du inte är den rätta "
+"personen för att behandla ärendet, ber vi dig vänligen skicka idén vidare "
+"per e-post till rätt person inom din organisation eller någon utomstående. "
+"Det är viktigt att den som kommit med idén får veta hur ärendet framskrider "
+"och på vilket sätt det behandlas!\n"
+"\n"
+"Idén finns på adressen %(base_url)s%(idea_url)s.\n"
+"\n"
+"%(sender_name)s\n"
+"e-post: %(sender_email)s\n"
+"\n"
+"\n"
+"\n"
+"---\n"
+"Du kan utnyttja nedanstående meddelandemall med behövliga ändringar när du "
+"skickar idén vidare. Lägg till dina egna kontaktuppgifter i meddelandet.\n"
+"Om du har frågor kan du kontakta tuki@nuortenideat.fi.\n"
+"\n"
+"\n"
+"Meddelandemall:  \n"
+"\n"
+"Hej!\n"
+"\n"
+"En idé som lagts fram i tjänsten Ungasidéer.fi har skickats till dig för "
+"behandling. Läs idén och svara på ändrings- eller förbättringsförslaget. Om "
+"du inte är den rätta personen för att behandla ärendet, ber vi dig vänligen "
+"skicka idén vidare per e-post till rätt person. Det är viktigt att den som "
+"kommit med idén får veta hur ärendet framskrider och på vilket sätt det "
+"behandlas!\n"
+"\n"
+"Idén finns på adressen %(base_url)s%(idea_url)s.\n"
+"\n"
+"Skicka mig ett meddelande om hur behandlingen av ärendet framskrider och "
+"vilket svar som ges i ärendet. Uppgifterna om hur behandlingen framskrider "
+"samt svaret och dess motivering publiceras i tjänsten ungasidéer.fi. På "
+"detta sätt får både den som kommit med idén och de som kommenterat den veta "
+"på vilket sätt idén har beaktats.\n"
+"\n"
+"Vi ber dig meddela uppgifterna om mottagandet av idén och på vilket sätt "
+"behandlingen fortsätter inom en månad. Svaret kan du meddela senare när "
+"ärendet har behandlats till slut.\n"
+"\n"
+"Tack för ditt samarbete!\n"
+"\n"
+"namn\n"
+"kontaktperson i tjänsten ungasidéer.fi\n"
+"e-post\n"
+"telefon\n"
+
+#: content/templates/content/email/transfer_idea_email_default_text.txt:38
+msgid ""
+"Nuortenideat.fi on valtakunnallinen vaikuttamispalvelu, jonka kautta nuoret "
+"voivat parantaa ja kehittää lähiympäristöään. Nuorten kirjoittamat ideat "
+"toimitetaan eteenpäin käsittelyyn ja vastattavaksi asioista päättäville "
+"toimijoille. Kaksikielinen palvelu on osa oikeusministeriön "
+"demokratiapalveluita verkossa (www.demokratia.fi). Palvelun tuottavat "
+"yhteistyössä Nuorten tieto- ja neuvontatyön kehittämiskeskus Koordinaatti, "
+"oikeusministeriö sekä opetus- ja kulttuuriministeriö. Tutustu ja ota palvelu "
+"käyttöön osoitteessa www.nuortenideat.fi"
+msgstr ""
+"Ungasidéer.fi är en riksomfattande webbtjänst som ger ungdomar möjlighet att "
+"förbättra och utveckla sin närmiljö. Idéerna som läggs fram i tjänsten "
+"skickas vidare för behandling och för att besvaras av beslutsfattarna. Den "
+"tvåspråkiga tjänsten hör till justitieministeriets elektroniska "
+"demokratitjänster (www.demokrati.fi). Tjänsten tillhandahålls av "
+"Utvecklingscentret för ungdomsinformations- och rådgivningsarbete "
+"Koordinaatti i samarbete med justitieministeriet och undervisnings- och "
+"kulturministeriet. Bekanta dig med tjänsten och ta den i bruk på adressen "
+"www.ungasideer.fi."
+
+#: content/templates/content/email/uncompleted_reminder.txt:1
+#, python-format
+msgid ""
+"Nuortenideat.fi idea '%(title)s' on ollut \"Viety eteenpäin\"-tilassa "
+"%(transferred_days)s päivää. Idea kaipaa vastauksen kirjaamista."
+msgstr ""
+
+#: content/templates/content/email/unpublished_archived.txt:1
+#, python-format
+msgid ""
+"Nuortenideat.fi idea '%(title)s' on ollut luonnos %(published_days)s päivää "
+"ja on nyt automaattisesti arkistoitu. Jos haluat julkaista idean, voit "
+"kirjautua palveluun ja palauttaa idean luonnokseksi."
+msgstr ""
+"Idén '%(title)s' som skapades i tjänsten ungasidéer.fi för "
+"%(published_days)s dagar sedan har arkiverats. Om du vill publicera idén ska "
+"du logga in i tjänsten och återsälla den till ett utkast."
+
+#: content/templates/content/email/unpublished_warning.txt:1
+#, fuzzy, python-format
+#| msgid ""
+#| "Nuortenideat.fi idea '%(title)s' on ollut luonnoksena "
+#| "%(unpublished_days)s päivää ja arkistoidaan %(archive_days)s päivän "
+#| "kuluttua, jos sitä ei tähän mennessä julkaista. Käy viimeistelemässä "
+#| "ideasi ja julkaise se täältä"
+msgid ""
+"Nuortenideat.fi idea '%(title)s' on ollut luonnoksena %(unpublished_days)s "
+"päivää ja arkistoidaan %(archive_days)s päivän kuluttua, jos sitä ei tähän "
+"mennessä julkaista. Käy viimeistelemässä ideasi ja julkaise se täältä"
+msgstr ""
+"Idén '%(title)s' skapades i tjänsten ungasidéer.fi för %(published_days)s "
+"dagar sedan. Idén arkiveras om %(archive_days)s dagar, om den inte "
+"publiceras före det. Slutför beredningen och publicera idén här"
+
+#: content/templates/content/email/untransferred_archived.txt:1
+#, python-format
+msgid ""
+"Nuortenideat.fi idea '%(title)s' on ollut julkaistuna %(published_days)s "
+"päivää ja automaattisesti arkistoitiin, koska ideaa ei oltu viety eteenpäin."
+msgstr ""
+"Idén '%(title)s' publicerades i tjänsten ungasidéer.fi för "
+"%(published_days)s sedan och arkiverades automatiskt, eftersom den inte "
+"fördes vidare."
+
+#: content/templates/content/email/untransferred_reminder.txt:1
+#, python-format
+msgid ""
+"Nuortenideat.fi idea '%(title)s' on ollut julkaistuna %(published_days)s "
+"päivää ja arkistoidaan %(archive_days)s päivän kuluttua, jos ideaa ei ole "
+"tähän mennessä viety eteenpäin. Ideaan liittyvän organisaation yhteyshenkilö "
+"neuvoo idean viemisessä eteenpäin."
+msgstr ""
+"Idén '%(title)s' publicerades i tjänsten ungasidéer.fi för "
+"%(published_days)s dagar sedan. Idén arkiveras om %(archive_days)s dagar, om "
+"den inte förs vidare före det. Kontaktpersonen vid organisationen som idén "
+"gäller hjälper med att föra idén vidare."
+
+#: content/templates/content/email/untransferred_warning.txt:1
+#, python-format
+msgid ""
+"Nuortenideat.fi idea '%(title)s' on ollut julkaistuna %(published_days)s "
+"päivää ja arkistoidaan %(archive_days)s päivän kuluttua, jos ideaa ei ole "
+"tähän mennessä viety eteenpäin. Organisaation yhteyshenkilö lähettää idean "
+"käsittelyyn ennen arkistoitumista."
+msgstr ""
+"Idén '%(title)s' publicerades i tjänsten ungasidéer.fi för "
+"%(published_days)s dagar sedan. Idén arkiveras om %(archive_days)s dagar, om "
+"den inte förs vidare före det. Kontaktpersonen vid organisationen skickar "
+"idén vidare för behandling innan den arkiveras."
+
+#: content/templates/content/feed_buttons.html:3
+msgid "Luo RSS"
+msgstr "Skapa RSS"
+
+#: content/templates/content/feed_buttons.html:5
+msgid "Luo widget"
+msgstr "Skapa widget"
+
+#: content/templates/content/idea_confirm_delete.html:6
+msgid "Idean poisto"
+msgstr "Ta bort en idé"
+
+#: content/templates/content/idea_confirm_delete.html:9
+msgid "Poistetaanko idea varmasti?"
+msgstr "Är du säker på att du vill ta bort idén?"
+
+#: content/templates/content/idea_detail.html:122
+#: content/templates/content/idea_detail.html:158
+msgid "Muokkaa asetuksia"
+msgstr "Redigera inställningar"
+
+#: content/templates/content/idea_detail.html:149
+#: content/templates/content/publish_idea_modal.html:87
+msgid "Julkaise idea"
+msgstr "Publicera idén"
+
+#: content/templates/content/idea_detail.html:151
+#: content/templates/content/publish_idea_decision.html:6
+#: content/templates/content/publish_idea_decision.html:16
+msgid "Kirjaa vastaus"
+msgstr "Registrera svaret"
+
+#: content/templates/content/idea_detail.html:156
+msgid "Muokkaa ideaa"
+msgstr "Redigera idén"
+
+#: content/templates/content/idea_detail.html:164
+msgid "Uusi lisätieto"
+msgstr "Ny tilläggsuppgift"
+
+#: content/templates/content/idea_detail.html:168
+msgid "Uusi kysely"
+msgstr "Ny enkät "
+
+#: content/templates/content/idea_detail.html:180
+#: content/templates/content/idea_detail.html:223
+msgid "Peruuta muokkaus"
+msgstr "Avbryt redigeringen"
+
+#: content/templates/content/idea_detail.html:192
+msgid ""
+"Ideasi on vielä luonnos. Halutessasi voit muokata sitä tässä vaiheessa "
+"valitsemalla ”Muokkaa ideaa”. Jos haluat liittää ideaasi kyselyn, voit tehdä "
+"sen nyt kohdasta ”Uusi kysely”. Kun ideasi on valmis, julkaise se ”Julkaise "
+"idea” -painikkeella. Kun julkaistu ideasi saa ensimmäisen kannatuksen tai "
+"kommentin, sitä ei voi enää muokata, mutta siihen voi kirjoittaa lisätietoja."
+msgstr ""
+"Din idé är ännu ett utkast. Om du vill göra ändringar, välj ”Redigera idén”. "
+"Om du vill lägga till en enkät, välj ”Ny enkät”. När din idé är färdig kan "
+"du publicera den genom att klicka på \"Publicera idén\". Efter att någon har "
+"understött eller kommenterat din idé kan den inte längre redigeras, men det "
+"går att lägga till tilläggsinformation."
+
+#: content/templates/content/idea_detail.html:202 content/views.py:483
+msgid "Idea on arkistoitu."
+msgstr "Idén har arkiverats."
+
+#: content/templates/content/idea_detail.html:242
+msgid ""
+"Idea on luonnos ja se ei näy muille käyttäjille ennen kuin se on julkaistu."
+msgstr "Idén är ett utkast och syns inte för andra innan den har publicerats. "
+
+#: content/templates/content/idea_detail.html:244
+#, python-format
+msgid "Ideaa ei voi kannattaa, koska se on tilassa \"%(status)s\"."
+msgstr "Idén kan inte understödas eftersom den har statusen  \"%(status)s\"."
+
+#: content/templates/content/idea_detail.html:299
+#: content/templates/content/idea_status.html:22
+msgid "Muokkaa kuntalaisaloitetta"
+msgstr "Redigera invånarinitiativet"
+
+#: content/templates/content/idea_detail.html:305
+#: content/templates/content/idea_status.html:27
+msgid "Näytä kuntalaisaloite"
+msgstr "Visa invånarinitiativet"
+
+#: content/templates/content/idea_detail.html:314
+#: content/templates/content/transfer_idea.html:15
+#: content/templates/content/transfer_idea.html:19
+#: content/templates/content/transfer_idea_to_kua.html:18
+msgid "Tee kuntalaisaloite"
+msgstr "Skapa ett invånarinitiativ"
+
+#: content/templates/content/idea_detail.html:321
+msgid "Kirjoita viesti"
+msgstr "Skriv ett meddelande"
+
+#: content/templates/content/idea_detail.html:326
+msgid "Kommentoinnin asetukset"
+msgstr "Kommentarinställningar"
+
+#: content/templates/content/idea_detail.html:332
+msgid "Arkistoi idea"
+msgstr "Arkivera idén"
+
+#: content/templates/content/idea_detail.html:336
+msgid "Palauta arkistoitu idea"
+msgstr "Återställ arkiverad idé"
+
+#: content/templates/content/idea_detail.html:344
+msgid "Poista idea"
+msgstr "Ta bort idén"
+
+#: content/templates/content/idea_detail.html:386
+msgid "Vastauksesi on tallennettu."
+msgstr "Ditt svar har sparats."
+
+#: content/templates/content/idea_detail.html:386
+msgid "Kiitos kyselyyn osallistumisesta!"
+msgstr "Tack för att du tog undersökningen!"
+
+#: content/templates/content/idea_detail.html:389
+#: content/templates/content/idea_edit_picture_form.html:4
+#: content/templates/content/publish_idea_decision.html:4
+#: content/templates/content/publish_idea_modal.html:59
+#: content/templates/content/transfer_idea.html:4
+#: content/templates/content/transfer_idea_to_kua.html:5
+#: content/templates/content/widget_modal.html:35
+#: content/templates/idea_survey/survey_container.html:41
+#: content/templates/idea_survey/survey_name_form.html:4
+#: nkadmin/templates/reports/user_activity_modal.html:4
+#: nkadmin/templates/reports/user_activity_modal.html:37
+#: nkchat/jstemplates/create-group-chat.html:5
+#: nkmoderation/templates/nkmoderation/flag_content_form.html:4
+#: nkmoderation/templates/nkmoderation/moderation_reasoning.html:6
+msgid "Sulje"
+msgstr "Stäng"
+
+#: content/templates/content/idea_detail_additional_details.html:3
+#: content/templates/content/idea_pdf.html:80
+msgid "Lisätietoa"
+msgstr "Tilläggsuppgifter"
+
+#: content/templates/content/idea_detail_description.html:12
+#: content/templates/content/idea_moderation.html:10
+#: content/templates/content/question_detail.html:22
+#: content/templates/content/question_moderation.html:7
+#: organization/templates/organization/organization_detail_description.html:4
+#: organization/templates/organization/organization_detail_name.html:2
+msgid "Muokkaa kuvausta"
+msgstr "Redigera beskrivning"
+
+#: content/templates/content/idea_detail_organizations.html:5
+msgid "Muokkaa organisaatioita"
+msgstr "Redigera organisationer"
+
+#: content/templates/content/idea_detail_owners.html:6
+msgid "Muokkaa omistajia"
+msgstr "Redigera ägare"
+
+#: content/templates/content/idea_detail_tags.html:5
+msgid "Muokkaa aiheita"
+msgstr "Redigera ämnena"
+
+#: content/templates/content/idea_detail_title.html:2
+#: content/templates/content/idea_moderation.html:5
+#: content/templates/content/question_detail.html:15
+#: content/templates/content/question_moderation.html:2
+#: content/templates/idea_survey/survey_container.html:18
+#: content/templates/idea_survey/survey_name_form.html:4
+msgid "Muokkaa otsikkoa"
+msgstr "Redigera rubrik"
+
+#: content/templates/content/idea_edit_description_form.html:5
+msgid "Tallenna kuvaus"
+msgstr "Spara beskrivningen"
+
+#: content/templates/content/idea_edit_picture_form.html:4
+msgid "Idean kuva"
+msgstr "Omslagsbild"
+
+#: content/templates/content/idea_edit_picture_form.html:13
+msgid "Nykyinen kuva"
+msgstr "Nuvarande bild"
+
+#: content/templates/content/idea_edit_picture_form.html:23
+msgid "Poista kuva"
+msgstr "Ta bort bild"
+
+#: content/templates/content/idea_multiform/settings_inputs.html:6
+#: nkcomments/templates/nkcomments/comment_block.html:5
+msgid "Asetukset"
+msgstr "Inställningar"
+
+#: content/templates/content/idea_multiform/settings_inputs.html:17
+msgid "Kommentointi"
+msgstr "Kommentarer"
+
+#: content/templates/content/idea_pdf.html:42
+msgid "Tämä idea on luotu Nuortenideat.fi-vaikuttamispalvelussa."
+msgstr "Denna idé har skapats i tjänsten Ungasidéer.fi."
+
+#: content/templates/content/idea_pdf.html:92
+msgid "Huom. osa kommenteista on poistettu."
+msgstr "Obs. En del av kommentarerna har tagits bort."
+
+#: content/templates/content/idea_pdf.html:96
+#: nkcomments/templates/nkcomments/comment_block.html:9
+#: nkcomments/templates/nkcomments/comment_count.html:7
+msgid "Kommentit"
+msgstr "Kommentarer"
+
+#: content/templates/content/idea_status.html:14
+msgid "Osallistumisaikaa"
+msgstr "Tid för deltagande"
+
+#: content/templates/content/idea_vote.html:3
+#: content/templates/content/idea_vote_buttons.html:12
+#: content/templates/content/idea_vote_buttons.html:16
+#: nkcomments/templates/nkcomments/comment_vote.html:6
+#: nkcomments/templates/nkcomments/comment_vote.html:10
+#: nkcomments/templates/nkcomments/comment_vote.html:12
+msgid "Kannatan"
+msgstr "Jag understöder"
+
+#: content/templates/content/idea_vote.html:6
+#: content/templates/content/idea_vote_buttons.html:25
+#: content/templates/content/idea_vote_buttons.html:29
+#: nkcomments/templates/nkcomments/comment_vote.html:21
+#: nkcomments/templates/nkcomments/comment_vote.html:25
+#: nkcomments/templates/nkcomments/comment_vote.html:27
+msgid "En kannata"
+msgstr "Jag understöder inte"
+
+#: content/templates/content/idea_vote_buttons.html:4
+msgid "Tämän idean kannatus ja kommentointi vaatii sisäänkirjautumisen."
+msgstr "För att understöda eller kommentera denna idé måste man logga in."
+
+#: content/templates/content/initiative_elements_organization.html:6
+msgid "Vastaa kyselyihin ja keskustele"
+msgstr "Svara på enkäter och diskutera!"
+
+#: content/templates/content/initiative_elements_user.html:6
+msgid "Kannata ja kommentoi ideoita"
+msgstr "Understöd och kommentera idéer!"
+
+#: content/templates/content/initiative_list.html:92
+#: content/templates/content/initiative_list.html:95
+#: nkadmin/templates/nkadmin/users_list.html:27
+#: omnavi/templates/omnavi/header_nav.html:34
+#: organization/templates/organization/organization_list.html:36
+#: organization/templates/organization/organization_list.html:39
+msgid "Hae"
+msgstr "Sök"
+
+#: content/templates/content/initiative_list.html:108
+#: organization/templates/organization/organization_list.html:47
+msgid "Piilota hakuehdot"
+msgstr "Dölj sökvillkor"
+
+#: content/templates/content/initiative_list.html:112
+#, python-format
+msgid "Hakuehdoilla löytyi %(count)s ideaa"
+msgstr "Sökvillkoren matchar %(count)s idéer."
+
+#: content/templates/content/initiative_stats.html:13
+msgid "Kyselyjen vastaukset"
+msgstr "Svaren på enkäterna"
+
+#: content/templates/content/no_owner.html:3
+msgid "Poistunut käyttäjä"
+msgstr ""
+
+#: content/templates/content/organization_detail.html:5
+#: content/templates/content/organization_detail.html:7
+msgid "Organisaation profiilikuva"
+msgstr "Organisationens profilbild"
+
+#: content/templates/content/organization_list.html:6
+msgid "Ei organisaatioita"
+msgstr "Ingen organisation"
+
+#: content/templates/content/publish_idea_decision.html:10
+msgid ""
+"Olet lähettänyt idean eteenpäin. Kun olet saanut tiedon, että asia on "
+"käsitelty, voit kirjoittaa saamasi vastauksen alla olevaan tekstikenttään. "
+"Vastaus näkyy ideasivulla muille käyttäjille."
+msgstr ""
+"Du har skickat idén vidare. När du har fått besked om att ärendet har "
+"behandlats, kan du skriva in svaret du fått i textfältet nedan.  Svaret syns "
+"på idé-sidan för andra."
+
+#: content/templates/content/publish_idea_modal.html:58
+msgid "Idean julkaisu ja eteenpäin vieminen"
+msgstr "Publicering och överföring av idén för behandling"
+
+#: content/templates/content/publish_idea_modal.html:70
+msgid "Kyselyt"
+msgstr "Enkäter"
+
+#: content/templates/content/publish_idea_modal.html:71
+msgid ""
+"Voit julkaista samalla ideaasi liittyvät kyselyt. Poista valinta kyselyistä, "
+"joita et halua julkaista vielä."
+msgstr ""
+"Du kan samtidigt publicera enkäterna som gäller din idé. Avmarkera enkät du "
+"inte ännu vill publicera."
+
+#: content/templates/content/question_detail.html:5
+#: content/templates/content/question_detail.html:37
+#: content/templates/content/question_detail.html:38
+#: nkvote/templates/gallup/form/question_input.html:3
+msgid "Kysymys"
+msgstr "Fråga"
+
+#: content/templates/content/question_detail.html:55
+msgid "Kysyjä"
+msgstr "Frågeställare"
+
+#: content/templates/content/question_detail.html:84
+msgid "Haluatko varmasti luoda idean?"
+msgstr "Är du säker på att du vill skapa idén?"
+
+#: content/templates/content/question_detail.html:84
+msgid "Muunna ideaksi"
+msgstr "Omvandla till en idé"
+
+#: content/templates/content/question_detail.html:93
+msgid "Haluatko varmasti poistaa kysymyksen?"
+msgstr "Är du säker på att du vill ta bort frågan?"
+
+#: content/templates/content/question_detail.html:93
+#: nkvote/templates/gallup/form.html:34
+msgid "Poista kysymys"
+msgstr "Ta bort frågan"
+
+#: content/templates/content/tag_list.html:7
+msgid "Ei aiheita"
+msgstr "Inga ämnen"
+
+#: content/templates/content/transfer_idea.html:6
+#: content/templates/content/transfer_idea_to_kua.html:7
+msgid "Tee ideasta kuntalaisaloite"
+msgstr "Skapa ett invånarinitiativ utifrån idén"
+
+#: content/templates/content/transfer_idea.html:11
+msgid ""
+"<p>Voit tehdä kuntalaisaloitteen jos ideasi koskee kotikuntasi toimintaa. </"
+"p><p>Tästä voit viedä ideasi Kuntalaisaloite.fi-palveluun, josta se ohjautuu "
+"kunnan käsiteltäväksi.</p>"
+msgstr ""
+"<P>Du kan skapa en invånarinitiativ om idén gäller din kommun.</P><p>Här kan "
+"du skicka din idé til Invånarinitiativ.fi tjänsten, varifrån den leds till "
+"kommunen för behandling.</P>"
+
+#: content/templates/content/transfer_idea.html:14
+#: content/templates/content/transfer_idea.html:18
+msgid ""
+"Olet tekemässä kuntalaisaloitetta. Olethan varmistanut, että ideasi on "
+"sellainen, joka voidaan käsitellä kuntalaisaloitteena? Tukea saat "
+"yhteyshenkilöltä tai ylläpidolta."
+msgstr ""
+"Idén kan föras vidare till behandling via tjänsten <a href=\"http://www."
+"kuntalaisaloite.fi\" target=\"_blank\">Kuntalaisaloite.fi</a> efter att du "
+"kontrollerat punkterna ovan. Du får hjälp av t.ex. kontaktpersonerna eller "
+"tjänstens administratörer."
+
+#: content/templates/content/transfer_idea_to_kua.html:11
+#, python-format
+msgid ""
+"Olet ilmoittanut henkilötiedoissasi kotikunnaksesi muun kunnan kuin "
+"%(kunta)s."
+msgstr ""
+"I dina personuppgifter har du som din hemort uppgett en annan kommun än "
+"%(kunta)s."
+
+#: content/templates/content/transfer_idea_to_kua.html:11
+msgid "Voit silti tehdä aloitteen, jos olet jäsen kyseisessä kunnassa."
+msgstr ""
+"Du kan ändå lägga fram ett initiativ, om du är medlem i kommunen i fråga. "
+
+#: content/templates/content/widget_modal.html:14
+msgid "Widgetin luonti"
+msgstr "Skapa widget"
+
+#: content/templates/content/widget_modal.html:18
+msgid ""
+"Widget luodaan tämänhetkisistä hakuparametreistasi. Valitse vielä väri, "
+"kieli ja montako tulosta widgetissä näytetään. Alareunaan ilmestyy iframe-"
+"koodi, jonka voit upottaa verkkosivuillesi."
+msgstr ""
+"Widget skapas enligt dina nuvarande sökparametrar. Välj färg, språk och "
+"antalet resultat som visas i widgeten. En iframe-kod dyker upp i nedre "
+"kanten som kan bäddas in på din webbplats."
+
+#: content/templates/content/widget_modal.html:27
+msgid "Esikatselu"
+msgstr "Förhandsgranskning"
+
+#: content/templates/content/widget_modal.html:30
+msgid "Koodi"
+msgstr "Kod"
+
+#: content/templates/idea_survey/confirm_delete.html:6
+msgid "Kyselyn poisto"
+msgstr "Radera enkäten"
+
+#: content/templates/idea_survey/confirm_delete.html:9
+msgid "Poistetaanko kysely varmasti?"
+msgstr "Är du säker på att du vill radera enkäten?"
+
+#: content/templates/idea_survey/survey_container.html:8
+#: nkadmin/templates/nkadmin/users_list.html:93
+#: nkvote/templates/gallup/well.html:8
+msgid "Toiminnot"
+msgstr "Funktioner"
+
+#: content/templates/idea_survey/survey_container.html:15
+#: nkvote/templates/gallup/well.html:13
+#: survey/templates/survey/answer_mode/question.html:6
+#: survey/templates/survey/answer_mode/subtitle.html:8
+msgid "Muokkaa"
+msgstr "Redigera"
+
+#: content/templates/idea_survey/survey_container.html:22
+msgid "Ketkä näkevät vastaukset?"
+msgstr "Vem ser svaren?"
+
+#: content/templates/idea_survey/survey_container.html:31
+msgid "Kirjautumaton käyttäjä voi vastata useasti"
+msgstr "En oregistrerad användare kan svara flera gånger"
+
+#: content/templates/idea_survey/survey_container.html:37
+msgid "Julkaise"
+msgstr "Publicera"
+
+#: content/templates/idea_survey/survey_container.html:44
+#: nkvote/templates/gallup/well.html:21
+msgid "Tulokset (PDF)"
+msgstr "Resultat (PDF)"
+
+#: content/templates/idea_survey/survey_container.html:54
+#: nkvote/templates/gallup/well.html:31
+msgid "Jaa"
+msgstr "Dela"
+
+#: content/templates/idea_survey/survey_container.html:74
+#: content/templates/idea_survey/survey_results_pdf.html:30
+msgid "Kysely on suljettu."
+msgstr "Enkäten är stängd."
+
+#: content/templates/idea_survey/survey_container.html:76
+#: content/templates/idea_survey/survey_results_pdf.html:32
+msgid "Kysely on luonnos. Vain idean omistajat näkevät sen."
+msgstr "Enkäten är ett utkast. Enbart ägarna av idén kan se den."
+
+#: content/templates/idea_survey/survey_container.html:82
+msgid "Kyselyn pakolliset kysymykset on merkitty (*) tähtimerkillä."
+msgstr "De obligatoriska fälten i enkäten har markerats med (*) asterisk. "
+
+#: content/templates/idea_survey/survey_container.html:96
+msgid "Lopeta muokkaus"
+msgstr "Sluta redigeringen"
+
+#: content/utils.py:56
+#, python-brace-format
+msgid "Idea '{name}' on ollut julkaisematon {days} päivää."
+msgstr "Idén '{name}' har varit ett utkast i {days} dagar."
+
+#: content/utils.py:85 content/utils.py:168
+#, python-format
+msgid "Idea '%s' on arkistoitu."
+msgstr "Idén '%s' har arkiverats."
+
+#: content/utils.py:111 content/utils.py:139
+#, python-format
+msgid "Muistutus idean '%s' viemisestä eteenpäin."
+msgstr "Påminnelse om att föra vidare idén '%s'."
+
+#: content/utils.py:233
+msgid "Idea liitteenä - nuortenideat.fi"
+msgstr "Idén bifogad - ungasidéer.fi"
+
+#: content/utils.py:261
+#, python-format
+msgid "Muistutus idean '%s' vastauksen kirjaamisesta."
+msgstr ""
+
+#: content/views.py:121
+msgid "Page is not 'last', nor can it be converted to an int."
+msgstr ""
+
+#: content/views.py:432
+msgid ""
+"Ideasi on julkaistu! Voit vielä muokata ideaasi, kunnes siihen tulee "
+"ensimmäinen kannanotto tai kommentti. Jaa ideaasi esimerkiksi sosiaalisessa "
+"mediassa saadaksesi sille näkyvyyttä sekä kannatuksia ja kommentteja muilta. "
+"Voit jakaa ideaasi kopioimalla linkin selaimen osoiteriviltä tai sivun "
+"alareunassa olevien sosiaalisen median painikkeiden kautta."
+msgstr ""
+"Din idé har publicerats! Du kan ändra på idén tills någon understöder eller "
+"kommenterar den. Dela idén t.ex. i sociala medier för att andra ska kunna "
+"understöda och kommentera den.  Du kan dela din idé genom att kopiera länken "
+"på webbläsarens adressrad eller klicka på knapparna för sociala medier i "
+"sidans nedre kant."
+
+#: content/views.py:499
+msgid "Arkistoitu idea on palautettu."
+msgstr "Den arkiverade idén har återställts."
+
+#: content/views.py:516
+msgid "Idea arkistoitiin, koska sillä ei ole enää omistajia."
+msgstr "Idén arkiverades eftersom dess ägare tagits bort."
+
+#: content/views.py:527
+msgid "Kuva tallennettu"
+msgstr "Bilden sparad"
+
+#: content/views.py:551
+msgid "Kuva poistettu"
+msgstr "Bilden raderad"
+
+#: content/views.py:569
+#, python-brace-format
+msgid "Idea '{0}' on poistettu."
+msgstr "Idén '{0}' har tagits bort. "
+
+#: content/views.py:706
+#, python-brace-format
+msgid "Kysymys \"{0}\" on poistettu."
+msgstr "Frågan \"{0}\" har tagits bort."
+
+#: content/views.py:732
+msgid "Uusi idea luotu kysymyksen pohjalta."
+msgstr "En ny idé har skapats utifrån en fråga."
+
+#: content/views.py:851
+msgid ""
+"Yhteyden muodostaminen kuntalaisaloite.fi-palveluun epäonnistui. Yritä "
+"myöhemmin uudelleen."
+msgstr ""
+"Anslutning till tjänsten Invånarinitiativ.fi misslyckades. Prova på nytt "
+"senare."
+
+#: content/views.py:875
+msgid "Idea on viety kuntalaisaloite.fi-palveluun luonnoksena."
+msgstr "Idén har överförts till tjänsten Invånarinitiativ.fi som en skiss."
+
+#: content/views.py:878
+msgid "Avaa aloite muokattavaksi tästä."
+msgstr "Öppna och redigera initiativet här."
+
+#: content/views.py:880
+#, python-format
+msgid "Muokkauslinkki on lähetetty myös sähköpostiisi %(email)s."
+msgstr "En redigeringslänk har skickats till din e-postadress %(email)s."
+
+#: content/views.py:891
+msgid "Kuntalaisaloitteen luominen ideasta epäonnistui."
+msgstr "Skapandet av ett invånarinitiativ utifrån idén misslyckades."
+
+#: content/views.py:907
+msgid "Idean tila päivitetty."
+msgstr "Status på idén uppdaterad."
+
+#: content/views.py:922
+msgid "Kommenttien esimoderointi on otettu käyttöön."
+msgstr "Förhandsmoderering av kommentarer har tagits i bruk."
+
+#: content/views.py:923
+msgid ""
+"Ideaan lisättävät kommentit menevät palvelun moderaattorien hyväksyttäväksi "
+"ennen julkaisua."
+msgstr ""
+"Kommentarer till idén publiceras först efter att tjänstens moderatorer har "
+"godkänt dem."
+
+#: content/views.py:931
+msgid "Kommenttien esimoderointi on poistettu käytöstä."
+msgstr "Förhandsmoderering av kommentarer har tagits ur bruk."
+
+#: content/views.py:932
+msgid "Ideaan lisättävät kommentit julkaistaan välittömästi."
+msgstr "Kommentarer till idén publiceras genast."
+
+#: content/views.py:946
+msgid "Kommentointi on suljettu."
+msgstr "Kan inte längre kommenteras."
+
+#: content/views.py:948
+msgid "Kommentointi on avoinna."
+msgstr "Kan kommenteras."
+
+#: content/views.py:970
+msgid "Tiedoston lähetys epäonnistui."
+msgstr "Filen kunde inte skickas."
+
+#: content/views.py:976
+msgid "Seuraa ideoita."
+msgstr "Följ idéer."
+
+#: content/views.py:1138
+msgid "Kysely poistettu."
+msgstr "Enkäten har raderats."
+
+#: favorite/templates/favorite/favorite_detail.html:14
+msgid "ei seurattuja"
+msgstr "du följer inga"
+
+#: favorite/templates/favorite/follow_idea_link.html:6
+#: favorite/templates/favorite/follow_idea_link.html:11
+msgid "Seuraa"
+msgstr "Följ"
+
+#: favorite/templates/favorite/follow_idea_link.html:6
+msgid "Lopeta seuraaminen"
+msgstr "Sluta följa"
+
+#: favorite/templates/favorite/follow_idea_link.html:13
+msgid "Lopeta seuranta"
+msgstr "Sluta uppföljning"
+
+#: help/models.py:25
+msgid "ei mitään"
+msgstr "inget"
+
+#: help/models.py:26
+msgid "tietosuojaseloste"
+msgstr "dataskyddsbeskrivning"
+
+#: help/models.py:27
+msgid "yhteystiedot"
+msgstr "kontaktuppgifter"
+
+#: help/models.py:28
+msgid "saavutettavuusseloste"
+msgstr "tillgänglighetsutlåtande"
+
+#: help/models.py:48
+msgid "ohje"
+msgstr "anvisning"
+
+#: help/models.py:49
+msgid "ohjeet"
+msgstr "anvisningar"
+
+#: help/templates/help/instruction_list.html:5
+#: help/templates/help/instruction_list.html:8
+#: help/templates/help/instruction_list.html:16
+#: nuka/templates/nuka/base.html:294 nuka/templates/nuka/base.html.py:375
+#: nuka/templatetags/sitemap_urls.py:49
+msgid "Tietoa palvelusta"
+msgstr "Information"
+
+#: info/models.py:34 info/templates/info/topic_list.html:9
+#: info/templates/info/topic_list.html:12
+#: info/templates/info/topic_list.html:20 nuka/templates/nuka/base.html:300
+#: nuka/templates/nuka/frontpage.html:74 nuka/templatetags/sitemap_urls.py:77
+msgid "Ajankohtaista"
+msgstr "Aktuellt"
+
+#: info/models.py:35
+msgid "Ajankohtaiset"
+msgstr "Aktuella"
+
+#: kuaapi/models.py:60
+msgid "Lähetetty kuntaan"
+msgstr "Skickats till kommunen"
+
+#: kuaapi/models.py:71
+msgid "Muunnettu aloitteeksi"
+msgstr "Omvandlad till initiativ"
+
+#: kuaapi/templates/kuaapi/simulation/kuainitiative_detail.html:2
+msgid "KUA simulation"
+msgstr "KUA simulation"
+
+#: libs/attachtor/forms/fields.py:18
+msgid "Upload signature missing."
+msgstr "Upload signature missing."
+
+#: libs/attachtor/forms/fields.py:19
+msgid "Invalid upload signature."
+msgstr "Invalid upload signature."
+
+#: libs/attachtor/views.py:44
+msgid "Upload failed"
+msgstr "Upload failed"
+
+#: libs/djcontrib/forms/fields.py:13
+msgid ""
+"Enter the phone number in an international format without dashes or spaces, "
+"e.g. +358401234567"
+msgstr ""
+"Enter the phone number in an international format without dashes or spaces, "
+"e.g. +358401234567"
+
+#: libs/djcontrib/forms/fields.py:22
+msgid "Yes"
+msgstr "Yes"
+
+#: libs/djcontrib/forms/fields.py:23
+msgid "No"
+msgstr "No"
+
+#: libs/djcontrib/forms/widgets.py:18
+msgid "e.g. +358401234567"
+msgstr "e.g. +358401234567"
+
+#: libs/fimunicipality/admin.py:12
+msgid "Type"
+msgstr "Type"
+
+#: libs/fimunicipality/admin.py:17
+msgid "Natural municipality"
+msgstr "Natural municipality"
+
+#: libs/fimunicipality/admin.py:18
+msgid "Reserved code"
+msgstr "Reserved code"
+
+#: libs/fimunicipality/admin.py:30
+msgid "Status"
+msgstr "Status"
+
+#: libs/fimunicipality/admin.py:35
+msgid "Upcoming"
+msgstr "Upcoming"
+
+#: libs/fimunicipality/admin.py:36
+msgid "Active"
+msgstr "Active"
+
+#: libs/fimunicipality/admin.py:37
+msgid "Expiring"
+msgstr "Expiring"
+
+#: libs/fimunicipality/admin.py:38
+msgid "Expired"
+msgstr "Expired"
+
+#: libs/fimunicipality/models.py:90
+msgid "Municipality"
+msgstr "Municipality"
+
+#: libs/fimunicipality/models.py:91
+msgid "Municipalities"
+msgstr "Municipalities"
+
+#: libs/fimunicipality/models.py:98
+msgid "New municipalities"
+msgstr "New municipalities"
+
+#: libs/fimunicipality/models.py:101
+msgid "Former municipalities"
+msgstr "Former municipalities"
+
+#: libs/formidable/forms/fields.py:68 libs/formidable/forms/fields.py:152
+msgid "Unexpected data received."
+msgstr "Unexpected data received."
+
+#: libs/formidable/forms/fields.py:70
+msgid "Creation of a new related object is disabled."
+msgstr "Creation of a new related object is disabled."
+
+#: libs/formidable/forms/fields.py:71
+msgid "Updating of an existing related object is disabled."
+msgstr "Updating of an existing related object is disabled."
+
+#: libs/formidable/forms/fields.py:146
+#, python-format
+msgid "At least %(min_forms)s entry is required."
+msgid_plural "At least %(min_forms)s entries are required."
+msgstr[0] "At least %(min_forms)s entry is required."
+msgstr[1] "At least %(min_forms)s entries are required."
+
+#: libs/formidable/forms/fields.py:149
+#, python-format
+msgid "At most %(max_forms)s entry is allowed."
+msgid_plural "At most %(max_forms)s entries are allowed."
+msgstr[0] "At most %(max_forms)s entry is allowed."
+msgstr[1] "At most %(max_forms)s entries are allowed."
+
+#: libs/formidable/forms/fields.py:154
+msgid "Invalid identifiers specified for objects to be deleted."
+msgstr "Invalid identifiers specified for objects to be deleted."
+
+#: libs/formidable/forms/fields.py:156
+msgid "Some of the objects specified for deletion do not exist."
+msgstr "Some of the objects specified for deletion do not exist."
+
+#: libs/formidable/forms/fields.py:158
+msgid "Some of the objects specified for deletion are protected."
+msgstr "Some of the objects specified for deletion are protected."
+
+#: libs/formidable/forms/fields.py:160
+msgid "Some of the objects changed are protected and can not be updated."
+msgstr "Some of the objects changed are protected and can not be updated."
+
+#: libs/formidable/forms/fields.py:162
+msgid "Can not update and delete the same object."
+msgstr "Can not update and delete the same object."
+
+#: libs/formidable/forms/fields.py:163
+msgid "Overriding object identifiers is not allowed."
+msgstr "Overriding object identifiers is not allowed."
+
+#: libs/multilingo/forms/fields.py:32
+msgid "Enter translations."
+msgstr "Enter translations."
+
+#: libs/multilingo/forms/fields.py:33
+msgid "Enter all translations."
+msgstr "Enter all translations."
+
+#: libs/permitter/perms.py:22
+msgid "Permission denied"
+msgstr "Permission denied"
+
+#: nkadmin/forms.py:47
+msgid "Käyttäjänimi"
+msgstr "Användarnamn"
+
+#: nkadmin/forms.py:48
+msgid "Käyttäjäryhmät"
+msgstr "Användargrupper"
+
+#: nkadmin/forms.py:66
+msgid "Käyttöoikeuksiisi tehtiin muutoksia"
+msgstr "Dina användarrättigheter har ändrats"
+
+#: nkadmin/templates/nkadmin/base.html:5 nkadmin/templates/nkadmin/base.html:9
+#: nkadmin/templates/nkadmin/edit_user.html:8
+#: nkadmin/templates/nkadmin/moderation_queue.html:6
+#: nkadmin/templates/nkadmin/reports.html:5
+#: nkadmin/templates/nkadmin/update_moderator_rights_form.html:5
+#: nkadmin/templates/nkadmin/users_list.html:7
+#: nuka/templates/nuka/base.html:377 nuka/templatetags/sitemap_urls.py:97
+msgid "Hallinta"
+msgstr "Administration"
+
+#: nkadmin/templates/nkadmin/base.html:12
+#: nkadmin/templates/nkadmin/moderation_queue.html:7
+msgid "Moderointi"
+msgstr "Moderering"
+
+#: nkadmin/templates/nkadmin/base.html:15
+#: nkadmin/templates/nkadmin/reports.html:6
+msgid "Raportit"
+msgstr "Rapporter"
+
+#: nkadmin/templates/nkadmin/base.html:16
+#: nkadmin/templates/nkadmin/update_moderator_rights_form.html:6
+msgid "Omat oikeudet"
+msgstr ""
+
+#: nkadmin/templates/nkadmin/base_list.html:11
+msgid "Hae / suodata"
+msgstr "Sök / filtrera"
+
+#: nkadmin/templates/nkadmin/change_user_password.html:11
+#, python-format
+msgid "Käyttäjän %(object)s salasanan vaihto"
+msgstr "Byte av användare %(object)s lösenord"
+
+#: nkadmin/templates/nkadmin/edit_user.html:5
+msgid "Muokkaa käyttäjän tietoja"
+msgstr "Redigera användaruppgifter"
+
+#: nkadmin/templates/nkadmin/email/group_change.txt:1
+#, python-format
+msgid ""
+"Käyttäjätilisi käyttöoikeuksia on muokattu.\n"
+"Uudet käyttöoikeudet: %(groups)s"
+msgstr ""
+"\"Användarrättigheterna till ditt användarkonto har ändrats.\n"
+"Nya användarrättigheter: %(groups)s\""
+
+#: nkadmin/templates/nkadmin/moderation_queue.html:16
+msgid "Ei moderoitavaa sisältöä."
+msgstr "Inget innehåll att moderera."
+
+#: nkadmin/templates/nkadmin/reports.html:12
+msgid "Ideoiden lukumäärät aiheittain"
+msgstr ""
+
+#: nkadmin/templates/nkadmin/reports.html:12
+msgid "tiedosto"
+msgstr "fil"
+
+#: nkadmin/templates/nkadmin/reports.html:13
+#: nkadmin/templates/reports/user_activity_modal.html:6
+msgid "Käyttäjäaktiivisuus"
+msgstr ""
+
+#: nkadmin/templates/nkadmin/update_moderator_rights_form.html:11
+msgid "Moderaattorioikeudet"
+msgstr ""
+
+#: nkadmin/templates/nkadmin/update_moderator_rights_form.html:14
+msgid "Olet pääkäyttäjä. Moderaattorioikeuksia ei tarvitse päivittää."
+msgstr ""
+
+#: nkadmin/templates/nkadmin/update_moderator_rights_form.html:16
+#, python-format
+msgid "Moderaattorioikeutesi erääntyvät %(valid)s."
+msgstr ""
+
+#: nkadmin/templates/nkadmin/update_moderator_rights_form.html:19
+msgid "Voit jatkaa oikeuksiesi voimassaoloa klikkaamalla Päivitä."
+msgstr ""
+
+#: nkadmin/templates/nkadmin/update_moderator_rights_form.html:21
+msgid "Sinun ei vielä tarvitse päivittää oikeuksia."
+msgstr "Du behöver inte uppgradera behörigheter än."
+
+#: nkadmin/templates/nkadmin/update_moderator_rights_form.html:28
+msgid "Päivitä"
+msgstr "Uppdatera"
+
+#: nkadmin/templates/nkadmin/users_list.html:4
+msgid "Käyttäjähallinta"
+msgstr "Användaradministration"
+
+#: nkadmin/templates/nkadmin/users_list.html:16
+msgid "Hae käyttäjätunnuksella tai nimellä"
+msgstr "Sök enligt användarnamn eller namn"
+
+#: nkadmin/templates/nkadmin/users_list.html:34
+msgid "Osallistuja"
+msgstr "Deltagare"
+
+#: nkadmin/templates/nkadmin/users_list.html:35
+msgid "Nuori"
+msgstr "Ungdom"
+
+#: nkadmin/templates/nkadmin/users_list.html:39
+msgid "Tuloksia"
+msgstr "Resultat"
+
+#: nkadmin/templates/nkadmin/users_list.html:52 nkcomments/forms.py:29
+#: nkcomments/forms.py:63 nkpicturecarousel/models.py:51
+msgid "Nimi"
+msgstr "Namn"
+
+#: nkadmin/templates/nkadmin/users_list.html:66
+msgid "Käyttäjäryhmä"
+msgstr "Användargrupp"
+
+#: nkadmin/templates/nkadmin/users_list.html:89
+msgid "Käyttäjän julkinen profiili"
+msgstr "Användarens offentliga profil"
+
+#: nkadmin/templates/nkadmin/users_list.html:105
+msgid "Lähetä viesti"
+msgstr "Skicka meddelande"
+
+#: nkadmin/templates/reports/user_activity_modal.html:14
+msgid "Lukumäärä"
+msgstr ""
+
+#: nkadmin/templates/reports/user_activity_modal.html:19
+msgid "Rekisteröityneet"
+msgstr "Registrerade"
+
+#: nkadmin/templates/reports/user_activity_modal.html:23
+msgid "Aktiiviset"
+msgstr "Aktiva"
+
+#: nkadmin/templates/reports/user_activity_modal.html:23
+msgid "Ei sisällä aktivoimattomia ja arkistoituja tilejä"
+msgstr ""
+
+#: nkadmin/templates/reports/user_activity_modal.html:29
+#, python-format
+msgid "Kirjautuneita %(days)s päivän aikana"
+msgstr ""
+
+#: nkadmin/views.py:228
+msgid "Käyttäjän tiedot tallennettu."
+msgstr "Användaruppgifterna har sparats."
+
+#: nkadmin/views.py:253
+#, python-format
+msgid "Käyttäjän %s salasana vaihdettu."
+msgstr "Användare %s lösenord har bytts."
+
+#: nkadmin/views.py:319
+#, python-format
+msgid "Moderaattorioikeuksien voimassaolo jatkettu %(date)s asti."
+msgstr ""
+
+#: nkchat/jstemplates/chat-message.html:1
+msgid "Poista viesti"
+msgstr "Ta bort meddelande"
+
+#: nkchat/jstemplates/chatbar.html:1
+msgid "Chat"
+msgstr "Chatt"
+
+#: nkchat/jstemplates/chatbar.html:2
+msgid "Tarvitsetko apua? Kysy moderaattoreilta."
+msgstr "Behöver du hjälp? Fråga moderatorerna."
+
+#: nkchat/jstemplates/chatbar.html:3
+msgid "Tuki"
+msgstr "Stöd"
+
+#: nkchat/jstemplates/create-group-chat.html:1
+msgid "Luo keskustelu"
+msgstr "Skapa diskussion"
+
+#: nkchat/jstemplates/create-group-chat.html:2
+#: nkchat/jstemplates/group-chats.html:3
+msgid "Luo uusi keskustelu"
+msgstr "Skapa ny diskussion"
+
+#: nkchat/jstemplates/create-group-chat.html:4
+msgid "Ryhmä-chatin nimi"
+msgstr "Namn på gruppchatten"
+
+#: nkchat/jstemplates/create-group-chat.html:6
+msgid "Syötä nimi..."
+msgstr "Ange namn..."
+
+#: nkchat/jstemplates/group-chat-settings-menu.html:1
+msgid "Haluatko varmasti poistaa chatin ja sen keskusteluhistorian?"
+msgstr ""
+"Är du säker på att du vill ta bort chatten och dess diskussionshistorik?"
+
+#: nkchat/jstemplates/group-chat-settings-menu.html:2
+msgid "Keskusteluoikeus"
+msgstr "Diskussionsrätt"
+
+#: nkchat/jstemplates/group-chat-settings-menu.html:3
+#: nkchat/jstemplates/group-chat-users.html:2
+msgid "Osallistujat"
+msgstr "Deltagare"
+
+#: nkchat/jstemplates/group-chat-settings-menu.html:4
+msgid "Poista keskustelu"
+msgstr "Ta bort diskussionen"
+
+#: nkchat/jstemplates/group-chat-settings-menu.html:5
+msgid "Vastaajat ja moderaattorit"
+msgstr "Svarare och moderatorer"
+
+#: nkchat/jstemplates/group-chat-settings-menu.html:6
+#: nkchat/jstemplates/group-chat-users.html:4
+msgid "Vierailijat"
+msgstr "Gäster"
+
+#: nkchat/jstemplates/group-chat-users.html:3
+msgid "Vastaajat"
+msgstr "Svarare"
+
+#: nkchat/jstemplates/group-chats.html:1
+msgid "Aktiiviset ryhmä-chatit"
+msgstr "Aktiva gruppchattar"
+
+#: nkchat/jstemplates/group-chats.html:2
+msgid "Ei keskusteluja käynnissä."
+msgstr "Inga diskussioner pågår."
+
+#: nkchat/jstemplates/layout-full.html:1
+msgid "Live-tuki"
+msgstr "Live-stöd"
+
+#: nkchat/jstemplates/layout-full.html:2
+msgid "Ryhmächat"
+msgstr "Gruppchatt"
+
+#: nkchat/jstemplates/message-form.html:1
+msgid "Kirjoita viestisi tähän.."
+msgstr "Skriv ditt meddelande här.."
+
+#: nkchat/jstemplates/message-removed.html:1
+msgid "Viesti poistettu."
+msgstr "Meddelandet har tagits bort."
+
+#: nkchat/jstemplates/moderators-online.html:1
+msgid "Ei moderaattoreita online-tilassa."
+msgstr "Inga moderatorer online."
+
+#: nkchat/jstemplates/organization-admins-online.html:1
+msgid "Ei yhteyshenkilöitä online-tilassa."
+msgstr "Inga kontaktpersoner online."
+
+#: nkchat/jstemplates/partner-online-status-change.html:1
+msgid "{{ name }} ei ole enää online-tilassa. Viestejä ei toimiteta."
+msgstr "{{ name }} är inte längre online. Meddelanden skickas inte."
+
+#: nkchat/jstemplates/partner-online-status-change.html:2
+msgid "{{ name }} on jälleen tavoitettavissa."
+msgstr "{{ name }} är åter anträffbar."
+
+#: nkchat/jstemplates/room-moderated.html:1
+msgid "Keskusteluoikeus rajattu moderaattoreihin ja vastaajiin."
+msgstr "Diskussionsrätten begränsad till moderatorer och svarare."
+
+#: nkchat/jstemplates/room-moderated.html:2
+msgid ""
+"Keskusteluoikeus rajattu moderaattoreihin, vastaajiin ja vierailijoihin."
+msgstr "Diskussionsrätten begränsad till moderatorer, svarare och besökare."
+
+#: nkchat/jstemplates/room-moderated.html:3
+msgid "Keskusteluoikeus vain kirjautuneilla käyttäjillä."
+msgstr "Endast inloggade användare har diskussionsrätt."
+
+#: nkchat/jstemplates/room-moderated.html:4
+msgid "Keskustelurajoitukset poistettu."
+msgstr "Begränsningen av diskussionsrätt har tagits bort. "
+
+#: nkchat/jstemplates/room-user-context-menu.html:1
+msgid "Lisää vastaajaksi"
+msgstr "Lägg till svarare"
+
+#: nkchat/jstemplates/room-user-context-menu.html:2
+msgid "Poista vastaaja"
+msgstr "Ta bort svarare"
+
+#: nkcomments/forms.py:26
+msgid ""
+"If you enter anything in this field your comment will be treated as spam"
+msgstr ""
+"If you enter anything in this field your comment will be treated as spam"
+
+#: nkcomments/forms.py:65 nkcomments/forms.py:86 nkcomments/forms.py:101
+msgid "Kommentti"
+msgstr "Kommentar"
+
+#: nkcomments/models.py:34
+msgid "Tämä kommentti on kirjoitettu sen jälkeen kun ideaan on saatu vastaus."
+msgstr "Denna kommentar har skrivits efter att idén har besvarats."
+
+#: nkcomments/perms.py:27
+msgid "Olet jo äänestänyt kommenttia."
+msgstr "Du har redan röstat på kommentaren."
+
+#: nkcomments/perms.py:45
+msgid "Kommentti on poistettu."
+msgstr "Kommentaren har tagits bort."
+
+#: nkcomments/templates/nkcomments/comment_block.html:15
+msgid "Kommentointi on päättynyt."
+msgstr "Kan inte längre kommenteras."
+
+#: nkcomments/templates/nkcomments/comment_content.html:4
+msgid "Kommentti poistettu"
+msgstr "Kommentaren har tagits bort"
+
+#: nkcomments/templates/nkcomments/comment_form.html:3
+msgid "Kommentoi"
+msgstr "Kommentera"
+
+#: nkcomments/templates/nkcomments/comment_form.html:5
+msgid ""
+"Kommenttien esimoderointi on käytössä. Uudet kommentit julkaistaan vasta kun "
+"palvelun moderaattori on hyväksynyt ne."
+msgstr ""
+"Förhandsmoderering av kommentarer är i bruk. Nya kommentarer publiceras "
+"först efter att tjänstens moderator har godkänt dem."
+
+#: nkcomments/templates/nkcomments/comment_form.html:14
+msgid "Lähetä kommentti"
+msgstr "Skicka kommentar"
+
+#: nkcomments/templates/nkcomments/comment_list_item.html:37
+#: nkcomments/templates/nkcomments/comment_moderation.html:21
+msgid "Muokkaa kommenttia"
+msgstr "Redigera kommentar"
+
+#: nkcomments/templates/nkcomments/comment_list_item.html:44
+msgid "Poista kommentti"
+msgstr "Ta bort kommentar"
+
+#: nkcomments/templates/nkcomments/comment_list_item.html:60
+msgid "Ilmoita asiaton kommentti"
+msgstr "Anmäl osaklig kommentar"
+
+#: nkcomments/templates/nkcomments/comment_list_item_deleted.html:16
+msgid "Kommentti poistettu."
+msgstr "Kommentaren har tagits bort."
+
+#: nkcomments/templates/nkcomments/comment_vote.html:5
+msgid "Kannata"
+msgstr "Understöd"
+
+#: nkcomments/templates/nkcomments/comment_vote.html:20
+msgid "Vastusta"
+msgstr "Motsätt dig"
+
+#: nkcomments/views.py:142
+msgid ""
+"Kommenttisi on tallennettu. Kommentti tulee näkyviin, kun moderaattori on "
+"hyväksynyt sen."
+msgstr ""
+"Din kommentar har sparats. Kommentaren publiceras efter att en moderator har "
+"godkänt den."
+
+#: nkmessages/models.py:19
+msgid "aihe"
+msgstr "ämne"
+
+#: nkmessages/models.py:20
+msgid "viesti"
+msgstr "meddelande"
+
+#: nkmessages/models.py:31
+msgid "Varoitusviesti"
+msgstr "Varningsmeddelande"
+
+#: nkmessages/models.py:58 organization/models.py:75 tagging/models.py:13
+msgid "nimi"
+msgstr "namn"
+
+#: nkmessages/models.py:63
+msgid "Palautteet"
+msgstr "Kommentarer"
+
+#: nkmessages/templates/nkmessages/email/new_feedback.txt:1
+msgid ""
+"Hei,\n"
+"\n"
+"Sinulle on saapunut uusi palauteviesti Nuortenideat.fi-palveluun."
+msgstr ""
+"\"Hej,\n"
+"\n"
+"Du har fått ett nytt responsmeddelande till tjänsten Ungasidéer.fi.\""
+
+#: nkmessages/templates/nkmessages/email/new_message.txt:1
+#, python-format
+msgid ""
+"Hei %(user)s,\n"
+"\n"
+"Sinulle on saapunut uusi viesti Nuortenideat.fi-palveluun."
+msgstr ""
+"\"Hej %(user)s,\n"
+"\n"
+"Du har fått ett nytt meddelande till tjänsten Ungasidéer.fi.\""
+
+#: nkmessages/views.py:40
+msgid "Saapunut palaute"
+msgstr "Inkommen respons"
+
+#: nkmessages/views.py:45
+msgid "Kiitos palautteesta! Palaute on lähetetty."
+msgstr "Tack för din kommentar! Din kommentar har skickats."
+
+#: nkmoderation/forms.py:38
+msgid "Sisältöä moderoitu."
+msgstr "Innehållet har modererats."
+
+#: nkmoderation/models.py:32
+msgid "ilmoitettu"
+msgstr "anmäld"
+
+#: nkmoderation/models.py:33
+msgid "ilmoitus hylätty"
+msgstr "anmälan har avslagits"
+
+#: nkmoderation/models.py:34
+msgid "ilmoitus hyväksytty"
+msgstr "anmälan har godkänts"
+
+#: nkmoderation/models.py:43
+msgid "ilmoittaja"
+msgstr "Anmälare"
+
+#: nkmoderation/models.py:47
+msgid "syy ilmoitukseen"
+msgstr "orsak till anmälan"
+
+#: nkmoderation/models.py:48
+#, python-format
+msgid "Kerro lyhyesti, mikä tekee sisällöstä asiattoman. Enintään %d merkkiä."
+msgstr "Berätta kort varför innehållet är osakligt. Högst %d tecken."
+
+#: nkmoderation/perms.py:31
+msgid "Olet jo ilmoittanut sisällön asiattomaksi."
+msgstr "Du har redan anmält innehållet som osakligt."
+
+#: nkmoderation/perms.py:54
+msgid "Sisältö on jo moderoitu."
+msgstr "Innehållet har redan modererats."
+
+#: nkmoderation/templates/nkmoderation/email/content_modified_message.txt:1
+#, python-format
+msgid ""
+"Nuortenideat.fi-palvelun moderaattori on käsitellyt kirjoittamaasi ideaa, "
+"kysymystä tai kommenttia.\n"
+"Moderaattorin viesti: \"%(reason)s\""
+msgstr ""
+"Ungasidéer.fi-tjänstens moderator har behandlat ditt idée, fråga eller "
+"kommentar. Meddelande av moderatorn: \"%(reason)s\" "
+
+#: nkmoderation/templates/nkmoderation/email/content_modified_message.txt:3
+msgid "Linkki sisältöön:"
+msgstr "Länk till innehållet:"
+
+#: nkmoderation/templates/nkmoderation/flag_content_form.html:6
+#: nkmoderation/templatetags/flagging.py:18
+msgid "Ilmoita asiaton sisältö"
+msgstr "Anmäl osakligt innehåll"
+
+#: nkmoderation/templates/nkmoderation/flag_content_form.html:14
+msgid "Lähetä ilmoitus"
+msgstr "Skicka anmälan"
+
+#: nkmoderation/templates/nkmoderation/moderated_object.html:10
+msgid "Ilmoitukset käyttäjiltä"
+msgstr "Användarnas anmälan"
+
+#: nkmoderation/templates/nkmoderation/moderated_object.html:12
+msgid "anonyymi"
+msgstr "anonym"
+
+#: nkmoderation/templates/nkmoderation/moderated_object.html:19
+msgid "Hyväksy"
+msgstr "Godkänn"
+
+#: nkmoderation/templates/nkmoderation/moderation_reasoning.html:8
+msgid "Sisällön moderointi"
+msgstr "Moderering av innehållet"
+
+#: nkmoderation/templates/nkmoderation/moderation_reasoning.html:13
+#: nkmoderation/templates/nkmoderation/moderation_reasoning.html:14
+msgid "Syy moderointiin"
+msgstr "Orsak till modereringen"
+
+#: nkmoderation/templates/nkmoderation/moderation_reasoning.html:15
+msgid "Kerro lyhyesti, miksi muokkasit sisältöä."
+msgstr "Berätta kort varför du redigerade innehållet."
+
+#: nkmoderation/templates/nkmoderation/moderation_reasoning.html:15
+msgid "Syy näytetään kaikille käyttäjille."
+msgstr "Orsaken visas till alla användare."
+
+#: nkmoderation/templates/nkmoderation/moderation_reasoning.html:19
+msgid "Moderoi"
+msgstr "Moderera"
+
+#: nkmoderation/templates/nkmoderation/object_moderation_reasons.html:8
+#, python-format
+msgid ""
+"<a href=\"%(profile_url)s\">%(moderator)s</a> moderoi sisältöä: %(reason)s"
+msgstr ""
+"<a href=\"%(profile_url)s\">%(moderator)s</a> modererade innehållet: "
+"%(reason)s"
+
+#: nkmoderation/templates/nkmoderation/object_moderation_reasons.html:9
+#, python-format
+msgid "Näytä lisää (%(count)s kpl)"
+msgstr "Visa mer (%(count)s kpl)"
+
+#: nkmoderation/views.py:37
+msgid "Olet jo ilmoittanut kyseisen sisällön."
+msgstr "Du har redan anmält detta innehåll."
+
+#: nkmoderation/views.py:40
+msgid "Kiitos ilmoituksesta. Ilmoitus on välitetty palvelun moderaattoreille."
+msgstr "Tack för din anmälan. Anmälan har skickats till tjänstens moderatorer."
+
+#: nkmoderation/views.py:61
+msgid "Sisältö hyväksytty."
+msgstr "Innehållet har godkänts."
+
+#: nkmoderation/views.py:76
+msgid "Sisältö poistettu."
+msgstr "Innehållet har tagits bort."
+
+#: nkpicturecarousel/admin.py:19
+msgid "Et voi ladata kahta kieliversiota samasta kielestä."
+msgstr "Du kan inte ladda ned två språkversioner på samma språk."
+
+#: nkpicturecarousel/models.py:52 organization/models.py:101
+msgid "aktiivinen"
+msgstr "aktiverad"
+
+#: nkpicturecarousel/models.py:58
+msgid "kuvakarusellin kuva"
+msgstr "bild för bildkarusellen"
+
+#: nkpicturecarousel/models.py:59
+msgid "kuvakarusellin kuvat"
+msgstr "bilder för bildkarusellen"
+
+#: nkpicturecarousel/models.py:69
+msgid "Lisää kuvat vain kerran per kieli."
+msgstr "Lägg till bilderna bara en gång per språk."
+
+#: nkpicturecarousel/models.py:84
+msgid "kuva"
+msgstr "bild"
+
+#: nkpicturecarousel/models.py:89
+msgid "alt-teksti"
+msgstr "alt-text"
+
+#: nkpicturecarousel/models.py:98
+msgid "kuvan kieliversio"
+msgstr "bildens språkversion"
+
+#: nkpicturecarousel/models.py:99
+msgid "kuvan kieliversiot"
+msgstr "bildens språkversioner"
+
+#: nkvote/models.py:96 nkvote/templates/gallup/form.html:42
+msgid "Kuka saa vastata gallupiin?"
+msgstr "Vem får svara på gallupen?"
+
+#: nkvote/models.py:115 survey/models.py:83
+msgid "kysymys"
+msgstr "fråga"
+
+#: nkvote/models.py:131 survey/models.py:99
+msgid "vaihtoehto"
+msgstr "alternativ"
+
+#: nkvote/templates/gallup/confirm_delete.html:6
+msgid "Gallupin poisto"
+msgstr "Ta bort gallup"
+
+#: nkvote/templates/gallup/confirm_delete.html:9
+msgid "Poistetaanko gallup varmasti?"
+msgstr "Är du säker på att du vill ta bort gallupen?"
+
+#: nkvote/templates/gallup/form.html:17
+msgid "Gallupin muokkaus"
+msgstr "Redigering av gallupen"
+
+#: nkvote/templates/gallup/form.html:17
+msgid "Uusi gallup"
+msgstr "Ny gallup"
+
+#: nkvote/templates/gallup/form.html:33
+#: survey/templates/survey/survey_form.html:14
+msgid "Lisää kysymys"
+msgstr "Lägg till fråga"
+
+#: nkvote/templates/gallup/form.html:36
+msgid "Näytetäänkö tulokset oletuksena heti, vai vasta vastaamisen jälkeen?"
+msgstr "Ska resultaten visas genast som förval eller efter svar?"
+
+#: nkvote/templates/gallup/form.html:38
+msgid "Vastaamisen jälkeen"
+msgstr "Efter svar"
+
+#: nkvote/templates/gallup/form.html:49
+msgid "Tallenna gallup"
+msgstr "Spara gallupen"
+
+#: nkvote/templates/gallup/form.html:59 nuka/forms/widgets.py:74
+msgid "Kieliversiot"
+msgstr "Språkversion"
+
+#: nkvote/templates/gallup/form/option_input.html:4
+msgid "Vastausvaihtoehto"
+msgstr "Svarsalternativ"
+
+#: nkvote/templates/gallup/form/option_input.html:5
+msgid "Anna vastausvaihtoehto"
+msgstr "Ge ett svarsalternativ"
+
+#: nkvote/templates/gallup/form/question.html:19
+msgid "Lisää vastausvaihtoehto"
+msgstr "Lägg till svarsalternativ"
+
+#: nkvote/templates/gallup/form/question.html:20
+msgid "Poista vastausvaihtoehto"
+msgstr "Ta bort svarsalternativ"
+
+#: nkvote/templates/gallup/form/question_input.html:4
+msgid "Anna kysymys"
+msgstr "Ge en fråga"
+
+#: nkvote/templates/gallup/results_pdf.html:20
+msgid "Gallup"
+msgstr "Gallup"
+
+#: nkvote/templates/gallup/results_pdf.html:25
+#: nkvote/templates/gallup/well.html:50
+msgid "Gallup on suljettu."
+msgstr "Gallupen är avslutad."
+
+#: nkvote/templates/gallup/results_pdf.html:27
+#: nkvote/templates/gallup/well.html:52
+msgid "Gallup on luonnos. Vain idean omistajat näkevät sen."
+msgstr "Gallupen är ett utkast. Enbart ägarna av idén kan se den."
+
+#: nkvote/templates/gallup/well.html:16
+msgid "Avaa äänestettäväksi"
+msgstr "Öppna för röstning"
+
+#: nkvote/templates/gallup/well.html:19
+msgid "Sulje äänestäminen"
+msgstr "Avsluta röstningen"
+
+#: nkvote/views.py:303
+msgid "Gallup tallennettu."
+msgstr "Gallupen har sparats."
+
+#: nkvote/views.py:402
+msgid "Gallup poistettu."
+msgstr "Gallupen har tagits bort."
+
+#: nkwidget/forms.py:15
+msgid "Purppura"
+msgstr "Lila"
+
+#: nkwidget/forms.py:16
+msgid "Vihreä"
+msgstr "Grön"
+
+#: nkwidget/forms.py:17
+msgid "Sininen"
+msgstr "Blå"
+
+#: nkwidget/forms.py:18
+msgid "Harmaa"
+msgstr "Grå"
+
+#: nkwidget/forms.py:19
+msgid "Valkoinen"
+msgstr "Vit"
+
+#: nkwidget/forms.py:21
+msgid "Väri"
+msgstr "Färg"
+
+#: nkwidget/forms.py:26
+msgid "Näytettäviä tuloksia"
+msgstr "Resultat som ska visas"
+
+#: nkwidget/forms.py:31
+msgid "Kieli"
+msgstr "Språk"
+
+#: nuka/context_processors.py:13 nuka/templates/nuka/base.html:13
+msgid "Nuortenideat.fi harjoittelu"
+msgstr "Ungasidéer.fi testning"
+
+#: nuka/forms/validators.py:28
+msgid "Tiedosto ei läpäissyt virustarkistusta. Löytynyt virus: {}"
+msgstr "Filen har blockerats av viruskontrollen.   Virus upptäckts: {}"
+
+#: nuka/forms/validators.py:37
+msgid "Tiedostotyyppi ei ole sallittu."
+msgstr "Filtypen är inte tillåten."
+
+#: nuka/forms/widgets.py:97
+msgid "Käännetty"
+msgstr "Översatts"
+
+#: nuka/perms.py:16
+msgid "Ei käyttöoikeutta."
+msgstr "Ingen användningsrätt."
+
+#: nuka/perms.py:33
+msgid "Kirjaudu sisään tai rekisteröidy käyttääksesi toimintoa."
+msgstr "Logga in eller registrera dig för att använda funktionen."
+
+#: nuka/perms.py:43
+msgid "Toiminto vaatii moderaattorin oikeudet."
+msgstr "Funktionen kräver moderatorsrättigheter."
+
+#: nuka/perms.py:54
+msgid "Toiminto vaatii ylläpitäjän oikeudet."
+msgstr "Funktionen kräver administratörsrättigheter."
+
+#: nuka/templates/admin/base_site.html:8
+msgid "Django site admin"
+msgstr "Django site admin"
+
+#: nuka/templates/admin/base_site.html:11
+msgid "Django administration"
+msgstr "Django administration"
+
+#: nuka/templates/nuka/ajaxy_success_message.html:3
+msgid "Tallennettu."
+msgstr "Sparad."
+
+#: nuka/templates/nuka/base.html:184
+msgid "Siirry sisältöön"
+msgstr "Gå till innehållet"
+
+#: nuka/templates/nuka/base.html:195 nuka/templates/nuka/base.html.py:225
+msgid "Kirjaudu ulos"
+msgstr "Logga ut"
+
+#: nuka/templates/nuka/base.html:204
+msgid ""
+"HUOM! Nuortenideat.fi -palvelu poistuu käytöstä 15. elokuuta 2022. Palveluun "
+"ei voi rekisteröityä eikä uusia ideoita voi julkaista 1.6.2022 lähtien."
+msgstr ""
+"OBS! Tjänsten Ungassidéer.fi läggs ner den 15 augusti 2022. Man kan inte "
+"registrera sig eller lämna nya idéer i tjänsten fr.o.m. den 1 juni 2022."
+
+#: nuka/templates/nuka/base.html:205
+msgid "Lue lisää asiasta ja Nuortenideat.fi:n korvaavista palveluista."
+msgstr "Mer information om nedläggningen och om ersättande tjänster."
+
+#: nuka/templates/nuka/base.html:244 nuka/templates/nuka/base.html.py:263
+msgid "Valikko"
+msgstr "Meny"
+
+#: nuka/templates/nuka/base.html:285 nuka/templates/nuka/base.html.py:343
+#: nuka/templates/nuka/base.html:372 nuka/templates/nuka/nuka_sitemap.html:5
+#: nuka/templatetags/sitemap_urls.py:14
+msgid "Etusivu"
+msgstr "Ingångssida"
+
+#: nuka/templates/nuka/base.html:308
+msgid "Lukemattomia viestejä"
+msgstr "Olästa meddelanden"
+
+#: nuka/templates/nuka/base.html:413
+msgid ""
+"Nuortenideat.fi on valtakunnallinen vaikuttamispalvelu, jossa nuoret voivat "
+"ideoida, osallistua ja vaikuttaa heitä koskeviin asioihin. Palvelun "
+"tuottavat yhteistyössä osaamiskeskus Koordinaatti, oikeusministeriö ja "
+"opetus- ja kulttuuriministeriö."
+msgstr ""
+"Ungasidéer.fi är en riksomfattande tjänst, där ungdomar lätt kan komma med "
+"förslag, delta och påverka frågor som rör dem. Tjänsten tillhandahålls av "
+"kompetenscenter Koordinaatti, justitieministeriet och undervisnings- och "
+"kulturministeriet."
+
+#: nuka/templates/nuka/base.html:418 nuka/templatetags/sitemap_urls.py:54
+msgid "Tietosuojaseloste"
+msgstr "Dataskyddsbeskrivning"
+
+#: nuka/templates/nuka/base.html:419 nuka/templatetags/sitemap_urls.py:60
+msgid "Saavutettavuusseloste"
+msgstr "Tillgänglighetsutlåtande"
+
+#: nuka/templates/nuka/base.html:420 nuka/templatetags/sitemap_urls.py:66
+msgid "Yhteystiedot"
+msgstr "Kontaktuppgifter"
+
+#: nuka/templates/nuka/base.html:422 nuka/templates/nuka/nuka_sitemap.html:6
+#: nuka/templates/nuka/nuka_sitemap.html:11
+msgid "Sivukartta"
+msgstr "Sidkarta"
+
+#: nuka/templates/nuka/base.html:436
+msgid "Kirjoita uusi idea"
+msgstr "Skriv en ny idé"
+
+#: nuka/templates/nuka/email/base.txt:3
+msgid ""
+"Terveisin,\n"
+"Nuortenideat.fi"
+msgstr ""
+"Hälsningar,\n"
+"Ungasidéer.fi"
+
+#: nuka/templates/nuka/errors/404.html:5
+msgid "Sivua ei löytynyt"
+msgstr "Sidan hittades inte"
+
+#: nuka/templates/nuka/errors/404.html:6
+#, python-format
+msgid " Palaa palvelun etusivulle <a href=\"%(BASE_URL)s\">tästä</a>"
+msgstr ""
+
+#: nuka/templates/nuka/export/initiatives_export_buttons.html:5
+msgid "Vie"
+msgstr "För"
+
+#: nuka/templates/nuka/export/initiatives_export_buttons.html:8
+msgid "Excel"
+msgstr "Excel"
+
+#: nuka/templates/nuka/export/initiatives_export_buttons.html:9
+msgid "CSV"
+msgstr "CSV"
+
+#: nuka/templates/nuka/frontpage.html:17
+msgid "Ideoi, kannata ja kommentoi"
+msgstr "Kom med idéer, ta ställning, kommentera"
+
+#: nuka/templates/nuka/frontpage.html:19
+msgid ""
+"Kerro, mihin haluat vaikuttaa ja miksi. Nuortenideat.fi-palvelussa voit "
+"tehdä ehdotuksia ja osallistua keskusteluun. Liity mukaan ja vaikuta!"
+msgstr ""
+"Berätta hur just du skulle vilja påverka och varför. I Ungasidéer.fi-"
+"tjänsten kan du komma med förslag och delta i diskussioner. Kom med och "
+"påverka!"
+
+#: nuka/templates/nuka/frontpage.html:47 nuka/templates/nuka/frontpage.html:57
+#: nuka/templates/nuka/frontpage.html:67
+#: nuka/templates/nuka/main_buttons.html:14
+msgid "Hae ideoita"
+msgstr "Sök idéer"
+
+#: nuka/templates/nuka/frontpage.html:74
+msgid "Näytä kaikki"
+msgstr "Visa alla"
+
+#: nuka/templates/nuka/frontpage.html:84
+msgid "Suosituimmat aiheet"
+msgstr "Populäraste ämnen"
+
+#: nuka/templates/nuka/frontpage_display_type_buttons.html:4
+msgid "Ruudukko"
+msgstr "Rutfält"
+
+#: nuka/templates/nuka/frontpage_display_type_buttons.html:5
+msgid "Lista"
+msgstr "Lista"
+
+#: nuka/templates/nuka/frontpage_sort_buttons.html:5
+msgid "Uusimmat"
+msgstr "Nyaste"
+
+#: nuka/templates/nuka/frontpage_sort_buttons.html:8
+msgid "Suosituimmat"
+msgstr "Populäraste"
+
+#: nuka/templates/nuka/info_bar.html:6
+msgid ""
+"Nuortenideat.fi on valtakunnallinen vaikuttamispalvelu, jossa nuoret voivat "
+"ideoida, osallistua ja vaikuttaa heitä koskeviin asioihin."
+msgstr ""
+
+#: nuka/templates/nuka/info_bar.html:7
+msgid ""
+"Kunnat ja muut viranomaiset, koulut, järjestöt ja nuorten vaikuttajaryhmät "
+"voivat ottaa palvelun maksutta käyttöönsä."
+msgstr ""
+
+#: nuka/templates/nuka/info_bar.html:8
+msgid ""
+"Organisaatiot voivat julkaista palvelussa kyselyitä ja keskusteluita "
+"aiheista, joihin halutaan nuorten näkemyksiä."
+msgstr ""
+
+#: nuka/templates/nuka/info_bar.html:9
+msgid ""
+"Palvelun tuottavat yhteistyössä osaamiskeskus Koordinaatti, oikeusministeriö "
+"ja opetus- ja kulttuuriministeriö."
+msgstr ""
+
+#: nuka/templates/nuka/logo.html:4
+msgid "Nuortenideat.fi-logo"
+msgstr ""
+
+#: nuka/templates/nuka/pdf/header.html:10
+msgid "Tämä PDF-tiedosto on luotu Nuortenideat.fi-vaikuttamispalvelussa."
+msgstr "Denna PDF-fil har skapats i tjänsten Ungasidéer.fi"
+
+#: nuka/templatetags/configs.py:12
+msgid "https://www.nuortenideat.fi/"
+msgstr "https://www.ungasideer.fi/"
+
+#: nuka/templatetags/sitemap_urls.py:44
+#: organization/templates/organization/create_organization.html:42
+msgid "Luo organisaatio"
+msgstr "Skapa organisation"
+
+#: nuka/urls.py:55
+msgid "^materiaalit/"
+msgstr "^material/"
+
+#: organization/forms.py:29
+msgid "Valitse yhteyshenkilöt"
+msgstr "Välj kontaktpersoner"
+
+#: organization/forms.py:30
+msgid ""
+"Valitse organisaation yhteyshenkilöiden Nuortenideat.fi käyttäjätunnukset."
+msgstr "Välj Ungasidéer-användarnamnen för organisationens kontaktpersoner."
+
+#: organization/forms.py:56
+msgid "Organisaation tyyppi"
+msgstr "Organisationstyp"
+
+#: organization/forms.py:59
+msgid "Valitse kunnat"
+msgstr "Välj kommuner"
+
+#: organization/forms.py:63
+msgid ""
+"Valitse kunta tai kunnat, joiden alueella organisaatio toimii. Jätä "
+"tyhjäksi, jos organisaatio on valtakunnallinen."
+msgstr ""
+"Välj den kommun eller de kommuner där organisationen är verksam. Lämna "
+"fältet tomt om det gäller en riksomfattande organisation."
+
+#: organization/forms.py:71
+msgid "Hyväksyn <a href=\"{}\" target=\"_blank\">käyttöehdot</a>."
+msgstr ""
+"Jag godkänner <a href=\"{}\" target=\"_blank\">användningsvillkoren</a>."
+
+#: organization/forms.py:81
+msgid "Et voi poistaa itseäsi yhteyshenkilöistä."
+msgstr "Du kan inte ta bort dig själv från kontaktpersonerna."
+
+#: organization/forms.py:121
+#: organization/templates/organization/organization_detail_type.html:2
+msgid "Tyyppi"
+msgstr "Typ"
+
+#: organization/forms.py:140
+msgid "Organisaation yhteyshenkilöitä on muutettu."
+msgstr "Organisationens kontaktpersoner har ändrats."
+
+#: organization/forms.py:177 organization/models.py:66
+msgid "Kunta"
+msgstr "Kommun"
+
+#: organization/forms.py:178 organization/models.py:65
+msgid "Järjestö"
+msgstr "Organisation"
+
+#: organization/forms.py:179
+msgid "Koulu tai oppilaitos"
+msgstr "Skola eller läroanstalt"
+
+#: organization/forms.py:180 organization/models.py:68
+msgid "Nuorten vaikuttajaryhmä"
+msgstr "Påverkansgrupp för unga"
+
+#: organization/forms.py:181 organization/models.py:69
+msgid "Muu"
+msgstr "Annan"
+
+#: organization/forms.py:190 organization/forms.py:191
+msgid "Hae organisaatio"
+msgstr "Sök organisation"
+
+#: organization/forms.py:196
+msgid "Valitse kunta"
+msgstr "Välj kommun"
+
+#: organization/forms.py:272
+msgid "Arkistoitu/piilotettu"
+msgstr "Arkiverad/dold"
+
+#: organization/management/commands/remind_unactivated_organizations.py:37
+msgid "Organisaatio aktivoimatta"
+msgstr "Oaktiverad organisation"
+
+#: organization/management/commands/remind_unactivated_organizations.py:43
+msgid "Organisaatio moderointijonossa"
+msgstr ""
+
+#: organization/management/commands/remove_unactivated_organizations.py:34
+msgid "Organisaatio poistettu"
+msgstr ""
+
+#: organization/migrations/0003_default_organizations.py:16
+msgid "Valtakunta"
+msgstr "Riket"
+
+#: organization/migrations/0003_default_organizations.py:18
+#: organization/models.py:63
+msgid "Tuntematon"
+msgstr "Obekant"
+
+#: organization/models.py:64
+msgid "Koko Suomi"
+msgstr "Hela Finland"
+
+#: organization/models.py:67
+msgid "Koulu tai muu oppilaitos"
+msgstr "Skola eller annan läroanstalt"
+
+#: organization/models.py:74
+msgid "tyyppi"
+msgstr "typ"
+
+#: organization/models.py:79
+msgid "Kunnat"
+msgstr "Kommuner"
+
+#: organization/models.py:80
+msgid "Valitse kunnat, joiden alueella organisaatio toimii."
+msgstr "Välj de kommuner där organisationen är verksam."
+
+#: organization/models.py:102
+msgid "luotu"
+msgstr "skapad"
+
+#: organization/models.py:155
+msgid "organisaatio"
+msgstr "organisation"
+
+#: organization/models.py:156
+msgid "organisaatiot"
+msgstr "organisationer"
+
+#: organization/templates/organization/create_organization.html:5
+#: organization/templates/organization/create_organization.html:22
+#: organization/templates/organization/create_organization.html:27
+msgid "Uusi organisaatio"
+msgstr "Ny organisation"
+
+#: organization/templates/organization/create_organization.html:30
+msgid ""
+"Organisaatiosivun julkaisee palvelun ylläpito, kun tarvittavat tiedot on "
+"lisätty sivulle ja ilmoitettu julkaisupäivä ylläpidolle."
+msgstr ""
+"Tjänstens administratörer publicerar organisationssidan när behövliga "
+"uppgifter har matats in och önskat publiceringsdatum har meddelats till "
+"administratörerna."
+
+#: organization/templates/organization/create_organization.html:32
+msgid "Lue lisää"
+msgstr "Läs mer"
+
+#: organization/templates/organization/create_organization.html:35
+msgid ""
+"Organisaatiosivulla tulee olla esittelyteksti ja kuva. Voit muokata "
+"organisaatiosivun tekstiä ja lisätä tekstiin kuvia, linkkejä tai videoita. "
+"Voit myös lisätä sivulle useampia yhteyshenkilöitä. Kun nämä tiedot on "
+"lisätty, lähetä viesti @moderaattori ja ilmoita toive julkaisupäivästä."
+msgstr ""
+"På organisationssidan ska finnas en presentationstext och en bild.  Du kan "
+"redigera texten på organisationssidan och lägga till bilder, länkar eller "
+"videor. Du kan också lägga till flera kontaktpersoner. När du har matat in "
+"dessa uppgifter ska du meddela önskad publiceringsdag till @moderaattori."
+
+#: organization/templates/organization/email/owner_change.txt:1
+#, python-format
+msgid ""
+"Organisaation %(organization)s yhteyshenkilöitä on muokattu.\n"
+"Uudet yhteyshenkilöt ovat: %(admins)s"
+msgstr ""
+"\"Kontaktpersonerna för organisationen %(organization)s har ändrats.\n"
+"Nya kontaktpersoner är: %(admins)s\""
+
+#: organization/templates/organization/email/unactivated_in_queue.txt:1
+#, python-format
+msgid ""
+"Nuortenideat.fi-palveluun luotua organisaatiota \"%(organization)s\" ei ole "
+"aktivoitu. Moderaattoreilla on 14 päivää aikaa aktivoida organisaatio. "
+"Mikäli sitä ei tehdä, organisaatio poistetaan."
+msgstr ""
+
+#: organization/templates/organization/email/unactivated_not_activated.txt:1
+#, python-format
+msgid ""
+"Luomaasi organisaatiota \"%(organization)s\" Nuortenideat.fi-palvelussa ei "
+"ole aktivoitu palvelun moderaattoreiden päätöksestä. Lisätietoa ja apua saat "
+"tuki@nuortenideat.fi"
+msgstr ""
+
+#: organization/templates/organization/email/unactivated_removed.txt:1
+#, python-format
+msgid ""
+"Organisaatiota %(organization)s ei aktivoitu palvelun ylläpitäjien toimesta "
+"ja se on poistettu."
+msgstr ""
+
+#: organization/templates/organization/organization_detail.html:8
+msgid "Organisaatio"
+msgstr "Organisation"
+
+#: organization/templates/organization/organization_detail.html:47
+msgid "Organisaatio ei ole aktiivinen."
+msgstr "Organisationen är inte aktiv."
+
+#: organization/templates/organization/organization_detail.html:70
+msgid "Kysymyksia"
+msgstr "Frågor"
+
+#: organization/templates/organization/organization_detail.html:105
+msgid "Poistaa yhteyshenkilöt ja piilottaa organisaation"
+msgstr "Tar bort kontaktpersonerna och döljer organisationen"
+
+#: organization/templates/organization/organization_detail.html:123
+#: organization/templates/organization/organization_moderation.html:14
+msgid "Yhteyshenkilöt"
+msgstr "Kontaktpersoner"
+
+#: organization/templates/organization/organization_detail.html:132
+msgid "Ideat ja kysymykset"
+msgstr "Idéer och frågor"
+
+#: organization/templates/organization/organization_detail.html:154
+msgid "Ei ideoita tai kysymyksiä."
+msgstr "Inga idéer eller frågor."
+
+#: organization/templates/organization/organization_detail_admins.html:11
+msgid "Lähetä yhteyshenkilölle viesti"
+msgstr "Skicka meddelande till kontaktpersonen"
+
+#: organization/templates/organization/organization_detail_admins.html:18
+msgid "Muokkaa yhteyshenkilöitä"
+msgstr "Redigera kontaktpersoner"
+
+#: organization/templates/organization/organization_detail_type.html:2
+msgid "Muokkaa tyyppiä"
+msgstr "Ändra typen"
+
+#: organization/templates/organization/organization_list.html:21
+msgid "Luo uusi organisaatio"
+msgstr "Skapa ny organisation"
+
+#: organization/views.py:252
+msgid "Organisaatio on aktivoitu."
+msgstr "Organisationen är aktiverad."
+
+#: organization/views.py:261
+msgid "Organisaatio on arkistoitu."
+msgstr "Organisationen är arkiverad."
+
+#: smslog/templates/smslog/email/sent_txt_messages.txt:3
+msgid "Lähetetyt tekstiviestit -raportti"
+msgstr "Rapport över sända textmeddelanden."
+
+#: smslog/templates/smslog/email/sent_txt_messages.txt:5
+msgid "Aikaväli"
+msgstr "Tidsintervall"
+
+#: smslog/templates/smslog/email/sent_txt_messages.txt:7
+msgid "Lähetetyt tekstiviestit"
+msgstr "Sända textmeddelanden."
+
+#: smslog/templates/smslog/email/sent_txt_messages.txt:7
+msgid "kpl"
+msgstr "st"
+
+#: survey/apps.py:19
+msgid "Vastanneet"
+msgstr "Svarandena"
+
+#: survey/default_perms.py:28
+msgid "Kyselyssä on jo vastauksia."
+msgstr "Enkäten har redan besvarats."
+
+#: survey/default_perms.py:39
+#: survey/templates/survey/survey_answer_form.html:18
+msgid "Olet jo vastannut kyselyyn."
+msgstr "Du har redan svarat på enkäten."
+
+#: survey/forms.py:71
+msgid "Lisää vaihtoehto"
+msgstr "Lägg till ett alternativ"
+
+#: survey/forms.py:72
+msgid "Poista vaihtoehto"
+msgstr "Radera alternativet"
+
+#: survey/forms.py:74
+msgid "Kysymyksen vastausvaihtoehdot"
+msgstr "Svarsalternativ"
+
+#: survey/forms.py:131
+msgid "Vastauksen on oltava numero."
+msgstr "Svaret måste vara en siffra"
+
+#: survey/models.py:23
+msgid "Vastausten näyttäminen"
+msgstr "Visa svaren"
+
+#: survey/models.py:65
+msgid "väliotsikko"
+msgstr "mellanrubrik"
+
+#: survey/models.py:74 survey/templates/survey/survey_form.html:20
+msgid "Yksivalinta"
+msgstr "Enbart ett alternativ kan väljas"
+
+#: survey/models.py:75 survey/templates/survey/survey_form.html:21
+msgid "Monivalinta"
+msgstr "Flera alternativ kan väljas"
+
+#: survey/models.py:76 survey/templates/survey/survey_form.html:17
+msgid "Tekstikenttä"
+msgstr "Textfält"
+
+#: survey/models.py:77
+msgid "Numerokenttä"
+msgstr "Nummerfält"
+
+#: survey/models.py:84
+msgid "ohjeteksti"
+msgstr "anvisning"
+
+#: survey/models.py:86
+msgid "pakollinen"
+msgstr "obligatorisk "
+
+#: survey/templates/survey/answer_mode/page.html:8
+msgid "Sivunvaihto"
+msgstr "Sidbyte"
+
+#: survey/templates/survey/answer_mode/page.html:18
+msgid "Jatka vastaamista"
+msgstr "Fortsätt svara"
+
+#: survey/templates/survey/edit_mode/element_buttons.html:3
+#: survey/templates/survey/edit_mode/element_buttons_temp_element.html:3
+msgid "Nosta"
+msgstr "Upp"
+
+#: survey/templates/survey/edit_mode/element_buttons.html:4
+#: survey/templates/survey/edit_mode/element_buttons_temp_element.html:4
+msgid "Laske"
+msgstr "Ner"
+
+#: survey/templates/survey/question_answers_checkbox.html:6
+#: survey/templates/survey/question_answers_number.html:5
+#: survey/templates/survey/question_answers_radio.html:6
+#: survey/templates/survey/question_answers_text.html:5
+msgid "Vastaukset"
+msgstr "Svaren"
+
+#: survey/templates/survey/question_answers_checkbox.html:17
+#: survey/templates/survey/question_answers_number.html:10
+#: survey/templates/survey/question_answers_radio.html:17
+#: survey/templates/survey/question_answers_text_results.html:11
+msgid "Ei vastauksia"
+msgstr "Inga svar"
+
+#: survey/templates/survey/survey_answer_form.html:30
+msgid "Lähetä vastaukset"
+msgstr "Skicka svaren"
+
+#: survey/templates/survey/survey_form.html:25
+msgid "Lisää väliotsikko"
+msgstr "Lägg till mellanrubrik"
+
+#: survey/templates/survey/survey_page.html:4
+msgid "Sivu"
+msgstr "Sida"
+
+#: survey/views.py:293
+msgid "Lomakkeessa oli virheitä. Tarkista kentät."
+msgstr "Det finns fel i blanketten. Kolla fälten."
+
+#: survey/views.py:302
+msgid "Kiitos kyselyyn osallistumisesta."
+msgstr "Tack för att du svarade på enkäten."
+
+#: tagging/admin.py:24
+msgid "Esiintyy (kpl) ideassa"
+msgstr ""
+
+#~ msgid "Organisaatio, jona idea kirjoitetaan."
+#~ msgstr "Organisation i vars namn idén skrivs."
+
+#~ msgid "Kirjaudu Facebook-tunnuksillasi"
+#~ msgstr "Logga in med ditt Facebook-användarnamn"
+
+#~ msgid "Kirjaudu Google-tunnuksillasi"
+#~ msgstr "Logga in med ditt Google-användarnamn."
+
+#~ msgid "Kirjaudu Instagram-tunnuksillasi"
+#~ msgstr "Logga in med ditt Instagram-konto"
+
+#~ msgid ""
+#~ "Kirjaudu sosiaalisen median tunnuksillasi, jos olet rekisteröitynyt jo "
+#~ "aikaisemmin."
+#~ msgstr ""
+#~ "Logga in med ditt användarnamn i sociala medier om du redan registrerat "
+#~ "dig tidigare."
+
+#~ msgid "Rekisteröidy sosiaalisen median tunnuksilla"
+#~ msgstr "Registrera dig med ditt användarnamn i sociala medier"
+
+#~ msgid "Rekisteröidy Facebook-tunnuksillasi"
+#~ msgstr "Registrera dig med ditt Facebook-användarnamn"
+
+#~ msgid "Rekisteröidy Google-tunnuksillasi"
+#~ msgstr "Registrera dig med ditt Google-användarnamn"
+
+#~ msgid "Rekisteröidy Instagram-tunnuksillasi"
+#~ msgstr "Registrera dig med ditt Instagram-konto"
+
+#~ msgid ""
+#~ "TIEDOTE: nuortenideat.fi -palvelu poistuu käytöstä 15. elokuuta 2022."
+#~ msgstr "MEDDELANDE: Tjänsten Ungassidéer.fi läggs ner den 15 augusti 2022."
+
+#~ msgid "Widget"
+#~ msgstr "Widget"

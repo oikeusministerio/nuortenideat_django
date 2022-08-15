@@ -1,0 +1,27 @@
+{% load i18n bootstrap3 %}
+
+<div class="modal-header">
+    <h1 class="h3-style">{% trans "Idean kuva" %} <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">{% trans "Sulje" %}</span></button></h1>
+
+</div>
+<div class="modal-body">
+    <form action="{{ request.path }}" method="post" class="ajaxy-form {% block form_classes %}{% endblock form_classes %}" data-ajaxy-target="#idea-picture" novalidate>
+        {% csrf_token %}
+
+        {% if form.instance.picture %}
+            <div class="form-group">
+                <label class="control-label" for="id_current_picture">{% trans "Nykyinen kuva" %}</label>
+                {% include 'content/idea_main_picture.html' with object=form.instance %}
+            </div>
+        {% endif %}
+
+        {% bootstrap_form form %}
+
+        <button class="btn btn-default" type="submit">{% bootstrap_icon "ok" %} {% trans "Tallenna" %}</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">{% trans "Peruuta" %}</button>
+        {% if form.instance.picture %}
+            <a href="{% url 'content:delete_idea_picture' initiative_id=form.instance.pk %}" class="btn btn-default pull-right remove-picture ajaxy-link" data-ajaxy-method="DELETE" data-ajaxy-target="#idea-picture">{% bootstrap_icon "remove" %} {% trans "Poista kuva" %}</a>
+        {% endif %}
+        <div class="clearfix"></div>
+    </form>
+</div>

@@ -1,0 +1,16 @@
+{% load i18n fontawesome %}
+<div class="stats">
+    <div class="initiative-stats-row">
+        {% if object.is_idea %}
+            {% include 'content/idea_vote.html' with votable_object=object %}
+        {% endif %}
+
+        {% if object.public_comments.public.count %}
+            {% include 'nkcomments/comment_count.html' %}
+        {% endif %}
+
+        {% if object.is_idea and object.count_survey_submissions %}
+            {% fa_icon 'question-circle' 'idea-stats-survey' _("Kyselyjen vastaukset") %} {{ object.count_survey_submissions }}
+        {% endif %}
+    </div>
+</div>

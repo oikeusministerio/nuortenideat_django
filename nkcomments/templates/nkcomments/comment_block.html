@@ -1,0 +1,31 @@
+{% load i18n static bootstrap3 custom_comments fontawesome %}
+
+<header>
+    <div class="buttons">
+        <button class="open-commenting-settings btn btn-white" type="button" title="{% trans 'Asetukset' %}">{% fa_icon "cog" %}</button>
+    </div>
+    <div>
+        <!-- always count public comments -->
+        <h4>{% trans "Kommentit" %} ({{ object.public_comments.public.count }})</h4>
+    </div>
+</header>
+<div class="content">
+
+    {% if object.commenting_closed %}
+        <div class="alert alert-info">{% trans "Kommentointi on päättynyt." %}</div>
+    {% endif %}
+
+    {% include 'nkcomments/comment_list.html' with comments=comments %}
+
+    {% if request.is_ajax %}{# HACK: dont re-display non-ajax messsages already show on page header #}
+        {% bootstrap_messages %}
+    {% endif %}
+
+    <a name="add-comment"></a>
+    {% if object in perm.content.CanCommentInitiative %}
+        <div class="ajaxy-wrap comment-form-container">
+            {% get_custom_comment_form object 'comment_form' %}
+            {% include 'nkcomments/comment_form.html' with form=comment_form %}
+        </div>
+    {% endif %}
+</div>

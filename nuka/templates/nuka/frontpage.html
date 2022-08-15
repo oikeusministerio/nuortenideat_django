@@ -1,0 +1,103 @@
+{% extends "nuka/base.html" %}
+
+{% load staticfiles i18n topics cache fontawesome %}
+
+{% block precontent %}
+    <div class="container visible-xs picture-carousel-sm">
+        <img src="{{ carousel.picture }}" class="img-responsive" alt="{{ carousel.picture_alt }}">
+    </div>
+    <div class="container visible-sm picture-carousel-sm">
+        <img src="{{ carousel.picture }}" class="img-responsive" alt="{{ carousel.picture_alt }}">
+    </div>
+    <section id="carousel-wrapper">
+        <div class="container-fluid">
+            <div class="row carousel-wrapper">
+                <div class="four-columns bg-magenta">
+                    <div class="welcome-text">
+                        <h1>{% trans "Ideoi, kannata ja kommentoi" %}</h1>
+                        <div class="sub">
+                            <p>{% trans "Kerro, mihin haluat vaikuttaa ja miksi. Nuortenideat.fi-palvelussa voit tehdä ehdotuksia ja osallistua keskusteluun. Liity mukaan ja vaikuta!" %}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="eight-columns no-padding">
+                    <div class="img-container">
+                        <div class="img-wrapper">
+                            <div class="visible-lg visible-md img-responsive picture-carousel-lg img-lg" style="background-image: url('{{ carousel.picture }}');" title="{{ carousel.picture_title }}" alt="{{ carousel.picture_alt }}"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock precontent %}
+
+{% block js_extra %}
+    {{ block.super }}
+    <script  src="{% static 'nuka/js/initiative_display_buttons.js' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="row hidden-xs">
+        <div class="col-xs-6">
+            {% include 'nuka/frontpage_sort_buttons.html' %}
+        </div>
+        <div class="col-xs-6 text-right">
+            {% include 'nuka/frontpage_display_type_buttons.html' %}
+            <!-- <a href="{% url 'content:initiative_list' %}" class="btn btn-default btn-lg">{% trans "Hae ideoita" %}</a> -->
+        </div>
+    </div>
+    <div class="row visible-xs">
+        <div class="col-xs-12 text-center">
+            {% include 'nuka/frontpage_sort_buttons.html' %}
+        </div>
+    </div>
+    <div class="row visible-xs">
+        <div class="col-xs-12 frontpage-top-browse-ideas-btn-wrap-xs">
+            <!-- <a href="{% url 'content:initiative_list' %}" class="btn btn-default btn-lg browse-ideas-btn">{% trans "Hae ideoita" %}</a> -->
+            {% include 'nuka/frontpage_display_type_buttons.html' %}
+        </div>
+    </div>
+
+    <div class="initiative-boxes-wrap">
+        {% include "content/initiative_elements_all.html" %}
+    </div>
+
+    <div class="frontpage-bottom-browse-ideas-btn-wrap">
+        <a href="{% url 'content:initiative_list' %}" class="btn btn-default btn-lg">{% trans "Hae ideoita" %}</a>
+    </div>
+
+    <div class="row">
+        <!-- <div class="col-md-6 col-xs-12">
+            <section class="well well-headered new-topics-wrap">
+                <header>
+                    <h2 class="h4-style">{% trans "Ajankohtaista" %} | <a href="{% url "info:topic_list" %}" style="text-transform: none; font-size: 16px;">{% trans "Näytä kaikki" %}</a></h2>
+                </header>
+                <div class="body">
+                    {% latest_topics %}
+                </div>
+            </section>
+        </div> -->
+        <div class="col-md-12 col-xs-12">
+            <section class="well well-headered">
+                <header>
+                    <h2 class="h4-style">{% trans "Suosituimmat aiheet" %}</h2>
+                </header>
+                <div class="row popular-tags-wrap">
+                    {% cache 10000 "top-tags" request.LANGUAGE_CODE %}
+                        {% load popular_tags %}
+                        {% popular_tags as top_tags %}
+                        {% for tag in top_tags %}
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 vertical-aligned">
+                                <span class="tag-{{ tag.size }}"><a href="{% url 'content:initiative_list' %}?tags={{ tag.pk }}">{{ tag }}</a></span>
+                            </div>
+                            {% if forloop.counter == 4 %}
+                                <div class="clearfix hidden-xs"></div>
+                            {% endif %}
+                        {% endfor %}
+                    {% endcache %}
+                </div>
+            </section>
+        </div>
+    </div>
+{% endblock content %}

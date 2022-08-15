@@ -1,0 +1,38 @@
+{% load i18n bootstrap3 %}
+{% csrf_token %}
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">{% trans "Sulje" %}</span></button>
+    <h4 class="modal-title">
+        {% trans "Käyttäjäaktiivisuus" %}
+    </h4>
+</div>
+<div class="modal-body">
+    <table class="table table-bordered" style="max-width:500px;">
+        <thead>
+            <tr>
+                <th>{% trans 'Käyttäjät' %}</th>
+                <th>{% trans 'Lukumäärä' %}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{% trans 'Rekisteröityneet' %}</td>
+                <td>{{ count_registered }}</td>
+            </tr>
+            <tr>
+                <td>{% trans 'Aktiiviset' %} <small>({% trans "Ei sisällä aktivoimattomia ja arkistoituja tilejä" %})</small></td>
+                <td>{{ count_active }}</td>
+            </tr>
+
+            {% for days, count in count_login.items %}
+                <tr>
+                    <td>{% blocktrans %}Kirjautuneita {{ days }} päivän aikana{% endblocktrans %}</td>
+                    <td>{{ count }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-default pull-right" data-dismiss="modal">{% trans "Sulje" %}</button>
+</div>

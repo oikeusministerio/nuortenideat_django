@@ -1,0 +1,20 @@
+{% extends 'nuka/base.html' %}
+{% load staticfiles i18n bootstrap3 sitemap_urls %}
+
+{% block breadcrumb_content %}
+    <li><a href="{% url 'frontpage' %}">{% trans "Etusivu" %}</a></li>
+    <li class="active">{% trans "Sivukartta" %}</li>
+{% endblock breadcrumb_content %}
+
+{% block content %}
+<div class="well well-headered">
+  <header><h1 class="h4-style">{% trans "Sivukartta" %}</h1></header>
+  <div class="body">
+    {% if request.user.is_authenticated %}
+        {% all_urls request.user.pk %}
+    {% else %}
+        {% all_urls None %}
+    {% endif %}
+  </div>
+</div>
+{% endblock %}

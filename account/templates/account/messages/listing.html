@@ -1,0 +1,56 @@
+{% extends 'account/profile_base.html' %}
+
+{% load i18n staticfiles %}
+
+{% block js_extra %}
+    {{ block.super }}
+    <script type="text/javascript" src="{% static 'account/js/messages.js' %}"></script>
+{% endblock %}
+
+{% block breadcrumb_content %}
+    {% if object in perm.account.CanEditUser %}
+        <li><a href="{% url 'account:profile' request.user.pk %}">{% trans "Oma sivu" %}</a></li>
+        <li class="active">{% trans "Viestit" %}</li>
+    {% else %}
+        <li><a href="{% url 'account:profile' request.user.pk %}">{% trans "Käyttäjä" %}</a></li>
+        <li class="active">{{ object.get_short_name }}</li>
+    {% endif %}
+{% endblock breadcrumb_content %}
+
+{% block subcontent %}
+    <a name="sisalto"></a>
+    <div class="well" id="messages-list-container">
+        <header>
+            <h2 class="h3-style">{% trans "Viestit" %}</h2>
+            <a href="{% url 'account:create_message' object.pk %}#sisalto" class="btn btn-default btn-lg new-message-btn">{% trans "Uusi viesti" %}</a>
+        </header>
+        <div class="margin-top-md alert alert-info">{% trans "Voit lähettää viestin organisaatioiden yhteyshenkilöille tai moderaattoreille. Huomioi, että viestin lähettäjän ja vastaanottajan viestilaatikossa näkyvät omiin tietoihin tallennetut etunimi ja sukunimi. Muualla palvelussa julkisesti on näkyvissä ainoastaan käyttäjätunnus." %}</div>
+        <hr class="margin-top-md">
+
+        <div class="row" style="margin-bottom: 20px;">
+            <div class="col-md-4">
+                <label for="messages-choice">{% trans "Näytä" %}:</label>
+                <select name="nayta" id="messages-choice" class="form-control">
+                    <option value="saapuneet">{% trans "Saapuneet" %}</option>
+                    <option value="lahetetyt">{% trans "Lähetetyt" %}</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <div id="messages-ajax-loading"><img src="{% static 'nuka/img/ajax-loader.gif' %}" alt=""></div>
+            </div>
+            <div class="col-md-4">
+                <label for="messages-sorting">{% trans "Järjestys" %}:</label>
+                <select name="jarjestys" id="messages-sorting" class="form-control">
+                    <option value="uusin">{% trans "Tuoreimmat ensin" %}</option>
+                    <option value="vanhin">{% trans "Vanhimmat ensin" %}</option>
+                </select>
+            </div>
+        </div>
+
+        <a href="{% url 'account:messages_table' object.pk %}" id="messages-change-url"></a>
+
+        <div id="messages-table-wrapper">
+            {% include "account/messages/list_table.html" with pager_path=request.path|add:'taulu/' %}
+        </div>
+    </div>
+{% endblock subcontent %}

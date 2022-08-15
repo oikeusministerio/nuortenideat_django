@@ -1,0 +1,17 @@
+{% load i18n %}
+
+{% spaceless %}
+    {% if object.picture %}
+        <div id="picture-container">
+            {% include 'content/idea_main_picture.html' %}
+        </div>
+    {% else %}
+        {% if object not in perm.content.CanEditIdea %}
+            {% if object.initiator_organization %}
+                <div class="no-picture-bar-blue"></div>
+            {% else %}
+                <div class="no-picture-bar-magenta"></div>
+            {% endif %}
+        {% endif %}
+    {% endif %}
+{% endspaceless %}

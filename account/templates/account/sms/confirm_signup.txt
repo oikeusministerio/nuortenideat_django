@@ -1,0 +1,1 @@
+{% load i18n %}{% trans "Vahvista rekisteröityminen Nuortenideat.fi-palveluun seuraavalla vahvistustunnuksella" %}: {{ pin_code }}

@@ -1,0 +1,33 @@
+{% extends 'nkadmin/base.html' %}
+{% load i18n permitter %}
+
+{% block breadcrumb_content %}
+    <li><a href="{% url 'nkadmin:moderation_queue' %}">{% trans "Hallinta" %}</a></li>
+    <li class="active">{% trans "Omat oikeudet" %}</a></li>
+{% endblock breadcrumb_content %}
+
+{% block subcontent %}
+    <div class="well">
+        <h2>{% trans "Moderaattorioikeudet" %}</h2>
+        <div class="alert alert-info">
+            {% if perm.nuka.IsAdmin %}
+                {% trans "Olet pääkäyttäjä. Moderaattorioikeuksia ei tarvitse päivittää." %}
+            {% else %}
+                {% blocktrans with request.user.moderator_rights_valid_until|date:"SHORT_DATE_FORMAT" as valid %}Moderaattorioikeutesi erääntyvät {{ valid }}.{% endblocktrans %}
+
+                {% if perm.nkadmin.CanUpdateModeratorRights %}
+                    {% trans "Voit jatkaa oikeuksiesi voimassaoloa klikkaamalla Päivitä." %}
+                {% else %}
+                    {% trans "Sinun ei vielä tarvitse päivittää oikeuksia." %}
+                {% endif %}
+            {% endif %}
+        </div>
+        {% if not perm.nuka.IsAdmin %}
+            <form method="post" novalidate>
+                {% csrf_token %}
+                <button class="btn btn-default" type="submit"{% if not perm.nkadmin.CanUpdateModeratorRights %} disabled{% endif %}>{% trans "Päivitä" %}</button>
+            </form>
+        {% endif %}
+    </div>
+
+{% endblock subcontent %}

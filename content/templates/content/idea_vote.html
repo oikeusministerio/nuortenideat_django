@@ -1,0 +1,8 @@
+{% load fontawesome i18n staticfiles %}
+
+<i class="ni-icon ni-icon-thumbs-up thumbs-disabled"><span class="sr-only">{% trans "Kannatan" %}</span></i>
+<span id="idea-votes-up">{{ votable_object.votes.up.count }}</span>
+
+<i class="ni-icon ni-icon-thumbs-down thumbs-disabled"><span class="sr-only">{% trans "En kannata" %}</span></i>
+<span id="idea-votes-down">{{ votable_object.votes.down.count }}</span>
+

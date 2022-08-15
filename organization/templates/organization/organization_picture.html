@@ -1,0 +1,20 @@
+{% load fontawesome staticfiles cropping %}
+
+{% if not nowrap %}
+    <div class="organization-picture-wrap">
+{% endif %}
+    {% if object.picture %}
+
+        <img class="img-responsive{{ img_class|yesno:" ," }}{{ img_class }}" src="{% spaceless %}
+            {% if user.settings.cropping %}
+                {% cropped_thumbnail object 'cropping' upscale=True %}
+            {% else %}
+                {{ object.picture_medium.url }}
+            {% endif %}
+        {% endspaceless %}" alt="{{ object.name }}">
+    {% else %}
+        <img class="img-responsive{{ img_class|yesno:" ," }}{{ img_class }}" src="{% static 'nuka/img/organisaatio_placeholder200x200.png' %}" alt="{{ object.name }}">
+    {% endif %}
+{% if not nowrap %}
+    </div>
+{% endif %}

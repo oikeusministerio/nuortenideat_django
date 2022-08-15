@@ -1,0 +1,139 @@
+{% extends 'nuka/base.html' %}
+
+{% load i18n bootstrap3 fontawesome bleach_tags static %}
+
+{% block title %}{% trans "Ideat" %} - {{ block.super }}{% endblock title %}
+
+{% block js_extra %}
+    <script type="text/javascript" src="{% static "nuka/js/jquery.buttonselect.js" %}"></script>
+    <script type="text/javascript" src="{% static 'nuka/js/initiative_display_buttons.js' %}"></script>
+    <script>
+        $(function() {
+            var display_type = '';
+            $(document).on('display-type-has-changed', function() {
+               display_type = $('.idea-display-button.active[data-display-type]').data('display-type');
+               $('#input-display-type').val(display_type);
+            });
+
+            var type_from_get = '{{ request.GET.display_type }}';
+            if (type_from_get) {
+                display_type = type_from_get;
+                $('[data-display-type="'+display_type+'"]').trigger('click');
+            }
+
+            $(document).on('click', 'ul.pagination > li > a', function(e) {
+                var regex = /display_type=([a-z]+)/i;
+                var replace = 'display_type='+display_type;
+                e.preventDefault();
+
+                var url = $(this).attr('href');
+
+                if (url.search('display_type') !== -1) {
+                    url = url.replace(regex, replace);
+                } else if (display_type) {
+                    url += '&' + replace;
+                }
+
+                location.href = url
+            });
+        });
+    </script>
+{% endblock js_extra %}
+
+{% block breadcrumb_content %}
+    <li class="active">{% trans "Ideat" %}</li>
+{% endblock breadcrumb_content %}
+
+{% block content %}
+    <article class="well idea-search-well">
+        <div class="row idea-search-header">
+            <div class="col-md-8 col-sm-8">
+                <h1>{% trans "Ideat" %}</h1>
+            </div>
+            {% if not_deprecated %}
+                <div class="col-md-4 col-sm-4 write-idea-btn-wrwap">
+                    <a class="btn btn-green btn-lg create-idea-btn" href="{% url 'content:create_idea' %}">
+                        <img src="{% static 'nuka/img/ikoni_lamppu_valkoinen.png' %}" alt=""> {% trans "Kirjoita idea" %}
+                    </a>
+                </div>
+            {% endif %}
+        </div>
+
+        <form id="idea_search_form" method="get">
+            <input type="hidden" id="input-display-type" name="display_type" />
+            <div class="row">
+                <div class="col-md-4">
+                    {% bootstrap_field searchform.words %}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    {% bootstrap_field searchform.organizations %}
+                </div>
+                <div class="col-md-4">
+                    {% bootstrap_field searchform.tags %}
+                </div>
+                <div class="col-md-4">
+                    {% bootstrap_field searchform.municipalities %}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    {% bootstrap_field searchform.organization_initiated %}
+                </div>
+                <div class="col-md-4">
+                    {% if searchform.user_municipality %}
+                        {% bootstrap_field searchform.user_municipality %}
+                    {% endif %}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 form-group hidden-xs">
+                    <button type="submit" class="btn btn-default btn-lg">{% bootstrap_icon "search" %} {% trans "Hae" %}</button>
+                </div>
+                <div class="col-md-12 form-group visible-xs">
+                    <button type="submit" class="btn btn-default btn-lg btn-block">{% bootstrap_icon "search" %} {% trans "Hae" %}</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    {% bootstrap_field searchform.status %}
+                    <div class="clearfix"></div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feed-buttons">{% include "content/feed_buttons.html" %}</div>
+                </div>
+            </div>
+
+            <!--<span class="pull-right">{% trans "Piilota hakuehdot" %}</span>-->
+        </form>
+
+        {% if count %}
+            {% blocktrans with count=count %}Hakuehdoilla löytyi {{ count }} ideaa{% endblocktrans %}
+        {% endif %}
+
+    </article>
+    <div class="clearfix"></div>
+
+    <a name="search-results"></a>
+
+    <div class="text-right">{% include 'nuka/frontpage_display_type_buttons.html' %}</div>
+    <div class="clearfix"></div>
+
+    <div class="initiative-boxes-wrap">
+        {% if object_list_user or object_list_organization %}
+            {% include "content/initiative_elements_user.html" with initiatives=object_list_user class=all_columns_user %}
+            {% include "content/initiative_elements_organization.html" with initiatives=object_list_organization class=all_columns_org %}
+        {% else %}
+            <div id="initiative-elements" class="no-content">
+                <p>{% trans "Hakuehdoilla ei löydetty yhtään ideaa." %}</p>
+            </div>
+        {% endif %}
+    </div>
+
+    <div class="text-center">{% bootstrap_pagination page=page_obj url=request.path|add:"?"|add:request.GET.urlencode %}</div>
+
+    {% include "content/feed_buttons.html" %}
+    {% include "content/widget_modal.html" %}
+
+{% endblock content %}

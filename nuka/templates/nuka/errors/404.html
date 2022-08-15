@@ -1,0 +1,7 @@
+{% load i18n %}
+
+
+{% block content %}
+    <h1>404 | {% trans "Sivua ei löytynyt" %}</h1>
+    <p>{% blocktrans %} Palaa palvelun etusivulle <a href="{{ BASE_URL }}">tästä</a>{% endblocktrans %}</p>
+{% endblock content %}

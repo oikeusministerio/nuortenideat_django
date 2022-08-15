@@ -1,0 +1,11 @@
+<ul>
+    {% for item in sitemap_items %}
+        {% if item.sub %}
+            <ul>
+                <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+            </ul>
+        {% else %}
+            <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+        {% endif %}
+    {% endfor %}
+</ul>

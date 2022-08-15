@@ -1,0 +1,82 @@
+{% extends 'nuka/base.html' %}
+
+{% load i18n bootstrap3 %}
+
+{% block breadcrumb_content %}
+    <li class="active">{% trans "Rekisteröidy" %}</li>
+{% endblock breadcrumb_content %}
+
+{% block content %}
+    <div class="well">
+        <h1>{% trans "Rekisteröityminen" %}</h1>
+        <p>{% trans 'Täytä alla olevat tiedot viedäksesi rekisteröitymisen loppuun. Kaikki kohdat ovat pakollisia.' %}</p>
+        <hr />
+
+        <form method="post" novalidate>
+            {% csrf_token %}
+
+            {% if social and social_picture %}
+            <div class="facebook-profile-pic-wrap">
+                <img src="{{ social_picture }}" alt="{% trans 'Profiilikuva' %}" /><br />
+                <p>{% trans "Käytetäänkö profiilikuvaa?" %}</p>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="social_pic" value="yes" checked />
+                        {% trans 'Kyllä' %}
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="social_pic" value="no" />
+                        {% trans 'Ei' %}
+                    </label>
+                </div>
+            </div>
+            {% endif %}
+            {% bootstrap_form forms.user %}
+            <input name="usersettings-confirmation_method" type="hidden" value="email" />
+            {% bootstrap_field forms.usersettings.phone_number %}
+            {% bootstrap_field forms.usersettings.email %}
+            {% bootstrap_field forms.usersettings.first_name %}
+            {% bootstrap_field forms.usersettings.last_name %}
+            {% bootstrap_field forms.usersettings.birth_year %}
+            {% bootstrap_field forms.usersettings.municipality %}
+            {% bootstrap_field forms.usersettings.favorite_tags %}
+            {% buttons %}
+                <button type="submit" class="btn btn-primary margin-right-2" disabled>
+                    {% bootstrap_icon "share" %} {% trans "Rekisteröidy" %}
+                </button>
+
+                {{ forms.usersettings.privacy_policy_confirm }}
+                <label for="id_usersettings-privacy_policy_confirm" style="font-weight:normal;">
+                    {% url 'help:linked_instruction_redirect' slug='privacy-policy' as privacy_policy_url %}
+                    {% blocktrans %}Olen tutustunut <a target="_blank" href="{{ privacy_policy_url }}">tietosuojaselosteeseen</a>{% endblocktrans %}
+                </label>
+            {% endbuttons %}
+        </form>
+    </div>
+
+{% endblock content %}
+
+{% block js_extra %}
+
+    <script type="text/javascript">
+        $(function() {
+
+            $('input[name="usersettings-confirmation_method"]').on('change', function() {
+                $('#id_usersettings-phone_number_wrap').toggle($(this).val() == '{{ forms.usersettings.CONFIRMATION_CHOICE_SMS }}');
+            });
+            $('input[name="usersettings-confirmation_method"]:checked').trigger('change');
+
+            function disableSubmit() {
+                $('button[type="submit"]').prop('disabled', !$('#id_usersettings-privacy_policy_confirm').prop('checked'));
+            }
+
+            $('#id_usersettings-privacy_policy_confirm').on('click', function() {
+                disableSubmit();
+            });
+            disableSubmit();
+        });
+    </script>
+
+{% endblock js_extra %}

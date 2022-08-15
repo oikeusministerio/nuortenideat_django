@@ -1,0 +1,2 @@
+{% extends "nuka/email/base.txt" %}{% load i18n %}{% block content %}{% blocktrans with organization=organization.name %}Nuortenideat.fi-palveluun luotua organisaatiota "{{ organization }}" ei ole aktivoitu. Moderaattoreilla on 14 päivää aikaa aktivoida organisaatio. Mikäli sitä ei tehdä, organisaatio poistetaan.{% endblocktrans %}{% endblock content %}
+

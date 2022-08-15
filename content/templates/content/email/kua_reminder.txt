@@ -1,0 +1,7 @@
+{% extends "nuka/email/base.txt" %}{% load i18n configs %}{% block content %}{% blocktrans %}Jos ideasi koskee oman kuntasi palvelua, voit kopioida valmiin idean kuntalaisaloite.fi-palveluun.
+
+Kunnan asukkailla on oikeus tehdä kuntalaisaloitteita oman kunnan toimintaa koskevissa asioissa. Aloitteen avulla voit nostaa esiin jonkin ajankohtaisen asian tai ongelman, sekä herätellä päättäjiä kiinnittämään siihen huomiota.  Kunnassa aloite ohjataan sen viranomaisen käsiteltäväksi, jonka toimialueeseen se kunnassa kuuluu. Jokainen kuntalaisaloite käsitellään. Lue lisää kuntalaisaloitteesta osoitteessa https://www.kuntalaisaloite.fi.
+
+Idean tietoihin ilmestyy “Tee kuntalaisaloite“ -painike sen jälkeen, kun olet julkaissut ideasi.{% endblocktrans %}
+
+{% trans "Idea on osoitteessa" %} {% base_url as url %}{% trans url %}{{idea_url}}{% endblock content %}

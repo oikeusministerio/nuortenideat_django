@@ -1,0 +1,45 @@
+{% extends 'nuka/base.html' %}
+
+{% load i18n bootstrap3 %}
+
+{% block title %}{% trans "Organisaatiot" %}: {% trans "Uusi organisaatio" %} - {{ block.super }}{% endblock title %}
+
+{% block js_extra %}
+    <script type="text/javascript">
+        $(function () {
+            $('input[name="target_type"]').on('change', function () {
+                if($(this).prop('checked')) {
+                    $('#id_target_organizations_wrap').toggle($(this).val() === '{{ form.TARGET_TYPE_ORGANIZATION }}');
+                }
+            });
+            $('input[name="target_type"]:checked').trigger('change');
+        });
+    </script>
+{% endblock js_extra %}
+
+{% block breadcrumb_content %}
+    <li><a href="{% url 'organization:list' %}">{% trans "Organisaatiot" %}</a></li>
+    <li class="active">{% trans "Uusi organisaatio" %}</li>
+{% endblock breadcrumb_content %}
+
+{% block content %}
+<div class="well">
+    <h1>{% trans "Uusi organisaatio" %}</h1>
+
+    <div class="alert alert-info">
+        {% trans "Organisaatiosivun julkaisee palvelun ylläpito, kun tarvittavat tiedot on lisätty sivulle ja ilmoitettu julkaisupäivä ylläpidolle." %}
+        <br>
+        <a data-toggle="collapse" href="#additional-help-text">{% trans "Lue lisää" %}...</a>
+        <br>
+        <span id="additional-help-text" class="collapse">
+            {% trans "Organisaatiosivulla tulee olla esittelyteksti ja kuva. Voit muokata organisaatiosivun tekstiä ja lisätä tekstiin kuvia, linkkejä tai videoita. Voit myös lisätä sivulle useampia yhteyshenkilöitä. Kun nämä tiedot on lisätty, lähetä viesti @moderaattori ja ilmoita toive julkaisupäivästä." %}
+        </span>
+    </div>
+
+    <form method="post" novalidate>
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        <button type="submit" class="btn btn-default">{% trans "Luo organisaatio" %}</button>
+    </form>
+</div>
+{% endblock content %}

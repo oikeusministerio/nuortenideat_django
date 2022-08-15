@@ -1,0 +1,1 @@
+{% extends "nuka/email/base.txt" %}{% load i18n %}{% block content %}{% blocktrans with organization=organization.name %}Organisaatiota {{ organization }} ei aktivoitu palvelun ylläpitäjien toimesta ja se on poistettu.{% endblocktrans %}{% endblock content %}

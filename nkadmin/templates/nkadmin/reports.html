@@ -1,0 +1,17 @@
+{% extends 'nkadmin/base.html' %}
+{% load i18n fontawesome %}
+
+{% block breadcrumb_content %}
+    <li><a href="{% url 'nkadmin:moderation_queue' %}">{% trans "Hallinta" %}</a></li>
+    <li class="active">{% trans "Raportit" %}</a></li>
+{% endblock breadcrumb_content %}
+
+{% block subcontent %}
+    <div class="well">
+        <ul>
+            <li><a href="{% url 'nkadmin:ideas_by_tags' %}?export=xlsx">{% trans "Ideoiden lukumäärät aiheittain" %}</a> {% fa_icon 'file' alt=_('tiedosto') %}</li>
+            <li><a class="ajaxy-link" href="{% url 'nkadmin:user_activity' %}" data-toggle="ajaxy-modal">{% trans "Käyttäjäaktiivisuus" %}</a>&hellip;</li>
+        </ul>
+    </div>
+
+{% endblock subcontent %}

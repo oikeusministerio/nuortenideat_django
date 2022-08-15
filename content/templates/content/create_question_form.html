@@ -1,0 +1,27 @@
+{% extends 'nuka/base.html' %}
+
+{% load i18n bootstrap3 %}
+
+{% block title %}{% trans "Kysymykset" %}: {% trans "Kysy organisaatiolta" %} - {{ block.super }}{% endblock title %}
+
+{% block breadcrumb_content %}
+    <li><a href="{% url 'content:initiative_list' %}">{% trans "Ideat" %}</a></li>
+    <li class="active">{% trans "Kysy organisaatiolta" %}</li>
+{% endblock breadcrumb_content %}
+
+{% block content %}
+    <article class="well">
+        <h1>{% trans "Kysy organisaatiolta" %}</h1>
+        <div class="alert alert-info">
+            {% trans "Jos sinulla on jotain kysyttävää, voit lähettää kysymyksen suoraan organisaatiolle tämän lomakkeen kautta. Kirjoittamasi kysymys näkyy julkisesti kaikille organisaation omalla sivulla. Voit myös ehdottaa organisaatiolle aiheita, joista se voisi kysyä nuorten mielipiteitä palvelun kautta." %}
+        </div>
+
+        <p><strong>Vastaanottaja</strong><br>{{ target_organization }}</p>
+
+        <form method="post" novalidate>
+            {% csrf_token %}
+            {% bootstrap_form form %}
+            <button type="submit" class="btn btn-default">{% trans "Lähetä kysymys" %}</button>
+        </form>
+    </article>
+{% endblock content %}

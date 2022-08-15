@@ -1,0 +1,10 @@
+{% load i18n %}
+<ul class="list-unstyled ajaxy-wrap" id="idea-additional-detail-list">
+    {% for detail in details %}
+        <li class="ajaxy-wrap" style="{% if detail.type != detail.TYPE_NONE %}background-color:{{ detail.get_bgcolor }}; padding:8px;{% endif %}">
+            {% include 'content/additional_detail_detail.html' with detail=detail %}
+        </li>
+    {% endfor %}
+    <li class="ajaxy-wrap new-detail"></li>
+</ul>
+<div id="additional-detail-form-wrap"></div>

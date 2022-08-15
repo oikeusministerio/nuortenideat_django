@@ -1,0 +1,1 @@
+{% extends "nuka/email/base.txt" %}{% load i18n %}{% block content %}{% blocktrans %}Nuortenideat.fi käyttäjätilisi tunnuksella "{{ username }}" on ollut pian 2 vuotta passiivinen ja se poistetaan {{ days_until }} päivän kuluttua. Voit peruuttaa poiston kirjautumalla käyttäjätunnuksellasi palveluun.{% endblocktrans %}{% endblock content %}

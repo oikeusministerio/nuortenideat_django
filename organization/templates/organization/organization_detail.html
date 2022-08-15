@@ -1,0 +1,158 @@
+{% extends 'nuka/base.html' %}
+{% load i18n fontawesome staticfiles bootstrap3 nuka_tags %}
+
+{% block meta_extra %}
+    {% include 'nuka/meta_og_tags.html' with title=object description=object.description_plaintext picture_url=object|og_pic_url %}
+{% endblock meta_extra %}
+
+{% block title %}{% trans "Organisaatio" %}: {{ object }} - {{ block.super }}{% endblock title %}
+
+{% block js_extra %}
+    <script type="text/javascript" src="{% static "nuka/js/jquery.buttonselect.js" %}"></script>
+    <script type="text/javascript" src="{% static "nuka/js/initiatives_export.js" %}"></script>
+    <script type="text/javascript" src="{% static "nuka/js/initiative_display_buttons.js" %}"></script>
+    <script type="text/javascript">
+        $(function() {
+
+            $('#id_status').on('change', function() {
+                if ($(this).val()) {
+                    $('#id_initiative_ct_id_wrap').find('label:contains("Kysymykset")').hide();
+                    $('#id_initiative_ct_id_wrap').find('label:contains("Frågor")').hide();
+                } else {
+                    $('#id_initiative_ct_id_wrap').find('label').show();
+                }
+            });
+
+            $('#id_initiative_ct_id').on('change', function() {
+                if ($(this).val() == '27') {
+                    $('#id_status_wrap').find('label').hide();
+                } else {
+                    $('#id_status_wrap').find('label').show();
+                }
+            });
+
+            $('#export-buttons').appendTo($('#id_status_wrap > .form-control'));
+        });
+    </script>
+{% endblock js_extra %}
+
+{% block breadcrumb_content %}
+    <li><a href="{% url 'organization:list' %}">{% trans "Organisaatiot" %}</a></li>
+    <li class="active">{{ object.name }}</li>
+{% endblock breadcrumb_content %}
+
+{% block content %}
+    {% if not object.is_active %}
+        <div class="alert alert-info">
+            {% trans "Organisaatio ei ole aktiivinen." %}
+        </div>
+    {% endif %}
+    <div class="well detail-page-header organization-detail">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12 organization-detail-pic-wrap">
+                <div class="editable-wrap ajaxy-wrap profile-pic-wrap">
+                    {% include "organization/organization_detail_picture.html" %}
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="col-md-5 col-sm-6 col-xs-12">
+                <div class="editable-wrap ajaxy-wrap">
+                    {% include "organization/organization_detail_name.html" %}
+                </div>
+
+                <div class="editable-wrap ajaxy-wrap">
+                    {% include "organization/organization_detail_type.html" %}
+                </div>
+
+                <ul class="stats">
+                    <li>{% trans "Ideoita" %}: {{ ideas_count }}</li>
+                    <li>{% trans "Kysymyksia" %}: {{ question_count }}</li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 col-sm-6 organization-detail-buttons">
+                <a href="{% url 'content:create_idea' %}?organization_id={{ object.pk }}" class="btn btn-default btn-green btn-lg">
+                    <img src="{% static 'nuka/img/ikoni_lamppu_valkoinen.png' %}" alt=""> {% trans "Kirjoita idea" %}
+                </a>
+                <br />
+                <a href="{% url 'content:create_question' object.pk %}" class="btn btn-default btn-lg organization-initiative" style="margin-top: 10px;">
+                    {% trans "Kysy organisaatiolta" %}
+                </a>
+                {% if user.is_moderator %}
+                    <div class="dropdown organization-tools-wrap">
+                        <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="organization-tools" data-toggle="dropdown" aria-expanded="true">
+                            <span class="glyphicon glyphicon-cog"></span>
+                            {% trans "Työkalut" %}
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="organization-tools">
+                            {% if object.is_active %}
+                                <li role="presentation">
+                                    <a role="menuitem" href="{% url 'organization:deactivate' object.pk %}" class="ajaxy-link" data-ajaxy-method="POST">
+                                        Piilota
+                                    </a>
+                                </li>
+                            {% else %}
+                                <li role="presentation">
+                                    <a role="menuitem" href="{% url 'organization:activate' object.pk %}" class="ajaxy-link" data-ajaxy-method="POST">
+                                        Muuta näkyväksi
+                                    </a>
+                                </li>
+                            {% endif %}
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation">
+                                <a role="menuitem" href="{% url 'organization:archive' object.pk %}" class="ajaxy-link" data-ajaxy-method="POST" title="{% trans 'Poistaa yhteyshenkilöt ja piilottaa organisaation' %}">
+                                    Arkistoi
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="editable-wrap ajaxy-wrap" style="margin-top:20px;">
+            {% include "organization/organization_detail_description.html" %}
+        </div>
+
+        <hr />
+
+        <h2>{% trans "Yhteyshenkilöt" %}</h2>
+        <div class="editable-wrap ajaxy-wrap">
+            {% include "organization/organization_detail_admins.html" %}
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+    <div class="well">
+        <h3 class="h2-style">{% trans "Ideat ja kysymykset" %}</h3>
+
+        <form class="ajaxy-form" id="idea-form" data-ajaxy-target="#initiative_list" novalidate method="get" action="{% url 'organization:idea_list' object.pk %}">
+            {% bootstrap_field form.initiative_ct_id %}
+            <div class="clearfix"></div>
+            {% bootstrap_field form.status %}
+            {% if object in perm.organization.CanExportInitiatives %}
+                {% include 'nuka/export/initiatives_export_buttons.html' %}
+            {% endif %}
+            <div class="clearfix"></div>
+        </form>
+    </div>
+
+    <div class="pull-right">{% include 'nuka/frontpage_display_type_buttons.html' %}</div>
+    <div class="loader-gif" style="display:none;"><img src="{% static 'nuka/img/ajax-loader.gif' %}" alt="{% trans "Odotetaan hakutulosta" %}"></div>
+    <div class="clearfix"></div>
+
+    <div id="initiative_list" class="initiative-boxes-wrap">
+        {% if initiatives_list %}
+            {% include "content/initiative_elements_organization.html" with initiatives=initiatives_list class=all_columns_org %}
+        {% else %}
+            <div id="initiative-elements" class="no-content">
+                <p>{% trans "Ei ideoita tai kysymyksiä." %}</p>
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}

@@ -1,0 +1,1 @@
+{% extends "nuka/email/base.txt" %}{% load i18n %}{% block content %}{% blocktrans with organization=organization.name %}Luomaasi organisaatiota "{{ organization }}" Nuortenideat.fi-palvelussa ei ole aktivoitu palvelun moderaattoreiden päätöksestä. Lisätietoa ja apua saat tuki@nuortenideat.fi{% endblocktrans %}{% endblock content %}

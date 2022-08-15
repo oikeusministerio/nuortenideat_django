@@ -1,0 +1,15 @@
+{% load custom_comments %}
+
+<ul class="list-unstyled">
+    {% for comment in comments %}
+        <li id="c{{ comment.pk }}" class="comment ajaxy-wrap">
+            <div class="row">
+
+                <div class="col-md-12 ajaxy-wrap">
+                    {% include 'nkcomments/comment_list_item.html' with deleted=comment.is_deleted comment_vote=comment|get_comment_vote:comment_votes highlight=comment.highlight %}
+                </div>
+            </div>
+            <div class="clearfix"></div>
+      </li>
+    {% endfor %}
+</ul>

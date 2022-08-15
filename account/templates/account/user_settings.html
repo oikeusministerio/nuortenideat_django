@@ -1,0 +1,98 @@
+{% extends "account/profile_base.html" %}
+
+{% load i18n bootstrap3 fontawesome favorites staticfiles %}
+
+{% block js_extra %}
+    {{ block.super }}
+    <script type="text/javascript" src="{% static 'account/js/notification_options.js' %}"></script>
+{% endblock %}
+
+{% block breadcrumb_content %}
+    {% if object in perm.account.CanEditUser %}
+        <li><a href="{% url 'account:profile' request.user.pk %}">{% trans "Oma sivu" %}</a></li>
+        <li class="active">{% trans "Omat tiedot ja asetukset" %}</li>
+    {% else %}
+        <li><a href="{% url 'account:profile' request.user.pk %}">{% trans "Käyttäjä" %}</a></li>
+        <li class="active">{{ object.get_short_name }}</li>
+    {% endif %}
+{% endblock breadcrumb_content %}
+
+{% block subcontent %}
+    <div class="well user-details">
+        {% comment %}
+        <a class="btn btn-default">{% trans "Vaihda salasana" %}</a>
+        {% endcomment %}
+        <div class="clearfix"></div>
+        <div class="row">
+            <div class="col-md-4">
+                <h2 class="h3-style">{% trans "Profiilikuva" %}</h2>
+                <div class="ajaxy-wrap profile-pic-wrap">
+                    {% include "account/user_settings_picture.html" %}
+                </div>
+            </div>
+            <div class="col-md-5">
+                <h2 class="h3-style">{% trans "Seuratut aiheet" %}</h2>
+                <div class="ajaxy-wrap">
+                    {% fav_get_ct_id 'tagging.tag' as ct_id %}
+                    {% include "favorite/favorite_detail.html" with user=object ct_id=ct_id title=_("Seuraa aiheita") button_text=_("Seuraa aiheita") %}
+                </div>
+                <h2 class="h3-style">{% trans "Seuratut organisaatiot" %}</h2>
+                <div class="ajaxy-wrap">
+                    {% fav_get_ct_id 'organization.organization' as ct_id %}
+                    {% include "favorite/favorite_detail.html" with user=object ct_id=ct_id title=_("Seuraa organisaatiota") %}
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="ajaxy-wrap editable-wrap">
+            {% include "account/user_settings_detail.html" %}
+        </div>
+
+        <hr>
+        <div class="ajaxy-wrap editable-wrap">
+            {% include 'account/notification_options/options_detail.html' %}
+        </div>
+
+        <hr>
+        <h3>{% trans "Tiliasetukset" %}</h3>
+        {% if user in perm.account.CanEditUser %}
+
+          <!--
+            {% if not object.social_connection %}
+                <a class="btn btn-default" href="{% url 'social:begin' BACKEND_KEY_FB %}?next={{ request.path }}&action=associate">
+                    {% trans "Yhdistä Facebook-tiliin" %}
+                </a>
+                <a class="btn btn-default" href="{% url 'social:begin' BACKEND_KEY_GOOGLE %}?next={{ request.path }}&action=associate">
+                    {% trans "Yhdistä Google-tiliin" %}
+                </a>
+                <a class="btn btn-default" href="{% url 'social:begin' BACKEND_KEY_INSTAGRAM %}?next={{ request.path }}&action=associate">
+                    {% trans "Yhdistä Instagram-tiliin" %}
+                </a>
+            {% else %}
+                {% if object in perm.account.CanDisconnectSocial %}
+                    <form action="{% url 'social:disconnect' object.social_connection %}?next={{ request.path }}" method="post">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-default">{% spaceless %}
+                            {% if object.social_connection == BACKEND_KEY_GOOGLE %}
+                                {% trans "Poista Google-tilin yhdistys" %}
+                            {% elif object.social_connection == BACKEND_KEY_FB %}
+                                {% trans "Poista Facebook-tilin yhdistys" %}
+                            {% elif object.social_connection == BACKEND_KEY_INSTAGRAM %}
+                                {% trans "Poista Instagram-tilin yhdistys" %}
+                            {% endif %}
+                        {% endspaceless %}</button>
+                    </form>
+                {% endif %}
+            {% endif %}
+          -->
+
+            {% if object.status != object.STATUS_ARCHIVED %}
+                <form action="{% url 'account:close' object.pk %}" method="post" style="display:inline-block; width:100%; margin-top:10px;" onsubmit="return confirm('{% trans 'Haluatko varmasti sulkea käyttäjätilisi?' %}');">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-default">{% trans "Sulje tili" %}</button>
+                </form>
+            {% endif %}
+        {% endif %}
+    </div>
+{% endblock subcontent %}

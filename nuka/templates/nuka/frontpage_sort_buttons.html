@@ -1,0 +1,10 @@
+{% load i18n %}
+
+<div class="btn-group btn-group-lg idea-sort-buttons" role="group">
+    <a href="{% url 'content' %}?jarjestys=uusin" class="btn btn-default mobile-small idea-display-button ajaxy-link active sort-published-btn" data-ajaxy-target=".initiative-boxes-wrap">
+        {% trans "Uusimmat" %}
+    </a>
+    <a href="{% url 'content' %}?jarjestys=suosituin" class="btn btn-default mobile-small idea-display-button ajaxy-link sort-popularity-btn" data-ajaxy-target=".initiative-boxes-wrap">
+        {% trans "Suosituimmat" %}
+    </a>
+</div>

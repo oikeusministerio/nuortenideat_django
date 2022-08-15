@@ -1,0 +1,18 @@
+{% load staticfiles i18n %}
+
+<div class="main-buttons-wrap">
+    <div class="container">
+        {% if not_deprecated %}
+            <div class="col-lg-6 col-md-6 col-sm-12" style="text-align: end;">
+                <a href="{% url 'content:create_idea' %}" class="btn btn-lg btn-green main-button">
+                    <img src="{% static 'nuka/img/btn_icon_lamp_small.png' %}" alt=""> {% trans "Kirjoita idea" %}
+                </a>
+            </div>
+        {% endif %}
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <a href="{% url 'content:initiative_list' %}" class="btn btn-lg btn-magenta main-button">
+                <img src="{% static 'nuka/img/btn-search-white.png' %}" alt=""> {% trans "Hae ideoita" %}
+            </a>
+        </div>
+    </div>
+</div>

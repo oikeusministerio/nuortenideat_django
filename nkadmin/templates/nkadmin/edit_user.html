@@ -1,0 +1,28 @@
+{% extends "nkadmin/base.html" %}
+
+{% load i18n bootstrap3 staticfiles %}
+
+{% block subtitle %}{% trans "Muokkaa käyttäjän tietoja" %}{% endblock subtitle %}
+
+{% block breadcrumb_content %}
+    <li><a href="{% url 'nkadmin:moderation_queue' %}">{% trans "Hallinta" %}</a></li>
+    <li><a href="{% url 'nkadmin:users' %}">{% trans "Käyttäjät" %}</a></li>
+    <li class="active">{% trans "Muokkaa tietoja" %}</a></li>
+{% endblock breadcrumb_content %}
+
+{% block content %}
+    {{ block.super }}
+
+    <div class="well" style="margin-bottom: 110px">
+        <form role="form" method="post" novalidate>
+            {% csrf_token %}
+            {% bootstrap_form forms.user %}
+            {% bootstrap_form forms.usersettings %}
+            {% buttons %}
+                <button type="submit" class="btn btn-primary">
+                    {% bootstrap_icon "save" %} {% trans "Tallenna" %}
+                </button>
+            {% endbuttons %}
+        </form>
+    </div>
+{% endblock %}

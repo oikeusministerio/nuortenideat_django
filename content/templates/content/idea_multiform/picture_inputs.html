@@ -1,0 +1,16 @@
+{% load bootstrap3 i18n %}
+
+<div id="no-picture-container-editable" class="margin-top-sm">
+    {% if request.is_ajax %}{# HACK: dont re-display non-ajax messsages already show on page header #}
+        {% bootstrap_messages %}
+    {% endif %}
+
+    <a class="btn btn-default ajaxy-link edit-link" href="{% url 'content:edit_idea_picture' initiative_id=form.instance.pk %}" data-toggle="ajaxy-modal">
+        {% bootstrap_icon "edit" %}
+        {% if form.instance.picture %}
+            {% trans "Vaihda kuva" %}
+        {% else %}
+            {% trans "Lisää kuva" %}
+        {% endif %}
+    </a>
+</div>

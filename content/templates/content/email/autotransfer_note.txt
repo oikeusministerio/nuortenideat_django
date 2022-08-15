@@ -1,0 +1,3 @@
+{% extends "nuka/email/base.txt" %}{% load i18n %}{% block content %}{% blocktrans with title=idea.title base_url=base_url idea_url=idea_url %}Olet julkaissut idean '{{ title }}' Nuortenideat.fi-palvelussa. Idea lähtee kahden viikon kuluttua automaattisesti eteenpäin käsittelyyn asiasta vastaavalle henkilölle. Mitä enemmän kannatusta ja kommentteja idea saa, sitä todennäköisemmin se pääsee toteutukseen ja käsittelyyn päätöksenteossa. Jaa siksi ideasi kavereille kannatettavaksi ja kommentoitavaksi!
+
+Idea on osoitteessa {{ base_url }}{{ idea_url }}.{% endblocktrans %}{% endblock content %}

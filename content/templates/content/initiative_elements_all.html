@@ -1,0 +1,9 @@
+{% load i18n %}
+{% if object_list_user or object_list_organization %}
+    {% include "content/initiative_elements_user.html" with initiatives=object_list_user class=all_columns_user hide_title=hide_title %}
+    {% include "content/initiative_elements_organization.html" with initiatives=object_list_organization class=all_columns_org hide_title=hide_title %}
+{% else %}
+    <div id="initiative-elements" class="no-content">
+        <p>{% trans "Hakuehdoilla ei löydetty yhtään ideaa." %}</p>
+    </div>
+{% endif %}

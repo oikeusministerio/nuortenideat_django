@@ -1,0 +1,6 @@
+{% load bootstrap3 %}
+
+<a tabindex="0" data-toggle="popover" data-trigger="focus" data-placement="top"
+   data-html="true" data-content="{{content|default_if_none:""|force_escape }}">
+    {% bootstrap_icon "question-sign" %}
+</a>
